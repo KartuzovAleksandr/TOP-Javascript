@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<head>
+    <!-- Обязательно для русского -->
+    <meta charset="UTF-8">
+    <Title>Массивы</Title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Введите размерность массива"));
+        let max = 100;
+        // заполнение случайными числами
+        let a = Array.from({ length: n }).map(_ => Math.round(Math.random() * max));
+        // сортировка по убыванию
+        a.sort((a, b) => b - a);
+        /*
+        // let a = [];
+        let a = [n];
+        for (let i = 0; i < n; i++) {
+            // a.push(Math.round(Math.random() * max));
+            a[i] = Math.round(Math.random() * max);
+        }
+        */
+        document.write(a.join(" "));
+        console.log(a);
+    </script>
+</body>
+</HTML>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Замена диагоналей</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h1>Квадратная матрица</h1>
+<div id="matrix-container"></div>
+<button id="swap-diagonals">Поменять диагонали</button>
+
+<script>
+  // Изначальная матрица
+  const matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ];
+
+  // Контейнер для матрицы
+  const container = document.getElementById("matrix-container");
+  const button = document.getElementById("swap-diagonals");
+
+  // Отрисовка матрицы
+  const table = document.createElement("table");
+  for (let i = 0; i < matrix.length; i++) {
+    const row = document.createElement("tr");
+    for (let j = 0; j < matrix[i].length; j++) {
+      const cell = document.createElement("td");
+      cell.textContent = matrix[i][j];
+      row.appendChild(cell);
+    }
+    table.appendChild(row);
+  }
+  container.appendChild(table);
+
+  // Обработчик кнопки для замены диагоналей
+  button.addEventListener("click", () => {
+    const n = matrix.length;
+
+    // Меняем местами элементы главной и побочной диагоналей
+    for (let i = 0; i < n; i++) {
+      const temp = matrix[i][i]; // Главная диагональ
+      matrix[i][i] = matrix[i][n - i - 1]; // Побочная диагональ
+      matrix[i][n - i - 1] = temp; // Обратная замена
+    }
+
+    // Перерисовка матрицы
+    container.innerHTML = "";
+    const newTable = document.createElement("table");
+    for (let i = 0; i < matrix.length; i++) {
+      const row = document.createElement("tr");
+      for (let j = 0; j < matrix[i].length; j++) {
+        const cell = document.createElement("td");
+        cell.textContent = matrix[i][j];
+        row.appendChild(cell);
+      }
+      newTable.appendChild(row);
+    }
+    container.appendChild(newTable);
+  });
+</script>
+</body>
+</html>
