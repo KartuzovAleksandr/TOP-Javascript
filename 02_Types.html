@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<head>
+    <!-- Обязательно для русского -->
+    <meta charset="UTF-8">
+    <Title>Квадрат</Title>
+</head>
+<body>
+    <script>
+        let a = 0x000F;
+        if (a) {
+            document.write(a + "<p>");
+        }
+        let s = "He123llo";
+        document.write(parseInt(s) + "<p>");
+
+        const number1 = "56";
+        const number2 = 4;
+        const result = +number1 - number2;
+        document.write(result + "<p>"); // 52
+
+        const person = {name: "Tom", age: 37};
+        for (prop in person){
+            document.write(prop + "<p>");
+        }
+        a = [1 , 2, 3];
+        for (prop of a){
+            document.write(prop + "<p>");
+        }
+
+    </script>
+</body>
+</HTML>

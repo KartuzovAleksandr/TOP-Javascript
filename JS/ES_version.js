@@ -55,4 +55,5 @@ const incrementOne = (value) => value + 1;
 const decrementOne = (value) => value - 1
 const output = 20 |> incrementOne |> decrementOne; // 20
 console.log(output);
- */
+*/
+
