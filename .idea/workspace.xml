@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/TOP-Javascript.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_Converter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_ES-Version.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_HelloExt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_HelloSanya.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01_Square.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/Hello.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Version ES" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +20,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -93,10 +84,32 @@
       <workItem from="1737970459600" duration="6279000" />
       <workItem from="1737984743327" duration="110000" />
       <workItem from="1738049527292" duration="260000" />
+      <workItem from="1738052933981" duration="493000" />
     </task>
+    <task id="LOCAL-00001" summary="Version ES">
+      <option name="closed" value="true" />
+      <created>1738053068691</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738053068691</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Version ES">
+      <option name="closed" value="true" />
+      <created>1738053346224</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738053346224</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Version ES" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version ES" />
   </component>
 </project>
