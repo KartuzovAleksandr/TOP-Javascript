@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Выделение уникальных элементов из 2 массивов</title>
+</head>
+<body>
+<script>
+    function SortUnique(arr1,arr2) {
+        const uniqueArray1 = arr1.filter(item => !arr2.includes(item));
+        const uniqueArray2 = arr2.filter(item => !arr1.includes(item));
+        return [...uniqueArray1, ...uniqueArray2];
+    }
+    let n = parseInt(prompt("Введите размерность массива"));
+    let max = 10;
+    let arr1 = Array.from({ length: n }).map(_ => Math.round(Math.random() * max));
+    let arr2 = Array.from({ length: n }).map(_ => Math.round(Math.random() * max));
+    document.write("Первоначальный массив1: " + arr1.join(" ") + "<p>");
+    document.write("Первоначальный массив2: " + arr2.join(" ") + "<p>");
+    const newSet = new Set(SortUnique(arr1, arr2))
+    let sortedArr = Array.from(newSet);
+    document.write("Отсортированный массив: " + sortedArr.join(" ") + "<p>");
+</script>
+</body>
+</html>

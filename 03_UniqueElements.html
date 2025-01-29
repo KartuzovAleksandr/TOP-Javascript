@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Выделение уникальных элементов из 2 массивов</title>
+</head>
+<body>
+<script>
+    function unique(a, b) {
+        let c = [];
+        let u;
+        let uniq;
+        for (let i = 0; i < a.length; i++) {
+            u = a[i];
+            uniq = true;
+            for (let j=0; j < b.length; j++) {
+                if (u === b[j]) {
+                    uniq = false;
+                    break;
+                }
+            }
+            if (uniq) {
+                for (let i = 0; i < c.length; i++) {
+                    if (c[i] === u) {
+                        uniq = false;
+                        break;
+                    }
+                }
+                if (uniq)
+                    c.push(u);
+            }
+        }
+        return c;
+    }
+
+    let a = [6,8,6,7,3];
+    let b = [2,5,8,7,3];
+    let d = unique(a, b);
+    let e = unique(b, a);
+    let f = [...d, ...e];
+    document.write(a);
+    document.write("<p>");
+    document.write(b);
+    document.write("<p>");
+    document.write(f);
+</script>
+</body>
+</html>

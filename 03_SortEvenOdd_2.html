@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Сортировка четных по возрастанию, нечетных по убыванию</title>
+</head>
+<body>
+<label for="size">Введите размерность</label>
+<input type="number" id="size" placeholder="Размер массива">
+<button onclick="sortArray()">Сгенерировать и отсортировать</button>
+<p><span id="result"></span></p>
+<script>
+  function sortArray() {
+    let size = parseInt(document.getElementById("size").value) || 10;
+    let numbers = Array.from({ length: size }, () => Math.floor(Math.random() * 100));
+    let evens = numbers.filter(n => n % 2 === 0).sort((a, b) => a - b), odds = numbers.filter(n => n % 2).sort((a, b) => b - a);
+    document.getElementById("result").textContent = numbers.map(n => n % 2 === 0 ? evens.shift() : odds.shift()).join(", ");
+  }
+</script>
+</body>
+</html>

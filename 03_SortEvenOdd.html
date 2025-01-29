@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Сортировка четных по возрастанию, нечетных по убыванию</title>
+</head>
+<body>
+<script>
+  function SortEvenOdd(arr) {
+    // четные чмсла выделяем, сортируем по возрастанию
+    let even = arr.filter(num => num % 2 === 0).sort();
+    // нечетные чмсла выделяем, сортируем по убыванию
+    let odd = arr.filter(num => num % 2 !== 0).sort((a, b) => b - a);
+    // объединяем массивы
+    return even.concat(odd);
+    // или // return [...even, ...odd];
+  }
+  let n = parseInt(prompt("Введите размерность массива"));
+  let max = 100;
+  // заполняем массив случайными числами
+  let arr = Array.from({ length: n }, () => Math.round(Math.random() * max));
+  // или // let arr = Array.from({ length: n }).map(_ => Math.round(Math.random() * max));
+  document.write("Первоначальный массив: " + arr.join (" ") + "<br>");
+  let sortedArr = SortEvenOdd(arr);
+  document.write("Отсортированный массив: " + sortedArr.join (" ") + "<br>");
+</script>
+</body>
+</html>
