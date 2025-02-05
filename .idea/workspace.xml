@@ -4,15 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 2">
-      <change afterPath="$PROJECT_DIR$/03_BubbleSort.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_SortEvenOdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_SortEvenOdd_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_UniqueElements.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_UniqueElements_2.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 3">
+      <change afterPath="$PROJECT_DIR$/04/04_DateDiff.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04/04_Palindrom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04/04_Regular.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/05_FuncParameter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/05_FuncVariable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/05_Good.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/05_Scopes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Arrays.html" beforeDir="false" afterPath="$PROJECT_DIR$/02_Arrays.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_Types.html" beforeDir="false" afterPath="$PROJECT_DIR$/02_Types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Converter.html" beforeDir="false" afterPath="$PROJECT_DIR$/01/01_Converter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_ES-Version.html" beforeDir="false" afterPath="$PROJECT_DIR$/01/01_ES-Version.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_HelloExt.html" beforeDir="false" afterPath="$PROJECT_DIR$/01/01_HelloExt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_HelloSanya.html" beforeDir="false" afterPath="$PROJECT_DIR$/01/01_HelloSanya.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_HelloWorld.html" beforeDir="false" afterPath="$PROJECT_DIR$/01/01_HelloWorld.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_Square.html" beforeDir="false" afterPath="$PROJECT_DIR$/01/01_Square.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_Arrays.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/02_Arrays.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_ReplaceDiagonals.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/02_ReplaceDiagonals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_Types.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/02_Types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_BubbleSort.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/03_BubbleSort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_SortEvenOdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/03_SortEvenOdd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_SortEvenOdd_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/03_SortEvenOdd_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_UniqueElements.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/03_UniqueElements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_UniqueElements_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/03_UniqueElements_2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +101,15 @@
     "JavaScript Debug.03_SortEvenOdd_2.html.executor": "Run",
     "JavaScript Debug.03_UniqueElements.html.executor": "Run",
     "JavaScript Debug.03_UniqueElements_2.html.executor": "Run",
+    "JavaScript Debug.03_UniqueMorozov.html.executor": "Run",
+    "JavaScript Debug.04_DateDiff.html.executor": "Run",
+    "JavaScript Debug.04_Palindrom.html.executor": "Run",
+    "JavaScript Debug.04_PalindromWord.html.executor": "Run",
+    "JavaScript Debug.04_Regular.html.executor": "Run",
+    "JavaScript Debug.05_FuncParameter.html.executor": "Run",
+    "JavaScript Debug.05_FuncVariable.html.executor": "Run",
+    "JavaScript Debug.05_Good.html.executor": "Run",
+    "JavaScript Debug.05_Scopes.html.executor": "Run",
     "Node.js.ES_version.js.executor": "Run",
     "Node.js.index.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -112,6 +135,9 @@
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\03" />
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\02" />
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\01" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript" />
     </key>
   </component>
@@ -137,7 +163,11 @@
       <workItem from="1738061541347" duration="308000" />
       <workItem from="1738073609151" duration="1684000" />
       <workItem from="1738141728017" duration="6029000" />
-      <workItem from="1738157665447" duration="1516000" />
+      <workItem from="1738157665447" duration="1953000" />
+      <workItem from="1738221999297" duration="873000" />
+      <workItem from="1738223826391" duration="9218000" />
+      <workItem from="1738251291131" duration="2216000" />
+      <workItem from="1738744675258" duration="8560000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -195,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738074660524</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lesson 3">
+      <option name="closed" value="true" />
+      <created>1738159320785</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738159320785</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +242,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Version ES" />
     <MESSAGE value="Lesson 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 2" />
+    <MESSAGE value="Lesson 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 3" />
   </component>
 </project>

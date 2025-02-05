@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регулярные выражения</title>
+</head>
+<body>
+<script>
+    let s = prompt("Введите текст");
+    // let digits = /[0-9]/; // any digit
+    // let lowercase = /[a-z]/; // any low english letters
+    // let letters = /[А-Я]i/; // any russian letters
+    let digits = /^\d+$/; // only digits
+    let lowercase = /^[a-z]+$/; // only low english letters
+    let letters = /^[а-яА-Я]+$/; // only russian letters
+    document.write("Только цифры ");
+    document.write(digits.test(s));
+    document.write("<p>");
+    document.write("Только маленькие буквы английские ");
+    document.write(lowercase.test(s));
+    document.write("<p>");
+    document.write("Только любые русские буквы ");
+    document.write(letters.test(s));
+</script>
+</body>
+</html>

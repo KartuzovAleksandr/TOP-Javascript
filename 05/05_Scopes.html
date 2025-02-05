@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Области видимости</title>
+</head>
+<body>
+<script>
+    "use strict";
+    function print() {
+        var a = 5;
+        let b = 8;
+        const c = 9;
+        d = 10;
+        console.log("Function print: a =", a);
+        console.log("Function print: b =", b);
+        console.log("Function print: c =", c);
+    }
+    print();
+    // console.log("Global: a =", a);  // Uncaught ReferenceError: a is not defined
+    console.log("Global: d =", d);  // 10
+</script>
+</body>
+</html>

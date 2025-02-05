@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Работа с датами</title>
+</head>
+<body>
+<script>
+    // разница между датами в днях
+    function DaysBetween(dateString) {
+        const today = new Date();
+        const inputDate = new Date(dateString);
+        const diffTime = Math.abs(inputDate - today);
+        return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    }
+    // день программиста в 2025 году
+    function GetProgrammersDay(year) {
+        const date = new Date(year, 0, 256);
+        return date.toDateString().split('T')[0];
+    }
+    // день сисадмина
+    function GetSysadminDay(year) {
+        const lastDay = new Date(year, 6, 31);
+        while (lastDay.getDay() !== 5) {
+            lastDay.setDate(lastDay.getDate() - 1);
+        }
+        return lastDay.toDateString().split('T')[0];
+    }
+    function getUSElectionDate(year) {
+        let date = new Date(year, 10, 1); // 1 ноября указанного года
+        let dayOfWeek = date.getDay(); // День недели (0 - воскресенье, 1 - понедельник, ..., 6 - суббота)
+
+        // Если 1 ноября не вторник (2), находим ближайший следующий вторник
+        let electionDay = 1 + ((9 - dayOfWeek) % 7);
+
+        return new Date(year, 10, electionDay).toDateString();
+    }
+    document.write("Разница в днях:", DaysBetween(prompt("Введите дату"))+'<br>');
+    document.write("День программиста 2025:", GetProgrammersDay(2025)+'<br>');
+    document.write("День сисадмина 2025:", GetSysadminDay(2025)+'<br>');
+    document.write("День выборов в США:", getUSElectionDate(prompt("Введите год"))+'<br>');
+</script>
+</body>
+</html>

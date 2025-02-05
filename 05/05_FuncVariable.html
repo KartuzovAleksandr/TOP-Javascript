@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Параметры функций</title>
+</head>
+<body>
+<script>
+    function avg(a, b, c)
+    // function avg(...a)
+    {
+        let result = 0;
+        for (const n of arguments) // или a
+            result += n;
+        try {
+            console.log(result / arguments.length);
+        }
+        catch (error) {
+            console.log(error);
+        }
+    }
+    function sum(x = 8, y = 5)
+    {
+        // if (y === undefined) y = 5;
+        // if (x === undefined) x = 8;
+        const z = x + y;
+        console.log(z);
+    }
+    sum();          // 13
+    sum(6);         // 11
+    sum(6, 4)       // 10
+    avg(1, 2, 3, 4);
+    avg(6, 4);
+    avg();
+</script>
+</body>
+</html>
