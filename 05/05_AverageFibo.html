@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Среднее арифметическое первых двенадцати членов ряда Фибоначчи</title>
+</head>
+<body>
+<script>
+function fibonacci(n) {
+    if (n <= 1) {
+        return n;
+    }
+    else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+function averageFibonacci(m) {
+let sum = 0;
+for (let i = 0; i < m; i++) {
+    sum += fibonacci(i);
+    }
+    return sum / m;
+}
+const average = averageFibonacci(12);
+console.log("Среднее арифметическое первых двенадцати членов ряда Фибоначчи: " + average);
+document.write("Среднее арифметическое первых двенадцати членов ряда Фибоначчи: " + average);
+</script>
+</body>
+</html>

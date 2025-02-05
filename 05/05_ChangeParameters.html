@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменение массива-параметра функции</title>
+</head>
+<body>
+<script>
+function change(array){
+array[0] = 8;
+array[1] = 8;
+array[2] = 8;
+}
+function changeFull(array){
+array = [9, 8, 7];
+}
+// let numbers2 = [9, 8, 7];
+let numbers = [1, 2, 3];
+// numbers2 = numbers;
+// console.log(numbers2);
+console.log("before change:", numbers);     // [1, 2, 3]
+change(numbers);
+console.log("after change:", numbers);      // [8, 2, 3]
+changeFull(numbers);
+</script>
+</body>
+</html>

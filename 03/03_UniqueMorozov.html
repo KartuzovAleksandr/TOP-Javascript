@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск уникальных чисел в массивах</title>
+    <style>
+        /* DarkTheme.css: Общие стили для тёмной темы */
+
+        /* Базовые переменные цветов для тёмной темы */
+        :root {
+            --color-background: #121212;
+            --color-foreground: #ffffff;
+            --color-border: #444;
+            --color-input-bg: #2a2a2a;
+            --color-input-placeholder: #888;
+            --color-button-bg: #3b82f6;
+            --color-button-bg-hover: #2563eb;
+            --color-success: #10b981;
+            --color-error: #ef4444;
+        }
+
+        /* Стили для body */
+        body {
+            background-color: var(--color-background);
+            color: var(--color-foreground);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Общие стили для кнопок */
+        button {
+            background-color: var(--color-button-bg);
+            color: var(--color-foreground);
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--color-button-bg-hover);
+        }
+
+        /* Стили для полей ввода и select */
+        input, select {
+            background-color: var(--color-input-bg);
+            color: var(--color-foreground);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input::placeholder {
+            color: var(--color-input-placeholder);
+        }
+
+        /* Стили для текста успеха и ошибок */
+        .success {
+            color: var(--color-success);
+        }
+
+        .error {
+            color: var(--color-error);
+        }
+
+        /* Общие стили для контейнеров */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background-color: var(--color-background);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes logo-bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            color: var(--color-success);
+            animation: logo-bounce 1.5s infinite;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .card {
+            background-color: var(--color-background);
+            color: var(--color-foreground);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--color-success);
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        .card input {
+            display: block;
+            width: calc(100% - 10px);
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="logo">TopJavaScript</div>
+<div class="cards">
+    <!-- Карточка 1: Генерация массивов -->
+    <div class="card">
+        <h3>Сгенерируйте два массива</h3>
+        <p>Нажмите кнопку для генерации случайных массивов.</p>
+        <button onclick="generateArrays()">Сгенерировать массивы</button>
+        <p><strong>Первый массив:</strong> <span id="array1-display">-</span></p>
+        <p><strong>Второй массив:</strong> <span id="array2-display">-</span></p>
+    </div>
+
+    <!-- Карточка 2: Результат -->
+    <div class="card">
+        <h3>Результат</h3>
+        <p><strong>Уникальные элементы:</strong></p>
+        <ul id="result"></ul>
+    </div>
+</div>
+
+<script>
+    function generateRandomArray(size, min, max) {
+        return Array.from(new Set(Array.from({ length: size }, () => Math.floor(Math.random() * (max - min + 1)) + min)));
+    }
+
+    function getUniqueElements(arr1, arr2) {
+        let uniqueInArr1 = arr1.filter(el => !arr2.includes(el));
+        let uniqueInArr2 = arr2.filter(el => !arr1.includes(el));
+        return Array.from(new Set([...uniqueInArr1, ...uniqueInArr2]));
+    }
+
+    function generateArrays() {
+        let array1 = generateRandomArray(10, 1, 20);
+        let array2 = generateRandomArray(10, 1, 20);
+
+        document.getElementById('array1-display').innerText = array1.join(', ');
+        document.getElementById('array2-display').innerText = array2.join(', ');
+
+        let result = getUniqueElements(array1, array2);
+        let resultList = document.getElementById('result');
+        resultList.innerHTML = '';
+
+        if (result.length) {
+            result.forEach(item => {
+                let li = document.createElement('li');
+                li.textContent = item;
+                resultList.appendChild(li);
+            });
+        } else {
+            let li = document.createElement('li');
+            li.textContent = 'Нет уникальных элементов';
+            resultList.appendChild(li);
+        }
+    }
+</script>
+</body>
+</html>

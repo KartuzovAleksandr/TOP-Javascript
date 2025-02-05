@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Проверка одного слова на палиндром</title>
+    </head>
+    <body>
+        <script>
+            let word = prompt("Введте слово :");
+            let revWord = word.split('').reverse().join('');
+            if (word === revWord)
+                document.write("палиндром");
+            else
+                document.write("не палиндром")
+        </script>
+    </body>
+</html>
