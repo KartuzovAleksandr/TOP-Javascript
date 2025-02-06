@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Максимальный элемент с нечётными номерами</title>
+</head>
+<body>
+<h2>Введите массив чисел через запятую:</h2>
+<input type="text" id="arrayInput" placeholder="Например: 3,7,1,9,4"/>
+<button onclick="findMaxOddIndex()">Найти</button>
+<p id="result"></p>
+<script>
+  function findMaxOddIndex() {
+    let input = document.getElementById("arrayInput").value;
+    let arr = input.split(",").map(Number);
+    let maxOddIndexValue = Number.NEGATIVE_INFINITY;
+    for (let i = 1; i < arr.length; i += 2) {
+      if (arr[i] > maxOddIndexValue) {
+        maxOddIndexValue = arr[i];
+      }
+    }
+    let resultText = (maxOddIndexValue === Number.NEGATIVE_INFINITY)
+            ? "Нет элементов с нечётными номерами"
+            : `Максимальный элемент с нечётным номером: ${maxOddIndexValue}`;
+    document.getElementById("result").innerText = resultText;
+  }
+</script>
+</body>
+</html>

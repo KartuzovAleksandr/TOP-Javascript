@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Матрица</title>
+  <style>
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      font-size: 1.1rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    #matrixOutput {
+      width: 80%;
+      max-width: 600px;
+      margin-top: 30px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      text-align: center;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+      font-size: 1.1rem;
+    }
+    td {
+      background-color: #ecf0f1;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    tr:nth-child(even) td {
+      background-color: #f7f7f7;
+    }
+    tr:hover td {
+      background-color: #dfe6e9;
+    }
+    .header-cell {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Генерация и вывод матрицы (см. консоль - F12)</h1>
+  <!-- <button onclick="createMatrix()">Создать и вывести матрицу</button> -->
+  <div id="matrixOutput"></div>
+  <script>
+    class Matrix {
+      constructor(m, n) {
+        this.m = m;
+        this.n = n;
+        this.max = 50;
+        this.generate(m, n);
+      }
+      generate(m, n) {
+        this.a = Array.from({ length: m }, () => Array(n).fill(0));
+        for (let i = 0; i < m; i++) {
+          for (let j = 0; j < n; j++) {
+            this.a[i][j] = Math.floor(Math.random() * (2 * this.max + 1)) - this.max;
+          }
+        }
+      }
+      clear() {
+        this.a = Array.from({ length: this.m }, () => Array(this.n).fill(0));
+      }
+      divide() {
+        for (let i = 0; i < this.m; i++) {
+          for (let j = 0; j < this.n; j++) {
+            this.a[i][j] = j === 0 ? 0 : Math.floor(this.a[i][j] / (j + 1));
+          }
+        }
+      }
+      print(header) {
+        if (!this.a || this.a.length === 0) {
+          console.log('Матрица пуста');
+          return;
+        }
+        console.log(header);
+        let headerRow = '   ';
+        for (let j = 0; j < this.n; j++) {
+          headerRow += `${j + 1})`.padStart(5);
+        }
+        console.log(headerRow);
+        for (let i = 0; i < this.m; i++) {
+          let row = `${(i + 1).toString().padStart(3)} `;
+          for (let j = 0; j < this.n; j++) {
+            row += `${this.a[i][j].toString().padStart(5)}`;
+          }
+          console.log(row);
+        }
+        console.log();
+      }
+    }
+    let mat5 = new Matrix(6, 6);
+    mat5.print('Матрица 6x6');
+    mat5.divide();
+    mat5.print('После деления матрицы 6x6');
+  </script>
+</body>
+</html>

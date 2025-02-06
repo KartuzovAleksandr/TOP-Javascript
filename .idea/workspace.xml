@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 4" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +81,7 @@
     "JavaScript Debug.03_UniqueElements.html.executor": "Run",
     "JavaScript Debug.03_UniqueElements_2.html.executor": "Run",
     "JavaScript Debug.03_UniqueMorozov.html.executor": "Run",
+    "JavaScript Debug.04_Array_Лощинин.html.executor": "Run",
     "JavaScript Debug.04_DateDiff.html.executor": "Run",
     "JavaScript Debug.04_Palindrom.html.executor": "Run",
     "JavaScript Debug.04_PalindromWord.html.executor": "Run",
@@ -88,6 +91,8 @@
     "JavaScript Debug.05_FuncParameter.html.executor": "Run",
     "JavaScript Debug.05_FuncVariable.html.executor": "Run",
     "JavaScript Debug.05_Good.html.executor": "Run",
+    "JavaScript Debug.05_Matrix_Морозов.html.executor": "Run",
+    "JavaScript Debug.05_Matrix_Нещетин.html.executor": "Run",
     "JavaScript Debug.05_Scopes.html.executor": "Run",
     "Node.js.ES_version.js.executor": "Run",
     "Node.js.index.js.executor": "Run",
@@ -148,6 +153,11 @@
       <workItem from="1738251291131" duration="2216000" />
       <workItem from="1738744675258" duration="8560000" />
       <workItem from="1738790314188" duration="692000" />
+      <workItem from="1738791023208" duration="109000" />
+      <workItem from="1738825908332" duration="41000" />
+      <workItem from="1738827114640" duration="268000" />
+      <workItem from="1738827955810" duration="206000" />
+      <workItem from="1738830889886" duration="375000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -229,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738790986280</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Lesson 4">
+      <option name="closed" value="true" />
+      <created>1738791113750</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738791113750</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

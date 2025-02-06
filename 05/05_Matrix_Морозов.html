@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сортировка четных чисел в каждой строке по возрастанию</title>
+    <link rel="stylesheet" href="../CSS/DarkTheme.css">
+    <style>
+        .matrix {
+            display: table;
+            margin-top: 20px;
+        }
+
+        .matrix .row {
+            display: table-row;
+        }
+
+        .matrix .cell {
+            display: table-cell;
+            padding: 10px;
+            border: 1px solid var(--color-border);
+            text-align: center;
+            width: 40px;
+            height: 40px;
+        }
+
+        .matrix .cell.even {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .matrix .cell.odd {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .matrix .cell.default {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="logo">Демонстрация работы с матрицей</div>
+
+<div class="cards">
+    <div class="card">
+        <h3>Исходная матрица</h3>
+        <div id="matrixBefore" class="matrix"></div>
+        <button onclick="sortEvenNumbers()">Отсортировать четные числа</button>
+        <button onclick="generateRandomMatrix()">Сгенерировать случайную матрицу</button>
+    </div>
+
+    <div class="card">
+        <h3>Матрица после сортировки</h3>
+        <div id="matrixAfter" class="matrix"></div>
+    </div>
+</div>
+
+<script>
+    class Matrix {
+        constructor(data) {
+            if (!Array.isArray(data) || !data.every(row => Array.isArray(row))) {
+                throw new Error("Матрица должна быть массивом массивов.");
+            }
+            this.data = data;
+            this.rows = data.length;
+            this.cols = data[0].length;
+        }
+
+        // Метод: сортировка четных чисел в каждой строке по возрастанию
+        sortEvenNumbersInRows() {
+            this.data = this.data.map(row => {
+                // Извлекаем четные числа и сортируем их
+                let evenNumbers = row.filter(num => num % 2 === 0).sort((a, b) => a - b);
+                let evenIndex = 0;
+
+                // Заменяем четные числа отсортированными значениями
+                return row.map(num => (num % 2 === 0 ? evenNumbers[evenIndex++] : num));
+            });
+        }
+    }
+
+    function renderMatrix(matrix, elementId) {
+        const matrixElement = document.getElementById(elementId);
+        matrixElement.innerHTML = '';
+        matrix.data.forEach(row => {
+            const rowElement = document.createElement('div');
+            rowElement.classList.add('row');
+            row.forEach(num => {
+                const cellElement = document.createElement('div');
+                cellElement.classList.add('cell');
+                cellElement.classList.add(num % 2 === 0 ? 'even' : 'odd');
+                cellElement.textContent = num;
+                rowElement.appendChild(cellElement);
+            });
+            matrixElement.appendChild(rowElement);
+        });
+    }
+
+    function generateRandomMatrix() {
+        const rows = Math.floor(Math.random() * 5) + 3;
+        const cols = Math.floor(Math.random() * 5) + 3;
+        let randomData = [];
+
+        for (let i = 0; i < rows; i++) {
+            let row = [];
+            for (let j = 0; j < cols; j++) {
+                row.push(Math.floor(Math.random() * 21) - 10);
+            }
+            randomData.push(row);
+        }
+
+        matrix = new Matrix(randomData);
+        renderMatrix(matrix, 'matrixBefore');
+        document.getElementById('matrixAfter').innerHTML = '';
+    }
+
+    // Пример
+    let matrix = new Matrix([
+        [4, 3, 2, 7],
+        [8, 5, 6, 1],
+        [12, 9, 10, 15]
+    ]);
+
+    renderMatrix(matrix, 'matrixBefore');
+
+    function sortEvenNumbers() {
+        matrix.sortEvenNumbersInRows();
+        renderMatrix(matrix, 'matrixAfter');
+    }
+</script>
+</body>
+</html>
