@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор расстояния</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        input {
+            margin: 5px;
+            padding: 8px;
+            width: 80px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>2D калькулятор</h2>
+    <input id="x1" type="number" placeholder="X1">
+    <input id="y1" type="number" placeholder="Y1">
+    <input id="x2" type="number" placeholder="X2">
+    <input id="y2" type="number" placeholder="Y2">
+    <button onclick="calculate2D()">Рассчитать</button>
+    <p id="result2D"></p>
+
+    <h2>3D калькуляторr</h2>
+    <input id="x3" type="number" placeholder="X1">
+    <input id="y3" type="number" placeholder="Y1">
+    <input id="z3" type="number" placeholder="Z1">
+    <input id="x4" type="number" placeholder="X2">
+    <input id="y4" type="number" placeholder="Y2">
+    <input id="z4" type="number" placeholder="Z2">
+    <button onclick="calculate3D()">Расчитать</button>
+    <p id="result3D"></p>
+
+    <script>
+        class Point {
+            constructor(x, y) {
+                this.x = x || 0;
+                this.y = y || 0;
+            }
+
+            distance(point) {
+                let dx = this.x - point.x;
+                let dy = this.y - point.y;
+                return Math.sqrt(dx * dx + dy * dy);
+            }
+        }
+
+        class Point3D extends Point {
+            constructor(x, y, z) {
+                super(x, y);
+                this.z = z || 0;
+            }
+
+            distance(point) {
+                let dx = this.x - point.x;
+                let dy = this.y - point.y;
+                let dz = this.z - point.z;
+                return Math.sqrt(dx * dx + dy * dy + dz * dz);
+            }
+        }
+
+        function calculate2D() {
+            let p1 = new Point(parseFloat(document.getElementById('x1').value), parseFloat(document.getElementById('y1').value));
+            let p2 = new Point(parseFloat(document.getElementById('x2').value), parseFloat(document.getElementById('y2').value));
+            document.getElementById('result2D').innerText = 'Расстояне: ' + p1.distance(p2);
+        }
+
+        function calculate3D() {
+            let p1 = new Point3D(parseFloat(document.getElementById('x3').value), parseFloat(document.getElementById('y3').value), parseFloat(document.getElementById('z3').value));
+            let p2 = new Point3D(parseFloat(document.getElementById('x4').value), parseFloat(document.getElementById('y4').value), parseFloat(document.getElementById('z4').value));
+            document.getElementById('result3D').innerText = 'Расстояние: ' + p1.distance(p2);
+        }
+    </script>
+</body>
+</html>

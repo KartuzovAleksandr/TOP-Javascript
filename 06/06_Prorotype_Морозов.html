@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Устройства на прототипах</title>
+    <link rel="stylesheet" href="../CSS/DarkTheme.css">
+    <style>
+        .output {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #222;
+            border: 1px solid var(--color-border);
+            border-radius: 3px;
+            font-size: 0.9em;
+            min-height: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="logo">Демонстрация устройств на прототипах</div>
+
+<div class="cards">
+    <!-- Чайник -->
+    <div class="card" id="cardKettle">
+        <h3>Чайник</h3>
+        <p class="description"></p>
+        <div class="buttons">
+            <button onclick="showDevice('kettle', 'show')">Show</button>
+            <button onclick="showDevice('kettle', 'desc')">Desc</button>
+            <button onclick="showDevice('kettle', 'sound')">Sound</button>
+        </div>
+        <div class="output" id="outputKettle"></div>
+    </div>
+
+    <!-- Микроволновка -->
+    <div class="card" id="cardMicrowave">
+        <h3>Микроволновка</h3>
+        <p class="description"></p>
+        <div class="buttons">
+            <button onclick="showDevice('microwave', 'show')">Show</button>
+            <button onclick="showDevice('microwave', 'desc')">Desc</button>
+            <button onclick="showDevice('microwave', 'sound')">Sound</button>
+        </div>
+        <div class="output" id="outputMicrowave"></div>
+    </div>
+
+    <!-- Автомобиль -->
+    <div class="card" id="cardCar">
+        <h3>Автомобиль</h3>
+        <p class="description"></p>
+        <div class="buttons">
+            <button onclick="showDevice('car', 'show')">Show</button>
+            <button onclick="showDevice('car', 'desc')">Desc</button>
+            <button onclick="showDevice('car', 'sound')">Sound</button>
+        </div>
+        <div class="output" id="outputCar"></div>
+    </div>
+
+    <!-- Пароход -->
+    <div class="card" id="cardSteamboat">
+        <h3>Пароход</h3>
+        <p class="description"></p>
+        <div class="buttons">
+            <button onclick="showDevice('steamboat', 'show')">Show</button>
+            <button onclick="showDevice('steamboat', 'desc')">Desc</button>
+            <button onclick="showDevice('steamboat', 'sound')">Sound</button>
+        </div>
+        <div class="output" id="outputSteamboat"></div>
+    </div>
+</div>
+
+<script>
+    function Device(name, characteristics) {
+        this.name = name;
+        this.characteristics = characteristics;
+    }
+    Device.prototype.show = function() {
+        return "Устройство: " + this.name;
+    };
+    Device.prototype.desc = function() {
+        let descStr = "Характеристики:<br>";
+        for (let key in this.characteristics) {
+            if (this.characteristics.hasOwnProperty(key)) {
+                descStr += key + ": " + this.characteristics[key] + "<br>";
+            }
+        }
+        return descStr;
+    };
+
+    Device.prototype.sound = function() {
+        console.log("Звук устройства по умолчанию");
+    };
+
+    // Чайник
+    function Kettle(name, characteristics) {
+        Device.call(this, name, characteristics);
+    }
+    Kettle.prototype = Object.create(Device.prototype);
+    Kettle.prototype.constructor = Kettle;
+    Kettle.prototype.sound = function() {
+        console.log(this.name + " говорит: Буль-буль");
+    };
+
+    // Микроволновка
+    function Microwave(name, characteristics) {
+        Device.call(this, name, characteristics);
+    }
+    Microwave.prototype = Object.create(Device.prototype);
+    Microwave.prototype.constructor = Microwave;
+    Microwave.prototype.sound = function() {
+        console.log(this.name + " издаёт: жжжжжжжжжжжжжжжж");
+    };
+
+    // Автомобиль
+    function Car(name, characteristics) {
+        Device.call(this, name, characteristics);
+    }
+    Car.prototype = Object.create(Device.prototype);
+    Car.prototype.constructor = Car;
+    Car.prototype.sound = function() {
+        console.log(this.name + " ревёт: Врум-врум!");
+    };
+
+    // Пароход
+    function Steamboat(name, characteristics) {
+        Device.call(this, name, characteristics);
+    }
+    Steamboat.prototype = Object.create(Device.prototype);
+    Steamboat.prototype.constructor = Steamboat;
+    Steamboat.prototype.sound = function() {
+        console.log(this.name + " гудит: Фу-у-у!");
+    };
+
+    let kettle = new Kettle("Чайник", { "Мощность": "1500W", "Объём": "1.7L" });
+    let microwave = new Microwave("Микроволновка", { "Мощность": "800W", "Объём": "20L" });
+    let car = new Car("Автомобиль", { "Макс. скорость": "200km/h", "Топливо": "бензин" });
+    let steamboat = new Steamboat("Пароход", { "Скорость": "40km/h", "Вместимость": "300 пассажиров" });
+
+    function showDevice(deviceId, method) {
+        let device;
+        let outputElement;
+        switch(deviceId) {
+            case 'kettle':
+                device = kettle;
+                outputElement = document.getElementById("outputKettle");
+                break;
+            case 'microwave':
+                device = microwave;
+                outputElement = document.getElementById("outputMicrowave");
+                break;
+            case 'car':
+                device = car;
+                outputElement = document.getElementById("outputCar");
+                break;
+            case 'steamboat':
+                device = steamboat;
+                outputElement = document.getElementById("outputSteamboat");
+                break;
+            default:
+                return;
+        }
+
+        if(method === 'show') {
+            outputElement.innerHTML = device.show();
+        } else if(method === 'desc') {
+            outputElement.innerHTML = device.desc();
+        } else if(method === 'sound') {
+            device.sound();
+            outputElement.innerHTML = "Звук выведен в консоль";
+        }
+    }
+
+    document.querySelector("#cardKettle .description").innerHTML = kettle.desc();
+    document.querySelector("#cardMicrowave .description").innerHTML = microwave.desc();
+    document.querySelector("#cardCar .description").innerHTML = car.desc();
+    document.querySelector("#cardSteamboat .description").innerHTML = steamboat.desc();
+</script>
+</body>
+</html>

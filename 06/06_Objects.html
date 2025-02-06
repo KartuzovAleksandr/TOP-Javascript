@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объекты</title>
+</head>
+<body>
+<script>
+        // методы создания объектов
+    let user = {};
+        // 1
+    user.name = "Tom";
+    user.age = 26;
+    console.log(user.name);
+    console.log(user.age);
+    console.log(user);
+        // 2
+    user = {
+        name: "Вася",
+        age: 20
+    };
+    console.log(user);
+        // 3
+    const name = "Петя";
+    const age = 18;
+    user = { name, age };
+    console.log(user);
+        // определение метода
+    user.display = function() {
+        console.log("Вызов метода display");
+        console.log(user.name);
+        console.log(user.age);
+    };
+        // вызов метода
+    user.display();
+        // 5
+    user = {};
+    user["name"] = "Оля";
+    user["age"] = 44;
+    user["display"] = function() {
+        console.log(user.name);
+        console.log(user.age);
+        };
+        // вызов метода
+    user["display"]();
+</script>
+</body>
+</html>

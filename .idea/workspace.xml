@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 4">
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 5">
+      <change afterPath="$PROJECT_DIR$/06/06_Closure.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/06_ObjectCopy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/06_Objects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +97,11 @@
     "JavaScript Debug.05_Matrix_Морозов.html.executor": "Run",
     "JavaScript Debug.05_Matrix_Нещетин.html.executor": "Run",
     "JavaScript Debug.05_Scopes.html.executor": "Run",
+    "JavaScript Debug.06_Closure.html.executor": "Run",
+    "JavaScript Debug.06_ObjectCopy.html.executor": "Run",
+    "JavaScript Debug.06_Objects.html.executor": "Run",
+    "JavaScript Debug.06_Point_Нещетин.html.executor": "Run",
+    "JavaScript Debug.06_Prorotype_Морозов.html.executor": "Run",
     "Node.js.ES_version.js.executor": "Run",
     "Node.js.index.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -119,10 +127,11 @@
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript" />
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\.idea" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\03" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\02" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\01" />
-      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -157,7 +166,8 @@
       <workItem from="1738825908332" duration="41000" />
       <workItem from="1738827114640" duration="268000" />
       <workItem from="1738827955810" duration="206000" />
-      <workItem from="1738830889886" duration="375000" />
+      <workItem from="1738830889886" duration="4831000" />
+      <workItem from="1738840746694" duration="438000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -247,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738791113750</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Lesson 5">
+      <option name="closed" value="true" />
+      <created>1738831343941</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738831343941</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +276,7 @@
     <MESSAGE value="Lesson 2" />
     <MESSAGE value="Lesson 3" />
     <MESSAGE value="Lesson 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4" />
+    <MESSAGE value="Lesson 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 5" />
   </component>
 </project>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Примеры замыканий</title>
+</head>
+<body>
+<script>
+    function outer() {
+        let x = 5;
+        function inner() {
+            x++;
+            console.log(x);
+        }
+        return inner;
+    }
+    let fn1 = outer(); // fn = inner, так как функция outer возвращает функцию inner
+    let fn2 = outer(); // fn = inner, так как функция outer возвращает функцию inner
+        // вызываем внутреннюю функцию inner
+    fn1();   // 6
+    fn2();   // 6
+    fn1();   // 7
+    fn2();   // 7
+    fn1();   // 8
+    function multiply(n) {
+        let x = n;
+        return function(m) { return x * m; };
+    }
+    fn1 = multiply(5);
+    const result1 = fn1(6); // 30
+    console.log(result1); // 30
+    fn2= multiply(4);
+    const result2 = fn2(6); // 24
+    console.log(result2); // 24
+    const result = multiply(5)(6); // 30
+    console.log(result);
+</script>
+</body>
+</html>

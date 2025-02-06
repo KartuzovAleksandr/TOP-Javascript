@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Копирование объектов</title>
+</head>
+<body>
+<script>
+    const tom = { name: "Tom", age: 37, company: "Google"};
+    const bob = { ...tom }
+    let alice = new Object(bob);
+    alice.name = "Alice";
+    bob.name = "Bob";
+    console.log(tom);   // {name: "Tom", age: 37, company: "Google"}
+    console.log(bob);   // {name: "Bob", age: 37, company: "Google"}
+    console.log(alice);   // {name: "Bob", age: 37, company: "Google"}
+    alice = Object.assign({}, tom);
+    alice.name = "Alice";
+    console.log(alice);   // {name: "Alice", age: 37, company: "Google"}
+</script>
+</body>
+</html>
