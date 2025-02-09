@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вычисление факториала рекурсией</title>
+</head>
+<body>
+<script>
+    const x = prompt('Введите число = ');
+    function factorial(n) {
+        return n === 1 ? 1 : n * factorial(n - 1);
+    }
+    const result = factorial(x);
+    document.write(result);
+    console.log(result);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вычисление cos(x) в ряд Тейлора</title>
+</head>
+<body>
+<script>
+    const x = prompt('Введите радианы');
+    let cosx = 1, temp;
+    function fact(n) {
+        let t = 1;
+        for (let i = 2; i < n+1; i++) {
+            t *= i;
+        }
+        return t;
+    }
+    let Z = -1;
+    for (let j = 2; j < 10; j*=2) {
+        temp = x ** j;
+        temp *= Z;
+        cosx += temp / fact(j);
+        Z = -Z;
+    }
+    document.write("Ряд Тейлора = " + cosx + "<p>");
+    document.write("Math.cos    = " + Math.cos(x) + "<p>");
+</script>
+</body>
+</html>

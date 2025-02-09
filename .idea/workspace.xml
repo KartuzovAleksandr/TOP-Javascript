@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 5">
-      <change afterPath="$PROJECT_DIR$/06/06_Closure.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06/06_ObjectCopy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06/06_Objects.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +71,10 @@
     "JavaScript Debug.01_ES-Version.html.executor": "Run",
     "JavaScript Debug.02_Arrays.html.executor": "Run",
     "JavaScript Debug.02_Cos.html.executor": "Run",
+    "JavaScript Debug.02_CosX.html.executor": "Run",
+    "JavaScript Debug.02_Factorial.html.executor": "Run",
+    "JavaScript Debug.02_FiboNumber.html.executor": "Run",
+    "JavaScript Debug.02_FiboRoman.html.executor": "Run",
     "JavaScript Debug.02_ReplaceDiagonals.html.executor": "Run",
     "JavaScript Debug.02_SortEvenOdd.html.executor": "Run",
     "JavaScript Debug.02_SwapRowsAvg.html.executor": "Run",
@@ -168,6 +169,8 @@
       <workItem from="1738827955810" duration="206000" />
       <workItem from="1738830889886" duration="4831000" />
       <workItem from="1738840746694" duration="438000" />
+      <workItem from="1738849498423" duration="181000" />
+      <workItem from="1739134593444" duration="1898000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -265,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738831343941</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Lesson 6">
+      <option name="closed" value="true" />
+      <created>1738849654278</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738849654278</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +288,7 @@
     <MESSAGE value="Lesson 3" />
     <MESSAGE value="Lesson 4" />
     <MESSAGE value="Lesson 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 5" />
+    <MESSAGE value="Lesson 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 6" />
   </component>
 </project>

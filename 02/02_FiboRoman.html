@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function fibo(i){
+    if (i === 1 || i === 2)
+        return 1
+    else
+        return fibo(i-1) + fibo(i-2)
+}
+let n = prompt('Порядковый номер числа Фибоначчи?', 10);
+document.write(fibo(n));
+</script>
+</body>
+</html>
