@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Генерация уникальных чисел</title>
+  <style>
+    /* Сброс стилей и базовая настройка */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      background-color: #fff;
+      max-width: 500px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .number-item {
+      display: inline-block;
+      background-color: #e9ecef;
+      color: #495057;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 4px;
+      min-width: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Генерация уникальных чисел</h1>
+  <div class="form-group">
+    <label for="count">Количество чисел:</label>
+    <input type="number" id="count" placeholder="Например, 10" min="1">
+  </div>
+  <div class="form-group">
+    <label for="range">Диапазон (от 1 до ...):</label>
+    <input type="number" id="range" placeholder="Например, 100" min="1">
+  </div>
+  <button id="generateBtn">Сгенерировать</button>
+  <div class="result" id="result"></div>
+</div>
+
+<script>
+  // Нещетин Арсений
+  document.getElementById('generateBtn').addEventListener('click', function() {
+    const countInput = document.getElementById('count');
+    const rangeInput = document.getElementById('range');
+    const resultDiv = document.getElementById('result');
+
+    // Очистка предыдущего результата
+    resultDiv.innerHTML = '';
+
+    const count = parseInt(countInput.value, 10);
+    const range = parseInt(rangeInput.value, 10);
+
+    // Проверка корректности ввода
+    if (isNaN(count) || isNaN(range)) {
+      resultDiv.innerHTML = '<p class="error">Пожалуйста, введите корректные значения.</p>';
+      return;
+    }
+    if (count > range) {
+      resultDiv.innerHTML = '<p class="error">Количество чисел не может превышать заданный диапазон.</p>';
+      return;
+    }
+
+    // Создаем массив всех чисел от 1 до range
+    const numbers = [];
+    for (let i = 1; i <= range; i++) {
+      numbers.push(i);
+    }
+
+    // Перемешиваем массив (алгоритм Фишера — Йетса)
+    for (let i = numbers.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
+    }
+
+    // Выбираем первые count элементов
+    const uniqueNumbers = numbers.slice(0, count);
+
+    // Отображаем результат
+    uniqueNumbers.forEach(num => {
+      const span = document.createElement('span');
+      span.className = 'number-item';
+      span.textContent = num;
+      resultDiv.appendChild(span);
+    });
+  });
+</script>
+</body>
+</html>

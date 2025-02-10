@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генерация массива случайных уникальных чисел</title>
+</head>
+<body>
+<script>
+    // Хомидов Лев г. Барнаул
+    let n = prompt("Размер массива = ", 10);
+    let a = new Set();
+    while (a.size < n) {
+        a.add(Math.floor(Math.random() * 10));
+    }
+    let resultArray = [...a];
+    console.log(a);
+    console.log("Генерированные уникальные числа: " + resultArray.join(", "));
+    document.write("Генерированные уникальные числа: " + resultArray.join(", "));
+</script>
+</body>
+</html>

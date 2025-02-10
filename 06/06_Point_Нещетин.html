@@ -54,14 +54,13 @@
     <input id="z4" type="number" placeholder="Z2">
     <button onclick="calculate3D()">Расчитать</button>
     <p id="result3D"></p>
-
+    <!-- Выполнил Нещетин Арсений Академия TOP Барнаул -->
     <script>
         class Point {
             constructor(x, y) {
                 this.x = x || 0;
                 this.y = y || 0;
             }
-
             distance(point) {
                 let dx = this.x - point.x;
                 let dy = this.y - point.y;
@@ -74,7 +73,6 @@
                 super(x, y);
                 this.z = z || 0;
             }
-
             distance(point) {
                 let dx = this.x - point.x;
                 let dy = this.y - point.y;

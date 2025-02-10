@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обработка исключений</title>
+</head>
+<body>
+<script>
+    try {
+        callSomeFunc();
+    }
+    catch (e) {
+        document.write("Функция не определена");
+        console.log(e);
+    }
+    console.log("Остальные инструкции");
+</script>
+</body>
+</html>

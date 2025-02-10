@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нещетин Арсений Exceptions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            color: #333;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            width: calc(100% - 24px);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        p {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Конвертация строки в число</h2>
+        <input type="text" id="decimalInput" placeholder="Введите число">
+        <button onclick="ConvertToInt()">Конвертировать</button>
+        <p id="decimalOutput"></p>
+    </div>
+
+    <div class="container">
+        <h2>Конвертация двоичного числа</h2>
+        <input type="text" id="binaryInput" placeholder="Введите двоичное число">
+        <button onclick="ConvertBinary()">Конвертировать</button>
+        <p id="binaryOutput"></p>
+    </div>
+
+    <div class="container">
+        <h2>Класс Money</h2>
+        <input type="number" id="rubles" placeholder="Рубли">
+        <input type="number" id="kopecks" placeholder="Копейки">
+        <button onclick="CreateMoney()">Создать</button>
+        <p id="moneyOutput"></p>
+    </div>
+
+    <script>
+        function ConvertToInt() {
+            try {
+                const input = document.getElementById("decimalInput").value;
+                const num = Number(input);
+                if (isNaN(num) || !Number.isInteger(num)) {
+                    throw new Error("Ошибка: введите корректное целое число");
+                }
+                document.getElementById("decimalOutput").innerText = "Целое число: " + num;
+            } catch (error) {
+                document.getElementById("decimalOutput").innerText = error.message;
+            }
+        }
+
+        function ConvertBinary() {
+            try {
+                const input = document.getElementById("binaryInput").value;
+                for (let char of input) {
+                    if (char !== '0' && char !== '1') {
+                        throw new Error("Ошибка: введите только 0 и 1");
+                    }
+                }
+                const num = parseInt(input, 2);
+                if (isNaN(num)) {
+                    throw new Error("Ошибка при конвертации");
+                }
+                document.getElementById("binaryOutput").innerText = "Десятичное число: " + num;
+            } catch (error) {
+                document.getElementById("binaryOutput").innerText = error.message;
+            }
+        }
+        class Money {
+            constructor(rubles, kopecks) {
+                if (rubles <= 0 || kopecks <= 0) {
+                    throw new Error("Вы банкрот!");
+                }
+                this.rubles = rubles;
+                this.kopecks = kopecks;
+            }
+
+            toString() {
+                return `${this.rubles} руб. ${this.kopecks} коп.`;
+            }
+        }
+        function CreateMoney() {
+            try {
+                const rubles = Number(document.getElementById("rubles").value);
+                const kopecks = Number(document.getElementById("kopecks").value);
+                if (isNaN(rubles) || isNaN(kopecks) || rubles < 0 || kopecks < 0) {
+                    throw new Error("Некорректный ввод");
+                }
+                const money = new Money(rubles, kopecks);
+                document.getElementById("moneyOutput").textContent = "Сумма: " + money.toString();
+            } catch (error) {
+                document.getElementById("moneyOutput").textContent = "Ошибка: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
