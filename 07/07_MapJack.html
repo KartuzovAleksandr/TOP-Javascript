@@ -82,9 +82,9 @@
         }
         console.log(w);
     }
-    // сортировка по частоте использования слов
-
-    console.log(m);
+        // сортировка по частоте использования слов
+    const ms = new Map([...m.entries()].sort((a, b) => b[1] - a[1]));
+    console.log(ms);
 </script>
 </body>
 </html>
