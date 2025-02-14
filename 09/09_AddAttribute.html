@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Добавление и изменение атрибутов</title>
+    <style>
+        h2 {
+            color: red; /* Меняем цвет заголовка на красный */
+        }
+    </style>
+</head>
+<body>
+<h2 id="h2">Another color</h2>
+<h3 id="h3">Another size</h3>
+<script>
+    const h2 = document.getElementById("h2");
+    h2.style.color = "green"; // Меняем цвет существующего заголовка на синий
+
+    const h3 = document.getElementById("h3");
+    h3.setAttribute("style", "font-size:38px;"); // Меняем размер сущ. заголовка
+
+    const header = document.createElement("h1");  // создаем заголовок <h1>
+    const headerText = document.createTextNode("Hello World");  // создаем текстовый узел
+    header.appendChild(headerText); // добавляем в элемент h1 текстовый узел
+    header.style.color = "blue"; // Задаем цвет нового заголовка на синий
+    document.body.appendChild(header);  // добавляем элемент h1 на страницу в элемент body
+</script>
+</body>
+</html>

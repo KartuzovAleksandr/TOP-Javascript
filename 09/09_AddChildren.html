@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Добавление элемента</title>
+</head>
+<body>
+<script>
+    const h2 = document.createElement("h2");
+    const h2Text = document.createTextNode("Second step");  // создаем текстовый узел
+    h2.appendChild(h2Text); // добавляем в элемент h1 текстовый узел
+    document.body.appendChild(h2);
+</script>
+</body>
+</html>

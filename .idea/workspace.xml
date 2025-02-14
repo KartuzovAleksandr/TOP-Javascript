@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 7">
-      <change afterPath="$PROJECT_DIR$/08/08_History.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08/08_Navigator.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 8">
+      <change afterPath="$PROJECT_DIR$/09/09_AddAttribute.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09/09_AddChildren.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09/09_GetByID.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07/07_MapJack.html" beforeDir="false" afterPath="$PROJECT_DIR$/07/07_MapJack.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +113,9 @@
     &quot;JavaScript Debug.07_UniqueRandom.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.08_History.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.08_Navigator.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.09_AddAttribute.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.09_AddChildren.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.09_GetByID.html.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.ES_version.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -121,7 +124,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;23.6.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.10.10&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sanya/WebstormProjects/TOP-Javascript&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sanya/WebstormProjects/TOP-Javascript/09&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -135,6 +138,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\09" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -183,7 +187,8 @@
       <workItem from="1739134593444" duration="2192000" />
       <workItem from="1739176310137" duration="9954000" />
       <workItem from="1739348984587" duration="7094000" />
-      <workItem from="1739430499818" duration="358000" />
+      <workItem from="1739430499818" duration="10368000" />
+      <workItem from="1739513249760" duration="1571000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -313,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739354764804</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Lesson 8">
+      <option name="closed" value="true" />
+      <created>1739430883345</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1739430883345</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +341,7 @@
     <MESSAGE value="Lesson 6" />
     <MESSAGE value="Lesson 2 update" />
     <MESSAGE value="Lesson 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 7" />
+    <MESSAGE value="Lesson 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 8" />
   </component>
 </project>

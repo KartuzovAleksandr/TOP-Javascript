@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Поиск по ID</title>
+</head>
+<body>
+<h1 id="header">Home Page</h1>
+<script>
+    const headerElement = document.getElementById("header");
+    // нельзя - большие и маленькие различаются
+    // const headerElement = document.getElementById("HEADER");
+    headerElement.textContent = "Домашняя страница";
+    console.log("Text: ", headerElement.textContent); // Text: Домашняя страница
+</script>
+</body>
+</html>
