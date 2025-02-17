@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 8">
-      <change afterPath="$PROJECT_DIR$/09/09_AddAttribute.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09/09_AddChildren.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09/09_GetByID.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +113,12 @@
     &quot;JavaScript Debug.09_AddAttribute.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.09_AddChildren.html.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.09_GetByID.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_CheckBox.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Checked_Нещетин.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Context.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_HelloJQuery.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Select_Нещетин.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Table.html.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.ES_version.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -188,7 +191,10 @@
       <workItem from="1739176310137" duration="9954000" />
       <workItem from="1739348984587" duration="7094000" />
       <workItem from="1739430499818" duration="10368000" />
-      <workItem from="1739513249760" duration="1571000" />
+      <workItem from="1739513249760" duration="2315000" />
+      <workItem from="1739779658843" duration="8638000" />
+      <workItem from="1739800585459" duration="877000" />
+      <workItem from="1739825945959" duration="1278000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -326,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739430883345</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Lesson 9">
+      <option name="closed" value="true" />
+      <created>1739514880375</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1739514880375</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +356,7 @@
     <MESSAGE value="Lesson 2 update" />
     <MESSAGE value="Lesson 7" />
     <MESSAGE value="Lesson 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 8" />
+    <MESSAGE value="Lesson 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 9" />
   </component>
 </project>

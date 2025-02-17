@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Нещетин Арсений -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .message {
+            margin-top: 10px;
+            color: red;
+            text-align: center;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Регистрация</h2>
+        <form id="registerForm">
+            <input type="text" id="fullname" placeholder="ФИО">
+            <select id="gender">
+                <option value="">Выберите пол</option>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+            <select id="education">
+                <option value="">Выберите уровень образования</option>
+                <option value="bachelor">Бакалавр</option>
+                <option value="spo">СПО</option>
+                <option value="school">Школа</option>
+            </select>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Пароль">
+            <input type="password" id="confirmPassword" placeholder="Повторите пароль">
+            <button type="submit">Зарегистрироваться</button>
+            <p class="message" id="message"></p>
+        </form>
+        <div class="output" id="output"></div>
+    </div>
+    <script>
+        $(function(){
+            $('#registerForm').submit(function(event){
+                event.preventDefault();
+                
+                let fullname = $('#fullname').val();
+                let gender = $('#gender').val();
+                let education = $('#education').val();
+                let email = $('#email').val();
+                let password = $('#password').val();
+                let confirmPassword = $('#confirmPassword').val();
+                
+                if(!fullname || !gender || !education || !email || !password || !confirmPassword) {
+                    $('#message').text('Все поля должны быть заполнены!');
+                    return;
+                }
+                if(password !== confirmPassword) {
+                    $('#message').text('Пароли не совпадают!');
+                    return;
+                }
+                let genderText = gender === 'male' ? 'Мужской' : 'Женский';
+                let educationText = {
+                    'bachelor': 'Бакалавр',
+                    'spo': 'СПО',
+                    'school': 'Школа'
+                }[education] || 'Не указано';
+                $('#message').text('Регистрация успешна!').css('color', 'green');
+                $('#output').html(
+                    `<p><strong>ФИО:</strong> ${fullname}</p>
+                     <p><strong>Пол:</strong> ${genderText}</p>
+                     <p><strong>Образование:</strong> ${educationText}</p>
+                     <p><strong>Email:</strong> ${email}</p>`
+                );
+            });
+        });
+    </script>
+</body>
+</html>
