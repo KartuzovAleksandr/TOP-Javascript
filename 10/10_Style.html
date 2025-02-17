@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../JS/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+<style>
+    .redStyle {color:red;}
+    .blueStyle {color:blue;}
+</style>
+
+<button id="but">Переключить стиль</button>
+
+<script type="text/javascript">
+    $(function(){
+        $('#but').click(function() {
+            $(this).toggleClass("redStyle");
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="myForm">
+    <input type="text" name="key" placeholder="Введите ФИО" />
+    <input type="button" name="print" value="Submit" />
+    <button type="reset" name="reset">Очистить</button>
+    <input type="checkbox" name="enabled" ><span>солнце</span>
+    <input type="checkbox" name="enabled" ><span>дождь</span>
+    <input type="checkbox" name="enabled" ><span>снег</span>
+    <input type="checkbox" name="enabled" ><span>песок</span>
+    <input type="checkbox" name="enabled" checked><span>гроза</span>
+</form>
+<div id="printBlock"></div>
+<script>
+    const en = document.myForm.enabled;
+    let temp = "";
+
+    const printBox = document.myForm.print;
+    const keyBox = document.myForm.key;
+    const resetBox = document.myForm.reset;
+    // обработчик изменения текста
+    function onchange(){
+        // получаем элемент printBlock
+        const printBlock = document.getElementById("printBlock");
+        // установка значения
+        onreset();
+        temp = keyBox.value + " выбирает: ";
+        for (let i=0; i < document.myForm.enabled.length; i++)
+            if (document.myForm.enabled[i].checked)
+                temp += "*";
+        printBlock.textContent = temp;
+    }
+    function onreset(){
+        printBlock.textContent = "";
+    }
+    printBox.addEventListener("click", onchange);
+    resetBox.addEventListener("click", onreset);
+</script>
+</body>
+</html>

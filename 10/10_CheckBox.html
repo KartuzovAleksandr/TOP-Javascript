@@ -2,31 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Выбор языка</title>
+    <title>Выбор языка с обработкой checkbox в JQuery</title>
     <script src="../JS/jquery-3.7.1.js"></script>
 </head>
 <body>
-<div class="text-center">
+<form name="myForm" id="myForm">
     <label><input type="checkbox" name="languages" value="Java" /></label><span>Java</span><p>
     <label><input type="checkbox" name="languages" value="C#" /></label><span>C#</span><p>
     <label><input type="checkbox" name="languages" value="C++" /></label><span>C++</span><p>
     <input type="button" id = "submit" name="submit" value="Submit" />
     <input type="button" id = "reset" name="reset" value="Reset" />
-</div>
+</form>
 <script>
     $(function() {
         $("#submit").click(function(e) {
             e.preventDefault();
+            console.log("Вы выбрали");
             const selected = $('input[name="languages"]:checked');
             for (let item of selected)
                 console.log(item.value);
-            //$('input[name="languages"]:checked').each(function(index, elem){
-            //    console.log(index + ". " + elem.value);
-            //});
-            // for (let item of selected)
-            //    console.log(item.value);
-            // for (let i = 0; i < selected.length; i++)
-            //    console.log(selected[i].value);
+            console.log("________________");
+            // ИЛИ
+            selected.each(function(index, elem) {
+                console.log(index + ". " + elem.value);
+            });
+            console.log("________________");
+            // ИЛИ
+            for (let item of selected)
+                console.log(item.value);
+            console.log("________________");
+            // ИЛИ
+            for (let i = 0; i < selected.length; i++)
+                console.log(selected[i].value);
         });
     });
     $(function() {

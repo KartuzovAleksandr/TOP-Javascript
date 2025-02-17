@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../JS/jquery-ui.css">
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <script src="../JS/jquery-ui.js"></script>
+</head>
+<body>
+<style>
+    .ui-button {font-size: 13px;}
+</style>
+
+<h4>Блок ссылок</h4>
+<p><a class="a_jqui" href="https://google.com">Ссылка 1</a></p>
+<p><a href="https://google.com">Ссылка 2</a></p>
+
+<h4>Блок кнопок</h4>
+<p><button class="button_jqui">Кнопка 1</button></p>
+<p><button>Кнопка 2</button></p>
+<script type="text/javascript">
+    $(function(){
+        $('.a_jqui').button().click(function(e){
+            e.preventDefault();
+            $('button.get_option').button({label:'Label 1'})
+            alert('Виджет button');
+        });
+        $('.button_jqui').button();
+    });
+</script>
+
+</body>
+</html>

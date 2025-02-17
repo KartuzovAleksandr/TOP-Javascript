@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../JS/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+<ul>
+    <li>Пункт 1</li>
+    <li>Пункт 2
+        <ul class="submenu">
+            <li>Подпункт 2.1</li>
+            <li>Подпункт 2.2</li>
+        </ul>
+    </li>
+    <li>Пункт 3</li>
+</ul>
+
+<script>
+    let lists = $('ul');
+    if (lists.is('.submenu')){
+        lists.css('background-color', 'silver');
+    }
+</script>
+</body>
+</html>

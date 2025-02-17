@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../JS/jquery-ui.css">
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <script src="../JS/jquery-ui.js"></script>
+</head>
+<body>
+
+<div id="progress"></div>
+<p><button id="getVal">Получить значение</button></p>
+<p><input type="text" id="val" /> <button id="setVal">Установить значение</button></p>
+<script type="text/javascript">
+    $(function(){
+
+        $('#progress').progressbar({value:25});
+        $('#getVal').button().click(function(){
+            // получаем значение
+            var val=$('#progress').progressbar('option', 'value');
+            alert("Значение индикатора: "+val);
+        });
+        $('#setVal').button().click(function(){
+            // устанавливаем значение
+            var val = parseInt($('#val').val());
+            if(val>100 || val<0){
+                alert('Введено недопустимое значение');
+            }
+            else{
+                $('#progress').progressbar('option', 'value', val);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../JS/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+<ul class="menu">
+    <li>Пункт 1</li>
+    <li>Пункт 2
+        <ul class="submenu">
+            <li>Подпункт 2.1</li>
+            <li>Подпункт 2.2</li>
+        </ul>
+    </li>
+    <li>Пункт 3</li>
+</ul>
+
+<script>
+    $(function(){
+        // поиск по селектору
+        var array0 = $('ul').find('.submenu');
+        array0.css('background-color', 'silver');
+
+        // поиск по элементу
+        // получаем первый элемент выборки
+        var elem = $('ul.submenu')[0];
+        var array1= $('ul').find(elem);
+        array1.css('background-color', 'gray');
+
+        // Поиск объекта jQuery
+        var jQueryObject = $('ul.submenu');
+        var array2= $('ul').find(jQueryObject);
+        array2.css('color', 'blue');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../JS/jquery-ui.css">
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <script src="../JS/jquery-ui.js"></script>
+    <script src="../JS/datepicker-ru.js"></script>
+</head>
+<body>
+
+
+<div id="datepicker_lx" style="width:200px; float:left;"></div>
+<script type="text/javascript">
+    $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+    $("#datepicker_lx").datepicker({showButtonPanel: true, changeMonth: true,
+        dateFormat:"yy-mm-dd", defaultDate: new Date (),
+        changeYear: true, firstDay: 1,
+        onChangeMonthYear: function(year, month, inst) {
+            location.href = location.href + '&year=' + year + '&month=' + month;
+        }
+    });
+</script>
+
+</body>
+</html>
