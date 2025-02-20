@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма сотрудника</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            background: #f4f4f4; margin: 20px;
+        }
+        .container { 
+            width: 80%; 
+            margin: auto; 
+            background: white; 
+            padding: 15px; 
+            border-radius: 10px; 
+            box-shadow: 2px 2px 10px rgba(2, 104, 49, 0.796); 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 10px; 
+        }
+        th, td { 
+            padding: 8px; 
+            border: 1px solid #ccc; 
+            text-align: left; 
+        }
+        th { 
+            background: #bbffdd; 
+            color: rgb(14, 32, 31); 
+        }
+        td input, td select { 
+            width: 100%; 
+            padding: 5px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+        }
+        td input:required, td select:required { 
+            border: 2px solid #ffe8e3; 
+            background: #ffe3df; 
+        }
+        .buttons { 
+            text-align: center; 
+            margin-top: 15px; 
+        }
+        button { 
+            padding: 10px 20px; 
+            background: #4effc1; 
+            color: rgb(179, 255, 221); 
+            border: none; cursor: pointer; 
+            border-radius: 5px; 
+        }
+        button:hover { 
+            background: #43fa59; 
+        }
+        .gender { 
+            display: flex; gap: 10px; 
+        }
+        .passport-group { 
+            display: flex; gap: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Выполнил Нещетин Арсений П211</h1>
+    <div class="container">
+        <h2 style="text-align: center;">Форма сотрудника</h2>
+        <form id="employeeForm">
+            <table>
+                <tr>
+                    <th>№</th>
+                    <th>Объект</th>
+                    <th>Общие</th>
+                    <th>Персональные (технические)</th>
+                    <th>Специальные</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Сотрудник</td>
+                    <td>
+                        <label>Фамилия: <input type="text" name="last_name" required></label><br>
+                        <label>Имя: <input type="text" name="first_name" required></label><br>
+                        <label>Отчество: <input type="text" name="middle_name"></label><br>
+                        <label>Пол:
+                            <div class="gender">
+                                <label><input type="radio" name="gender" value="Мужской" required> Мужской</label>
+                                <label><input type="radio" name="gender" value="Женский" required> Женский</label>
+                            </div>
+                        </label>
+                    </td>
+                    <td>
+                        <label>Паспорт:
+                            <div class="passport-group">
+                                <input type="text" name="passport_series" pattern="\d{4}" title="4 цифры" placeholder="Серия" required>
+                                <input type="text" name="passport_number" pattern="\d{6}" title="6 цифр" placeholder="Номер" required>
+                            </div>
+                        </label><br>
+                        <label>Гражданство:
+                            <select name="citizenship" required>
+                                <option value="Россия">Россия</option>
+                                <option value="США">США</option>
+                                <option value="Турция">Турция</option>
+                                <option value="Беларусь">Беларусь</option>
+                            </select>
+                        </label><br>
+                        <label>Дата рождения: <input type="date" name="birth_date" required></label><br>
+                        <label>Место рождения: <input type="text" name="birth_place"></label><br>
+                        <label>Дата выдачи: <input type="date" name="issue_date" required></label><br>
+                        <label>Код подразделения: <input type="text" name="department_code" pattern="\d{6}" title="6 цифр" required></label>
+                    </td>
+                    <td>
+                        <label>ИНН: <input type="text" name="inn" pattern="\d{12}" title="12 цифр" required></label><br>
+                        <label>СНИЛС: <input type="text" name="snils" pattern="\d{3}-\d{3}-\d{3} \d{2}" title="Формат: XXX-XXX-XXX XX" placeholder="XXX-XXX-XXX XX" required></label><br>
+                        <label>Полис: <input type="text" name="policy" pattern="\d{16}" title="16 цифр" required></label>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button type="submit" id="saveBtn">Сохранить</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            $('#employeeForm').on('submit', function(event) {
+                event.preventDefault();
+                if (!this.checkValidity()) {
+                    alert('Пожалуйста, заполните все поля правильно.');
+                    return;
+                }
+                let formData = $('#employeeForm').serializeArray();//сериализуем введенные данные в массив
+                let jsonObject = {};ы
+                $.each(formData, function() {//заполняем json объект данными с массива
+                    jsonObject[this.name] = this.value;
+                });
+                jsonObject["passport"] = jsonObject["passport_series"] + " " + jsonObject["passport_number"];//соединяем пасспортные данные
+                let jsonData = JSON.stringify(jsonObject, null, 2);//преобразуем json в json строку
+                let blob = new Blob([jsonData], { type: 'application/json' })//создаем json файл
+                let link = document.createElement('a');//создаем <a> ссылку для скачивания
+                link.href = URL.createObjectURL(blob);
+                link.download = 'инфа_о_сотруднике.json';
+                link.click();//вызываем нажатие на ссылку
+            });
+        });
+    </script>
+</body>
+</html>

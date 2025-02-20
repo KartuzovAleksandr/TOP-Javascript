@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма сотрудника</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #007bff;
+            color: white;
+        }
+
+        td input, td select {
+            width: 95%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        input:invalid {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Форма сотрудника</h2>
+    <table>
+        <tr>
+            <th>№</th>
+            <th>Объект</th>
+            <th>Общие</th>
+            <th>Персональные (технические)</th>
+            <th>Специальные</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Сотрудник</td>
+            <td>
+                <label>Фамилия: <input type="text" id="surname" required></label><br>
+                <label>Имя: <input type="text" id="name" required></label><br>
+                <label>Отчество: <input type="text" id="patronymic"></label><br>
+                <label>Пол: 
+                    <input type="radio" name="gender" value="Мужской" checked> Мужской
+                    <input type="radio" name="gender" value="Женский"> Женский
+                </label>
+            </td>
+            <td>
+                <label>Дата рождения: <input type="date" id="birthDate" required></label><br>
+                <label>Паспорт (серия-номер): 
+                    <input type="text" id="passport" maxlength="11" title="Формат: XXXX-XXXXXX" required>
+                </label><br>
+                <label>Дата выдачи: <input type="date" id="issueDate" required></label><br>
+                <label>Гражданство: 
+                    <select id="citizenship">
+                        <option value="Россия">Россия</option>
+                        <option value="Беларусь">Беларусь</option>
+                        <option value="Казахстан">Казахстан</option>
+                    </select>
+                </label><br>
+                <label>Код подразделения: 
+                    <input type="text" id="departmentCode" maxlength="7" title="Формат: XXX-XXX" required>
+                </label>
+            </td>
+            <td>
+                <label>ИНН: <input type="text" id="inn" maxlength="14" title="Формат: XXX-XXX-XXX-XXX" required></label><br>
+                <label>СНИЛС: <input type="text" id="snils" maxlength="14" title="Формат: XXX-XXX-XXX-XX" required></label><br>
+                <label>Полис: <input type="text" id="policy" maxlength="19" title="Формат: XXXX-XXXX-XXXX-XXXX" required></label>
+            </td>
+        </tr>
+    </table>
+    <button id="save">Сохранить в JSON</button>
+    <script>
+        // Виловатый Артём
+        // Академия Топ
+        // Город Барнаул
+        function formatInput(value, pattern) {
+            let numbers = value.replace(/\D/g, "");
+            let result = "";
+            let index = 0;
+
+            for (let char of pattern) {
+                if (char === "X") {
+                    if (index < numbers.length) {
+                        result += numbers[index++];
+                    } else {
+                        break;
+                    }
+                } else {
+                    if (index < numbers.length) {
+                        result += char;
+                    }
+                }
+            }
+            return result;
+        }
+
+        $("#passport").on("input", function() {
+            $(this).val(formatInput($(this).val(), "XXXX-XXXXXX"));
+        });
+
+        $("#inn").on("input", function() {
+            $(this).val(formatInput($(this).val(), "XXX-XXX-XXX-XXX"));
+        });
+
+        $("#snils").on("input", function() {
+            $(this).val(formatInput($(this).val(), "XXX-XXX-XXX-XX"));
+        });
+
+        $("#policy").on("input", function() {
+            $(this).val(formatInput($(this).val(), "XXXX-XXXX-XXXX-XXXX"));
+        });
+
+        $("#departmentCode").on("input", function() {
+            $(this).val(formatInput($(this).val(), "XXX-XXX"));
+        });
+
+        function formatNameInput(input) {
+            let value = input.value.replace(/[^А-Яа-яЁё]/g, ""); 
+            value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+            input.value = value;
+        }
+
+        $("#surname, #name, #patronymic").on("input", function() {
+            formatNameInput(this);
+        });
+
+        $("#save").click(function () {
+            let data = {
+                ФИО: {
+                    Фамилия: $("#surname").val(),
+                    Имя: $("#name").val(),
+                    Отчество: $("#patronymic").val(),
+                    Пол: $("input[name='gender']:checked").val()
+                },
+                Дата_рождения: $("#birthDate").val(),
+                Паспорт: $("#passport").val(),
+                Дата_выдачи: $("#issueDate").val(),
+                Гражданство: $("#citizenship").val(),
+                "Код подразделения": $("#departmentCode").val(),
+                ИНН: $("#inn").val(),
+                СНИЛС: $("#snils").val(),
+                Полис: $("#policy").val()
+            };
+
+            let jsonData = JSON.stringify(data, null, 4);
+            let blob = new Blob([jsonData], { type: "application/json" });
+            let a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "employee_data.json";
+            a.click();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма сотрудника</title>
+    <script>
+        function validateInput(id, length) {
+            let input = document.getElementById(id);
+            let errorSpan = document.getElementById(id + "Error");
+            let regex = new RegExp(`^\\d{${length}}$`);
+
+            if (!regex.test(input.value)) {
+                errorSpan.textContent = `${id.toUpperCase()} должен содержать ровно ${length} цифр`;
+                return false;
+            } else {
+                errorSpan.textContent = "";
+                return true;
+            }
+        }
+
+        function validatePassport() {
+            let input = document.getElementById("passport");
+            let errorSpan = document.getElementById("passportError");
+            let regex = /^\d{4,6}$/;
+
+            if (!regex.test(input.value)) {
+                errorSpan.textContent = "Паспорт должен содержать от 4 до 6 цифр";
+                return false;
+            } else {
+                errorSpan.textContent = "";
+                return true;
+            }
+        }
+
+        function formatDepartmentCode() {
+            let input = document.getElementById("departmentCode");
+            let errorSpan = document.getElementById("departmentCodeError");
+            let regex = /^\d{6}$/;
+
+            if (!regex.test(input.value)) {
+                errorSpan.textContent = "Код подразделения должен содержать 6 цифр";
+                return false;
+            } else {
+                errorSpan.textContent = "";
+                input.value = input.value.replace(/(\d{3})(\d{3})/, "$1-$2");
+                return true;
+            }
+        }
+
+        function validateTextInput(id) {
+            let input = document.getElementById(id);
+            input.value = input.value.replace(/[^а-яА-ЯёЁ\s]/g, '');
+        }
+
+        function saveData() {
+            if (!validateInput('inn', 12) || !validateInput('snils', 11) || !validateInput('policy', 16) || !validatePassport() || !formatDepartmentCode()) {
+                alert("Пожалуйста, исправьте ошибки перед сохранением.");
+                return;
+            }
+
+            let data = {
+                general: {
+                    surname: document.getElementById("surname").value,
+                    name: document.getElementById("name").value,
+                    patronymic: document.getElementById("patronymic").value,
+                    gender: document.querySelector('input[name="gender"]:checked')?.value || ""
+                },
+                personal: {
+                    passport: document.getElementById("passport").value,
+                    citizenship: document.getElementById("citizenship").value,
+                    birthDate: document.getElementById("birthDate").value,
+                    birthPlace: document.getElementById("birthPlace").value,
+                    issueDate: document.getElementById("issueDate").value,
+                    departmentCode: document.getElementById("departmentCode").value
+                },
+                special: {
+                    inn: document.getElementById("inn").value,
+                    snils: document.getElementById("snils").value,
+                    policy: document.getElementById("policy").value
+                }
+            };
+
+            let jsonData = JSON.stringify(data, null, 2);
+            let blob = new Blob([jsonData], { type: "application/json" });
+            let link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "employee_data.json";
+            link.click();
+        }
+    </script>
+</head>
+<body>
+<h2>Форма сотрудника</h2>
+<table border="1">
+    <tr>
+        <th>Общие</th>
+        <th>Персональные (технические)</th>
+        <th>Специальные</th>
+    </tr>
+    <tr>
+        <td>
+            Фамилия: <input type="text" id="surname" oninput="validateTextInput('surname')"><br>
+            Имя: <input type="text" id="name" oninput="validateTextInput('name')"><br>
+            Отчество: <input type="text" id="patronymic" oninput="validateTextInput('patronymic')"><br>
+            Пол: <input type="radio" name="gender" value="Мужской"> Мужской
+            <input type="radio" name="gender" value="Женский"> Женский
+        </td>
+        <td>
+            Паспорт: <input type="text" id="passport" oninput="validatePassport()"> <span id="passportError" style="color:red"></span><br>
+            Гражданство: <input type="text" id="citizenship"><br>
+            Дата рождения: <input type="date" id="birthDate"><br>
+            Место рождения: <input type="text" id="birthPlace"><br>
+            Дата выдачи: <input type="date" id="issueDate"><br>
+            Код подразделения: <input type="text" id="departmentCode" maxlength="6" onblur="formatDepartmentCode()"> <span id="departmentCodeError" style="color:red"></span>
+        </td>
+        <td>
+            ИНН: <input type="text" id="inn" maxlength="12" oninput="validateInput('inn', 12)"> <span id="innError" style="color:red"></span><br>
+            СНИЛС: <input type="text" id="snils" maxlength="11" oninput="validateInput('snils', 11)"> <span id="snilsError" style="color:red"></span><br>
+            Полис: <input type="text" id="policy" maxlength="16" oninput="validateInput('policy', 16)"> <span id="policyError" style="color:red"></span>
+        </td>
+    </tr>
+</table>
+<br>
+<button onclick="saveData()">Сохранить</button>
+</body>
+</html>
