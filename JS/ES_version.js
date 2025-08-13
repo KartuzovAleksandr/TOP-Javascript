@@ -25,8 +25,10 @@ var ecmaScriptInfo = (function() {
                 return 13;
             case !String.prototype.isWellFormed:
                 return 14;
-            default:
+            case !RegExp.Escape:
                 return 15;
+            default:
+                return 16;
         }
     }
 
@@ -50,10 +52,8 @@ var ecmaScriptInfo = (function() {
 
 console.log(ecmaScriptInfo.text);
 document.write(ecmaScriptInfo.text);
-/* трубопровода пока нет
-const incrementOne = (value) => value + 1;
-const decrementOne = (value) => value - 1
-const output = 20 |> incrementOne |> decrementOne; // 20
-console.log(output);
-*/
-
+// трубопровода пока нет
+// const incrementOne = (value) => value + 3;
+// const decrementOne = (value) => value - 2
+// const output = 20 |> incrementOne |> decrementOne; // 21
+// console.log(output);
