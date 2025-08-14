@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson 12">
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="ES version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01/01_HelloSanya.html" beforeDir="false" afterPath="$PROJECT_DIR$/01/01_HelloSanya.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01/01_HelloWorld.html" beforeDir="false" afterPath="$PROJECT_DIR$/01/01_HelloWorld.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/ES_version.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/ES_version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02/02_Types.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/02_Types.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,7 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -48,7 +47,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/KartuzovAleksandr/TOP-Javascript&quot;,
-    &quot;accountId&quot;: &quot;5bb85fff-7dbe-427f-9e97-a646bcfb32fc&quot;
+    &quot;accountId&quot;: &quot;d117b676-4913-43c9-9c59-89c5617bc93a&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -157,7 +156,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;C:/Users/Sanya/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions/22.18.0/node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\JetBrains\\WebStorm2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -225,7 +224,8 @@
       <workItem from="1743358542980" duration="141000" />
       <workItem from="1754933954059" duration="2529000" />
       <workItem from="1754939193324" duration="59000" />
-      <workItem from="1755101341856" duration="3966000" />
+      <workItem from="1755101341856" duration="5995000" />
+      <workItem from="1755143817839" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -395,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740031479585</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="ES version">
+      <option name="closed" value="true" />
+      <created>1755108235506</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1755108235506</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,6 +423,7 @@
     <MESSAGE value="Lesson 10" />
     <MESSAGE value="Lesson 11" />
     <MESSAGE value="Lesson 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 12" />
+    <MESSAGE value="ES version" />
+    <option name="LAST_COMMIT_MESSAGE" value="ES version" />
   </component>
 </project>

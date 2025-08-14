@@ -22,6 +22,11 @@
         const result = +number1 - number2;
         document.write(result + "<p>"); // 52
 
+        const s1 = "58";
+        const n1 = 58;
+        s1 == n1 && document.write("Строка и число равны"+"<p>");
+        s1 !== n1 && document.write("Но строка и число не тождественны"+"<p>");
+
         const person = {name: "Tom", age: 37};
         for (prop in person){
             document.write(prop + "<p>");
