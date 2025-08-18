@@ -33,12 +33,22 @@
         // Если 1 ноября не вторник (2), находим ближайший следующий вторник
         let electionDay = 1 + ((9 - dayOfWeek) % 7);
 
-        return new Date(year, 10, electionDay).toLocaleString();
+        let formatter = new Intl.DateTimeFormat("ru", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        });
+
+        // по-простому
+        // return new Date(year, 10, electionDay).toLocaleString("ru-RU");
+        // полный формат
+        return formatter.format(new Date(year, 10, electionDay));
     }
-    document.write("Разница в днях:", DaysBetween(prompt("Введите дату"))+'<br>');
-    document.write("День программиста 2025:", GetProgrammersDay(2025)+'<br>');
-    document.write("День сисадмина 2025:", GetSysadminDay(2025)+'<br>');
-    document.write("День выборов в США:", getUSElectionDate(prompt("Введите год"))+'<br>');
+    document.write("Разница в днях: ", DaysBetween(prompt("Введите дату"))+'<br>');
+    document.write("День программиста 2025: ", GetProgrammersDay(2025)+'<br>');
+    document.write("День сисадмина 2025: ", GetSysadminDay(2025)+'<br>');
+    document.write("День выборов в США: ", getUSElectionDate(prompt("Введите год"))+'<br>');
 </script>
 </body>
 </html>

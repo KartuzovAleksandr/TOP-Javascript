@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Converter">
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson03-04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02/02_ReplaceDiagonals.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/03_ReplaceDiagonals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04/04_Array_Лощинин.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/03_Array_Лощинин.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04/04_DateDiff.html" beforeDir="false" afterPath="$PROJECT_DIR$/04/04_DateDiff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04/04_Palindrom.html" beforeDir="false" afterPath="$PROJECT_DIR$/04/04_Palindrom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04/04_PalindromWord.html" beforeDir="false" afterPath="$PROJECT_DIR$/04/04_PalindromWord.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +231,7 @@
       <workItem from="1755272823862" duration="6477000" />
       <workItem from="1755493107795" duration="443000" />
       <workItem from="1755524602735" duration="172000" />
-      <workItem from="1755531488579" duration="5389000" />
+      <workItem from="1755531488579" duration="7734000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -437,7 +433,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755496862160</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Lesson03-04">
+      <option name="closed" value="true" />
+      <created>1755537970483</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1755537970483</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,6 +463,7 @@
     <MESSAGE value="Lesson 12" />
     <MESSAGE value="ES version" />
     <MESSAGE value="Converter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Converter" />
+    <MESSAGE value="Lesson03-04" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson03-04" />
   </component>
 </project>
