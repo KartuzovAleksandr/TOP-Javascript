@@ -10,17 +10,21 @@
         let n = parseInt(prompt("Введите размерность массива"));
         let max = 100;
         // заполнение случайными числами
-        let a = Array.from({ length: n }).map(_ => Math.round(Math.random() * max));
-        // сортировка по убыванию
-        a.sort((a, b) => b - a);
-        /*
-        // let a = [];
+        /* самый простой способ
         let a = [n];
         for (let i = 0; i < n; i++) {
-            // a.push(Math.round(Math.random() * max));
             a[i] = Math.round(Math.random() * max);
         }
         */
+        /* второй способ
+        let a = [];
+        for (let i = 0; i < n; i++) {
+            a.push(Math.round(Math.random() * max));
+        }
+        */
+        let a = Array.from({ length: n }).map(_ => Math.round(Math.random() * max));
+        // сортировка по убыванию
+        a.sort((a, b) => b - a);
         document.write(a);
         document.write("<p>");
         document.write(a.join(" "));

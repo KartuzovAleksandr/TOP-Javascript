@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Вывод чисел Фибоначчи</title>
 </head>
 <body>
 <SCRIPT>
-let n = prompt('Кол-во чисел Фибоначчи ?', 10);
-let ar= [1,1];
-for (let i = 2; i < n; i++) {
-    ar[i] = ar[i-1] + ar[i-2];
-}
-document.write(ar.join(", "));
-console.log(ar);
+    let n = prompt('Кол-во чисел Фибоначчи ?', 10);
+    let ar = [1, 1];
+    for (let i = 2; i < n; i++) {
+        ar[i] = ar[i-1] + ar[i-2];
+    }
+    document.write(ar.join(", "));
+    console.log(ar);
 </SCRIPT>
 </body>
 </html>

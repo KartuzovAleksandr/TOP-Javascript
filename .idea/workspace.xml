@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="ES version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02/02_Types.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/02_Types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02/02_Arrays.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/02_Arrays.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02/02_Factorial.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/02_Factorial.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02/02_FiboNumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/02_FiboNumber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02/02_FiboRoman.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/02_FiboRoman.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,15 +151,15 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.18.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.17.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.17.2&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Sanya/WebstormProjects/TOP-Javascript&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;C:/Users/Sanya/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions/22.18.0/node&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;C:/JetBrains/node/versions/22.18.0/node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\JetBrains\\WebStorm2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -226,6 +229,9 @@
       <workItem from="1754939193324" duration="59000" />
       <workItem from="1755101341856" duration="5995000" />
       <workItem from="1755143817839" duration="529000" />
+      <workItem from="1755261031299" duration="206000" />
+      <workItem from="1755272632290" duration="13000" />
+      <workItem from="1755272823862" duration="6477000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
