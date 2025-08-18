@@ -33,7 +33,7 @@
         // Если 1 ноября не вторник (2), находим ближайший следующий вторник
         let electionDay = 1 + ((9 - dayOfWeek) % 7);
 
-        return new Date(year, 10, electionDay).toDateString();
+        return new Date(year, 10, electionDay).toLocaleString();
     }
     document.write("Разница в днях:", DaysBetween(prompt("Введите дату"))+'<br>');
     document.write("День программиста 2025:", GetProgrammersDay(2025)+'<br>');
