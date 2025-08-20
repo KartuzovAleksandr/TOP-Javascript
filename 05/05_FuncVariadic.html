@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Функции с переменным числом параметров</title>
+</head>
+<body>
+    <script>
+        function sum() {
+            let result = 0;
+            for (const n of arguments)
+                result += n;
+            console.log(result);
+        }
+        sum(6);             // 6
+        sum(6, 4)           // 10
+        sum(6, 4, 5)        // 15
+
+        // rest-параметры
+        function sumv(...numbers) {
+            let result = 0;
+            for (const n of numbers)
+                result += n;
+            console.log(result);
+        }
+        sumv(6, 4, 5)     // 15
+    </script>
+</body>
+</html>

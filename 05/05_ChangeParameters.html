@@ -6,22 +6,24 @@
 </head>
 <body>
 <script>
-function change(array){
-array[0] = 8;
-array[1] = 8;
-array[2] = 8;
-}
-function changeFull(array){
-array = [9, 8, 7];
-}
-// let numbers2 = [9, 8, 7];
-let numbers = [1, 2, 3];
-// numbers2 = numbers;
-// console.log(numbers2);
-console.log("before change:", numbers);     // [1, 2, 3]
-change(numbers);
-console.log("after change:", numbers);      // [8, 2, 3]
-changeFull(numbers);
+    // массивы передаются по ссылке
+    // по индексу их менять можно
+    function change(array) {
+        array[0] = 8;
+    }
+    // целиком нельзя
+    function changeFull(array) {
+        array = [9, 8, 7];
+    }
+    // let numbers2 = [9, 8, 7];
+    let numbers = [1, 2, 3];
+    // numbers2 = numbers;
+    // console.log(numbers2);
+    console.log("before change:", numbers);     // [1, 2, 3]
+    change(numbers);
+    console.log("after change:", numbers);      // [8, 2, 3]
+    changeFull(numbers);
+    console.log("after full change:", numbers);      // [8, 8, 8]
 </script>
 </body>
 </html>

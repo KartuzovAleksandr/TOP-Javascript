@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Функции со значениями по умолчанию</title>
+</head>
+<body>
+  <script>
+    function sum(x, y){
+      if(y === undefined) y = 5;
+      if(x === undefined) x = 8;
+      const z = x + y;
+      console.log(z);
+    }
+    sum();          // 13
+    sum(6);         // 11
+    sum(6, 4)       // 10
+
+    function sumd(x = 8, y = 5){
+      const z = x + y;
+      console.log(z);
+    }
+    sumd();      // 13
+    sumd(6);     // 11
+    sumd(6, 4)   // 10
+
+    function sume(x = 8, y = 10 + x){
+      const z = x + y;
+      console.log(z);
+    }
+    sume();      // 26
+    sume(6);     // 22
+    sume(6, 4)   // 10
+  </script>
+</body>
+</html>
