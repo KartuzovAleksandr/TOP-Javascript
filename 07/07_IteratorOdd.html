@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сумма чисел на нечетных позициях</title>
+</head>
+<body>
+<script>
+  // Запрашиваем размер массива у пользователя
+  let sizeInput = prompt("Введите размер массива:", "5");
+  let size = parseInt(sizeInput, 10);
+
+  // Валидация ввода
+  if (isNaN(size) || size <= 0) {
+    size = 5; // Устанавливаем значение по умолчанию
+  }
+
+  // Генерируем массив случайных чисел (от 1 до 100)
+  const numbers = [];
+  for (let i = 0; i < size; i++) {
+    numbers.push(Math.floor(Math.random() * 100) + 1);
+  }
+
+  console.log("Сгенерированный массив:", numbers);
+  // Выводим результат в браузер
+  document.write(`<h2>Сгенерированный массив:</h2>`);
+  document.write(`<p>${numbers}</p>`);
+
+  // Функция-итератор для нечетных позиций
+  function oddPositionsIterator() {
+    const array = this;
+    let index = 1; // Начинаем с нечетной позиции (индекс 1)
+    return {
+      next: function () {
+        if (index < array.length) {
+          const value = array[index];
+          index += 2; // Переходим к следующей нечетной позиции
+          return { value, done: false };
+        } else {
+          return { value: undefined, done: true };
+        }
+      }
+    };
+  }
+
+  // Устанавливаем кастомный итератор для массива
+  numbers[Symbol.iterator] = oddPositionsIterator;
+
+  // Вычисляем сумму чисел на нечетных позициях
+  const sum = [...numbers].reduce((acc, num) => acc + num, 0);
+  console.log("Сумма чисел на нечетных позициях:", sum);
+  // Выводим результат в браузер
+  document.write(`<h2>Сумма чисел на нечетных позициях:</h2>`);
+  document.write(`<p><strong>${sum}</strong></p>`);
+</script>
+</body>
+</html>

@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Lesson06">
-      <change afterPath="$PROJECT_DIR$/07/07_Iterator.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Iterator">
+      <change afterPath="$PROJECT_DIR$/07/07_IteratorOdd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +240,7 @@
       <workItem from="1755875755251" duration="303000" />
       <workItem from="1755876075195" duration="4719000" />
       <workItem from="1755961346338" duration="252000" />
-      <workItem from="1756136862073" duration="1896000" />
+      <workItem from="1756136862073" duration="4063000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -490,7 +490,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755884037940</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Iterator">
+      <option name="closed" value="true" />
+      <created>1756139002302</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1756139002302</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,6 +525,7 @@
     <MESSAGE value="FuncSpread" />
     <MESSAGE value="Lesson05" />
     <MESSAGE value="Lesson06" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson06" />
+    <MESSAGE value="Iterator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iterator" />
   </component>
 </project>
