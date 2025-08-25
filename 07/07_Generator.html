@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор</title>
+</head>
+<body>
+<script>
+    function* points() {
+        let x = 0; let y = 0;
+        while (true) {
+            yield { x : x, y : y };
+            x = Math.floor(Math.random() * 100);
+            y = Math.floor(Math.random() * 100);
+        }
+    }
+    let pointGenerator = points();
+
+    let repeat = 0;
+    let num;
+    while (repeat++ < 10) {
+        num = pointGenerator.next();
+        console.log(num);
+    }
+</script>
+</body>
+</html>
