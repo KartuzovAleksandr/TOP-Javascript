@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Итератор реверсивный</title>
+</head>
+<body>
+<script>
+    const people = ["Tom", "Bob", "Sam"];
+
+    function reverseArrayIterator() {
+        const array = this;
+        let count = array.length;
+        return {
+            next: function(){
+                if (count > 0) {
+                    return {
+                        value: array[--count],
+                        done: false
+                    };
+                }
+                else {
+                    return {
+                        value: undefined,
+                        done: true
+                    };
+                }
+            }
+        }
+    }
+    // меняем итератор для массива people
+    people[Symbol.iterator] = reverseArrayIterator;
+    for (person of people) {
+        console.log(person);
+    }
+</script>
+</body>
+</html>
