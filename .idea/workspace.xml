@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="07_Generator">
-      <change afterPath="$PROJECT_DIR$/08/008_Location.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="08_Navigator, Location, History">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08/08_History.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/08_History.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08/08_Navigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/08_Navigator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/09_Ul.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_UL-CSS.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,11 +171,11 @@
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\09" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\10" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\src\lib" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\03" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\CSS" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript" />
-      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\.idea" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -246,7 +244,7 @@
       <workItem from="1756136862073" duration="8264000" />
       <workItem from="1756218862141" duration="402000" />
       <workItem from="1756296332853" duration="143000" />
-      <workItem from="1756309746804" duration="1351000" />
+      <workItem from="1756309746804" duration="3006000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -520,7 +518,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756143692049</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="08_Navigator, Location, History">
+      <option name="closed" value="true" />
+      <created>1756311370573</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1756311370573</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,6 +556,7 @@
     <MESSAGE value="Iterator" />
     <MESSAGE value="IteratorOdd" />
     <MESSAGE value="07_Generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="07_Generator" />
+    <MESSAGE value="08_Navigator, Location, History" />
+    <option name="LAST_COMMIT_MESSAGE" value="08_Navigator, Location, History" />
   </component>
 </project>
