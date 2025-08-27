@@ -1,17 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <script>
-        function goBack() {
-            window.history.back()
-        }
-    </script>
+  <meta charset="UTF-8">
+  <title>История</title>
 </head>
 <body>
+<script>
+  // === ИСТОРИЯ ПОСЕЩЕНИЙ ===
+  // Получаем текущий URL и время
+  const currentVisit = {
+    url: window.location.href,
+    timestamp: new Date().toLocaleString()
+  };
 
-<button onclick="goBack()">Go Back</button>
+  // Получаем существующую историю из localStorage
+  let history = JSON.parse(localStorage.getItem('pageHistory') || '[]');
 
-<p>Clicking on the Back button here will not result in any action, because there is no previous URL in the history list.</p>
+  // Добавляем текущее посещение
+  history.unshift(currentVisit); // Добавляем в начало списка
 
+  // Ограничиваем размер истории (например, 10 последних записей)
+  if (history.length > 10) {
+    history = history.slice(0, 10);
+  }
+
+  // Сохраняем обновлённую историю
+  localStorage.setItem('pageHistory', JSON.stringify(history));
+
+  // Отображаем историю на странице
+  const historyDiv = document.createElement('div');
+  historyDiv.style.marginTop = '30px';
+  historyDiv.innerHTML = '<h3>История посещений:</h3>';
+
+  if (history.length === 0) {
+    historyDiv.innerHTML += '<p>История пуста.</p>';
+  } else {
+    const list = document.createElement('ul');
+    history.forEach(entry => {
+      const item = document.createElement('li');
+      item.textContent = `${entry.timestamp} - ${entry.url}`;
+      list.appendChild(item);
+    });
+    historyDiv.appendChild(list);
+  }
+
+  document.body.appendChild(historyDiv);
+</script>
 </body>
 </html>

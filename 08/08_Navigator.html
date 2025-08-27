@@ -2,21 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Navigator</title>
 </head>
 <body>
 <script>
-console.log(navigator.appCodeName); // Mozilla
-console.log(navigator.appName);     // Netscape
-console.log(navigator.appVersion);  // 5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
-console.log(navigator.product);     // Gecko
-console.log(navigator.productSub);  // 20030107
-console.log(navigator.vendor);      // Google Inc.
-console.log(navigator.vendorSub);   // [ пустая строка ]
-console.log(navigator.userAgent);   // Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36
-console.log(navigator.platform);    // MacIntel
-console.log(navigator.languages);   // список поддерживаемых языков
-console.log(navigator.plugins);     // список поддерживаемых плагинов
+    // Функция для успешного получения геопозиции
+    function onSuccess(position) {
+        console.log("Геопозиция получена:");
+        console.log("Широта:", position.coords.latitude);
+        console.log("Долгота:", position.coords.longitude);
+        console.log("Точность:", position.coords.accuracy + " м");
+    }
+
+    // Функция для обработки ошибок
+    function onFail(error) {
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                console.error("Пользователь отклонил запрос на геолокацию.");
+                break;
+            case error.POSITION_UNAVAILABLE:
+                console.error("Данные о местоположении недоступны.");
+                break;
+            case error.TIMEOUT:
+                console.error("Запрос истёк.");
+                break;
+            default:
+                console.error("Неизвестная ошибка:", error.message);
+        }
+    }
+
+    // Запрос геопозиции
+    navigator.geolocation.getCurrentPosition(onSuccess, onFail);
+
+    // Остальные свойства navigator
+    console.log("appCodeName:", navigator.appCodeName);
+    console.log("appName:", navigator.appName);
+    console.log("appVersion:", navigator.appVersion);
+    console.log("product:", navigator.product);
+    console.log("vendor:", navigator.vendor);
+    console.log("userAgent:", navigator.userAgent);
+    console.log("platform:", navigator.platform);
+    console.log("languages:", navigator.languages);
 </script>
 </body>
 </html>
