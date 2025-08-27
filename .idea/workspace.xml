@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="08_Navigator, Location, History">
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="09_UL-CSS">
+      <change afterPath="$PROJECT_DIR$/09/09_Checkbox.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/09_Ul.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_UL-CSS.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +244,7 @@
       <workItem from="1756136862073" duration="8264000" />
       <workItem from="1756218862141" duration="402000" />
       <workItem from="1756296332853" duration="143000" />
-      <workItem from="1756309746804" duration="3006000" />
+      <workItem from="1756309746804" duration="5146000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -526,7 +526,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756311370573</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="09_UL-CSS">
+      <option name="closed" value="true" />
+      <created>1756315448719</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1756315448719</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,6 +565,7 @@
     <MESSAGE value="IteratorOdd" />
     <MESSAGE value="07_Generator" />
     <MESSAGE value="08_Navigator, Location, History" />
-    <option name="LAST_COMMIT_MESSAGE" value="08_Navigator, Location, History" />
+    <MESSAGE value="09_UL-CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="09_UL-CSS" />
   </component>
 </project>
