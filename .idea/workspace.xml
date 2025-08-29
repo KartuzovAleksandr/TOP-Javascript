@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="09_UL-CSS">
-      <change afterPath="$PROJECT_DIR$/09/09_Checkbox.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="09_Checkbox">
+      <change afterPath="$PROJECT_DIR$/09/09_RadioButton.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,104 +67,105 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.01_Arrays.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.01_Converter.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.01_Cos.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.01_ES-Version.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.01_HelloExt.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.01_HelloSanya.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.01_HelloWorld.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.01_Square.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.02_Arrays.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.02_Cos.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.02_CosX.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.02_Factorial.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.02_FiboNumber.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.02_FiboRoman.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.02_ReplaceDiagonals.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.02_SortEvenOdd.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.02_SwapRowsAvg.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.02_Types.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.03_BubbleSort.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.03_SortEvenOdd.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.03_SortEvenOdd_2.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.03_UniqueElements.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.03_UniqueElements_2.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.03_UniqueMorozov.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.04_Array_Лощинин.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.04_DateDiff.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.04_Palindrom.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.04_PalindromWord.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.04_Regular.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.05_AverageFibo.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.05_ChangeParameters.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.05_FuncParameter.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.05_FuncVariable.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.05_Good.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.05_Matrix_Морозов.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.05_Matrix_Нещетин.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.05_Scopes.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.06_Closure.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.06_ObjectCopy.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.06_Objects.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.06_Point_Нещетин.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.06_Prorotype_Морозов.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.07_Exceptions_Nechetin_Arseniy.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.07_Generator.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.07_MapJack.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.07_TryCatch.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.07_UniqueNumbers.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.07_UniqueRandom.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.08_History.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.08_Navigator.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.09_AddAttribute.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.09_AddChildren.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.09_CheckBox_Roman.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.09_GetByID.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.09_Ul.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_CheckBox.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_Checked_Нещетин.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_Context.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_Even.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_HelloJQuery.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_LI.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_Select_Нещетин.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_Style.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_Table.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_Ul-find.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.10_Ul.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.11_Button_JQ-UI.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.11_DatePicker_JQ-UI.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.11_Hello_JQ-UI.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.11_Icon_JQ-UI.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.11_Progress_JQ-UI.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.11_Slider_JQ-UI.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.ES_version.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Vcs Notifications&quot;: &quot;VCS notifications&quot;,
-    &quot;Notification.DoNotAsk-Vcs Notifications&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.18.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.17.2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/AAA/gigacode-jetbrains-25.8.643.zip&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;C:/Users/Sanya/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions/22.18.00/node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.intellij.sdk.settings.AppSettingsConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\WebStorm\\WebStorm2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.01_Arrays.html.executor": "Run",
+    "JavaScript Debug.01_Converter.html.executor": "Run",
+    "JavaScript Debug.01_Cos.html.executor": "Run",
+    "JavaScript Debug.01_ES-Version.html.executor": "Run",
+    "JavaScript Debug.01_HelloExt.html.executor": "Run",
+    "JavaScript Debug.01_HelloSanya.html.executor": "Run",
+    "JavaScript Debug.01_HelloWorld.html.executor": "Debug",
+    "JavaScript Debug.01_Square.html.executor": "Run",
+    "JavaScript Debug.02_Arrays.html.executor": "Run",
+    "JavaScript Debug.02_Cos.html.executor": "Run",
+    "JavaScript Debug.02_CosX.html.executor": "Run",
+    "JavaScript Debug.02_Factorial.html.executor": "Run",
+    "JavaScript Debug.02_FiboNumber.html.executor": "Run",
+    "JavaScript Debug.02_FiboRoman.html.executor": "Run",
+    "JavaScript Debug.02_ReplaceDiagonals.html.executor": "Run",
+    "JavaScript Debug.02_SortEvenOdd.html.executor": "Run",
+    "JavaScript Debug.02_SwapRowsAvg.html.executor": "Run",
+    "JavaScript Debug.02_Types.html.executor": "Run",
+    "JavaScript Debug.03_BubbleSort.html.executor": "Run",
+    "JavaScript Debug.03_SortEvenOdd.html.executor": "Run",
+    "JavaScript Debug.03_SortEvenOdd_2.html.executor": "Run",
+    "JavaScript Debug.03_UniqueElements.html.executor": "Run",
+    "JavaScript Debug.03_UniqueElements_2.html.executor": "Run",
+    "JavaScript Debug.03_UniqueMorozov.html.executor": "Run",
+    "JavaScript Debug.04_Array_Лощинин.html.executor": "Run",
+    "JavaScript Debug.04_DateDiff.html.executor": "Run",
+    "JavaScript Debug.04_Palindrom.html.executor": "Run",
+    "JavaScript Debug.04_PalindromWord.html.executor": "Run",
+    "JavaScript Debug.04_Regular.html.executor": "Run",
+    "JavaScript Debug.05_AverageFibo.html.executor": "Run",
+    "JavaScript Debug.05_ChangeParameters.html.executor": "Run",
+    "JavaScript Debug.05_FuncParameter.html.executor": "Run",
+    "JavaScript Debug.05_FuncVariable.html.executor": "Run",
+    "JavaScript Debug.05_Good.html.executor": "Run",
+    "JavaScript Debug.05_Matrix_Морозов.html.executor": "Run",
+    "JavaScript Debug.05_Matrix_Нещетин.html.executor": "Run",
+    "JavaScript Debug.05_Scopes.html.executor": "Run",
+    "JavaScript Debug.06_Closure.html.executor": "Run",
+    "JavaScript Debug.06_ObjectCopy.html.executor": "Run",
+    "JavaScript Debug.06_Objects.html.executor": "Run",
+    "JavaScript Debug.06_Point_Нещетин.html.executor": "Run",
+    "JavaScript Debug.06_Prorotype_Морозов.html.executor": "Run",
+    "JavaScript Debug.07_Exceptions_Nechetin_Arseniy.html.executor": "Run",
+    "JavaScript Debug.07_Generator.html.executor": "Run",
+    "JavaScript Debug.07_MapJack.html.executor": "Run",
+    "JavaScript Debug.07_TryCatch.html.executor": "Run",
+    "JavaScript Debug.07_UniqueNumbers.html.executor": "Run",
+    "JavaScript Debug.07_UniqueRandom.html.executor": "Run",
+    "JavaScript Debug.08_History.html.executor": "Run",
+    "JavaScript Debug.08_Navigator.html.executor": "Run",
+    "JavaScript Debug.09_AddAttribute.html.executor": "Run",
+    "JavaScript Debug.09_AddChildren.html.executor": "Run",
+    "JavaScript Debug.09_CheckBox_Roman.html.executor": "Run",
+    "JavaScript Debug.09_GetByID.html.executor": "Run",
+    "JavaScript Debug.09_RadioButton.html.executor": "Run",
+    "JavaScript Debug.09_Ul.html.executor": "Run",
+    "JavaScript Debug.10_CheckBox.html.executor": "Run",
+    "JavaScript Debug.10_Checked_Нещетин.html.executor": "Run",
+    "JavaScript Debug.10_Context.html.executor": "Run",
+    "JavaScript Debug.10_Even.html.executor": "Run",
+    "JavaScript Debug.10_HelloJQuery.html.executor": "Run",
+    "JavaScript Debug.10_LI.html.executor": "Run",
+    "JavaScript Debug.10_Select_Нещетин.html.executor": "Run",
+    "JavaScript Debug.10_Style.html.executor": "Run",
+    "JavaScript Debug.10_Table.html.executor": "Run",
+    "JavaScript Debug.10_Ul-find.html.executor": "Run",
+    "JavaScript Debug.10_Ul.html.executor": "Run",
+    "JavaScript Debug.11_Button_JQ-UI.html.executor": "Run",
+    "JavaScript Debug.11_DatePicker_JQ-UI.html.executor": "Run",
+    "JavaScript Debug.11_Hello_JQ-UI.html.executor": "Run",
+    "JavaScript Debug.11_Icon_JQ-UI.html.executor": "Run",
+    "JavaScript Debug.11_Progress_JQ-UI.html.executor": "Run",
+    "JavaScript Debug.11_Slider_JQ-UI.html.executor": "Run",
+    "Node.js.ES_version.js.executor": "Run",
+    "Node.js.index.js.executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
+    "Notification.DoNotAsk-Vcs Notifications": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "22.18.0",
+    "javascript.nodejs.core.library.typings.version": "22.17.2",
+    "last_opened_file_path": "E:/AAA/gigacode-jetbrains-25.8.643.zip",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "C:/Users/Sanya/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions/22.18.00/node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.intellij.sdk.settings.AppSettingsConfigurable",
+    "ts.external.directory.path": "C:\\WebStorm\\WebStorm2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript" />
@@ -244,7 +245,8 @@
       <workItem from="1756136862073" duration="8264000" />
       <workItem from="1756218862141" duration="402000" />
       <workItem from="1756296332853" duration="143000" />
-      <workItem from="1756309746804" duration="5146000" />
+      <workItem from="1756309746804" duration="5307000" />
+      <workItem from="1756481497055" duration="3100000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -534,14 +536,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756315448719</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="09_Checkbox">
+      <option name="closed" value="true" />
+      <created>1756318852111</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1756318852111</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Version ES" />
     <MESSAGE value="Lesson 2" />
     <MESSAGE value="Lesson 3" />
     <MESSAGE value="Lesson 4" />
@@ -566,6 +575,7 @@
     <MESSAGE value="07_Generator" />
     <MESSAGE value="08_Navigator, Location, History" />
     <MESSAGE value="09_UL-CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="09_UL-CSS" />
+    <MESSAGE value="09_Checkbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="09_Checkbox" />
   </component>
 </project>

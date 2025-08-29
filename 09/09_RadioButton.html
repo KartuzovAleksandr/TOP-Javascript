@@ -1,0 +1,48 @@
+<!--Сергей Еремеев-->
+<!--Академия TOP-->
+<!--гр. ПВ311-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример формы c радио-кнопками</title>
+</head>
+<body>
+<form name="myForm">
+    <div>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <p>Выберите вариант:</p>
+        <input type="radio" id="option1" name="options" value="Java">
+        <label for="option1">Java</label><br>
+
+        <input type="radio" id="option2" name="options" value="C#">
+        <label for="option2">C#</label><br>
+
+        <input type="radio" id="option3" name="options" value="C">
+        <label for="option3">C</label>
+    </div>
+    <button type="button" onclick="displayData()">Отправить</button>
+</form>
+<p id="result"></p>
+<div id="printBlock"></div>
+<script>
+    function displayData() {
+        // Получаем значение из поля ввода имени
+        const nameInput = document.getElementById('name');
+        const enteredName = nameInput.value;
+
+        // Получаем выбранный радиокнопку
+        const selectedOption = document.querySelector('input[name="options"]:checked');
+        const selectedValue = selectedOption ? selectedOption.value : 'не выбран';
+
+        // Выводим результат
+        const resultParagraph = document.getElementById('result');
+        resultParagraph.textContent = `Привет, ${enteredName}! Вы выбрали: ${selectedValue}`;
+    }
+</script>
+</body>
+
+</html>
