@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="09_Checkbox">
-      <change afterPath="$PROJECT_DIR$/09/09_RadioButton.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="09_Radio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/10_RadioMagrgarita.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_RadioMargarita.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +246,7 @@
       <workItem from="1756218862141" duration="402000" />
       <workItem from="1756296332853" duration="143000" />
       <workItem from="1756309746804" duration="5307000" />
-      <workItem from="1756481497055" duration="3100000" />
+      <workItem from="1756481497055" duration="4200000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -544,14 +544,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756318852111</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="09_Radio">
+      <option name="closed" value="true" />
+      <created>1756487113343</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1756487113343</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson 2" />
     <MESSAGE value="Lesson 3" />
     <MESSAGE value="Lesson 4" />
     <MESSAGE value="Lesson 5" />
@@ -576,6 +583,7 @@
     <MESSAGE value="08_Navigator, Location, History" />
     <MESSAGE value="09_UL-CSS" />
     <MESSAGE value="09_Checkbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="09_Checkbox" />
+    <MESSAGE value="09_Radio" />
+    <option name="LAST_COMMIT_MESSAGE" value="09_Radio" />
   </component>
 </project>
