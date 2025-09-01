@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="09_Radio">
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_RadioMagrgarita.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_RadioMargarita.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/10_CheckBox.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_CheckBox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/10_Even.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Even.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/10_HelloJQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_HelloJQuery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/10_Style.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Style.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +49,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/KartuzovAleksandr/TOP-Javascript&quot;,
-    &quot;accountId&quot;: &quot;d117b676-4913-43c9-9c59-89c5617bc93a&quot;
+    &quot;url&quot;: &quot;https://github.com/KartuzovAleksandr/TOP-Javascript.git&quot;,
+    &quot;accountId&quot;: &quot;a099a2e5-66a8-45ec-ae4b-b269efca8a5f&quot;
   }
 }</component>
   <component name="PackageJsonUpdateNotifier">
@@ -60,7 +63,7 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2sCra9FwIDLOLmXpDVI1A7cef7o" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -152,17 +155,17 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "22.18.0",
-    "javascript.nodejs.core.library.typings.version": "22.17.2",
+    "javascript.nodejs.core.library.configured.version": "22.19.0",
+    "javascript.nodejs.core.library.typings.version": "22.18.0",
     "last_opened_file_path": "E:/AAA/gigacode-jetbrains-25.8.643.zip",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "C:/Users/Sanya/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions/22.18.00/node",
+    "nodejs_interpreter_path": "C:/JetBrains/node/versions/22.19.0/node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.intellij.sdk.settings.AppSettingsConfigurable",
-    "ts.external.directory.path": "C:\\WebStorm\\WebStorm2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "ts.external.directory.path": "C:\\JetBrains\\WebStorm2025.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -182,7 +185,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
       </set>
     </attachedChunks>
   </component>
@@ -247,6 +250,9 @@
       <workItem from="1756296332853" duration="143000" />
       <workItem from="1756309746804" duration="5307000" />
       <workItem from="1756481497055" duration="4200000" />
+      <workItem from="1756565011190" duration="800000" />
+      <workItem from="1756568510354" duration="19000" />
+      <workItem from="1756741547255" duration="5472000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -559,7 +565,6 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson 3" />
     <MESSAGE value="Lesson 4" />
     <MESSAGE value="Lesson 5" />
     <MESSAGE value="Lesson 6" />
@@ -584,6 +589,7 @@
     <MESSAGE value="09_UL-CSS" />
     <MESSAGE value="09_Checkbox" />
     <MESSAGE value="09_Radio" />
-    <option name="LAST_COMMIT_MESSAGE" value="09_Radio" />
+    <MESSAGE value="Урок 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 10" />
   </component>
 </project>
