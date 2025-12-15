@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Геттеры и сеттеры</title>
+</head>
+<body>
+<script>
+    function User(uName, uAge) {
+        this.name = uName;
+        let _age = uAge;
+        // геттер - возвращаем значение переменной
+        this.getAge = function() { return _age; }
+        // устанавливаем значение переменной
+        this.setAge = function(age) {
+            if(age > 0 && age < 110){      // если возраст больше 0 и меньше 110
+                _age = age;
+            } else {
+                console.log("Недопустимое значение");
+            }
+        }
+        this.print = function(){
+            console.log(`Name: ${this.name}  Age: ${_age}`);
+        };
+    }
+
+    const tom = new User("Tom", 39);
+    // получаем значение
+    console.log(tom.getAge())   // 39
+    // устанавливаем новое значение
+    tom.setAge(22);
+    console.log(tom.getAge())   // 22
+    tom.setAge(11500);     // Недопустимое значение
+    console.log(tom.getAge())   // 22
+
+    // setter и getter в классе
+    class Person {
+        #ageValue = 1;
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        set age(value){
+            console.log(`Передано ${value}`);
+            if(value>0 && value < 110) this.#ageValue = value;
+        }
+        get age(){
+            return this.#ageValue;
+        }
+        get fullName() { return `${this.name} ${this.age}` }
+    }
+    const bob = new Person("Bob", 37);
+    console.log(bob.age); // getter
+    bob.age = -15; // setter
+    console.log(bob.age);
+    console.log(bob.fullName);
+</script>
+</body>
+</html>

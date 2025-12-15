@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объекты и массивы</title>
+</head>
+<body>
+<script>
+    const country = {
+        name: "Швейцария",
+        languages: ["немецкий", "французский", "итальянский"],
+        capital: {
+            name: "Берн",
+            population: 126598
+        },
+        cities: [
+            { name: "Цюрих", population: 378884},
+            { name: "Женева", population: 188634},
+            { name: "Базель", population: 164937}
+        ]
+    };
+
+    // вывод всех элементов из country.languages
+    console.log("Официальные языки Швейцарии");
+    for(const lang of country.languages){
+        console.log(lang);
+    }
+    console.log("\n");  // для разделения языков от городов
+
+    // вывод всех элементов из country.cities
+    console.log("Города Швейцарии");
+    for(const city of country.cities){
+        console.log(city.name);
+    }
+</script>
+</body>
+</html>

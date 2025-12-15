@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head> 
+  <meta charset="UTF-8">
+<title>Инкремент и декремент и подсчет ЗП</title>
+</head>
+<body>
+ <script>
+
+    function createCounter(initialValue) {
+    let count = initialValue; 
+
+    return {
+        increment() {
+            count += 10000;
+            return count;
+        },
+
+        decrement() {
+            count -= 5000;
+            return count;
+        },
+
+        getSalary() {
+            return count;
+        }
+    };
+}
+
+document.write("Сотрудник №1 с начальной зарплатой 10 000руб." + "<br>")
+let sotr1 = createCounter(10000); 
+
+document.write("11.05.2025 — сотрудник 1 хорошо выполнил работу (+10 000): " + sotr1.increment() + "<br>");
+document.write("15.05.2025 — сотрудник 1 внедрил инновацию (+10 000): " + sotr1.increment() + "<br>");
+document.write("20.05.2025 — сотрудник 1 нарушил процесс (-5 000): " + sotr1.decrement() + "<br>");
+
+document.write("<br>ИТОГОВАЯ ЗАРПЛАТА сотрудника 1: " + sotr1.getSalary() + " руб." + "<br>");
+
+document.write("Сотрудник №2 с начальной зарплатой 10 000руб." + "<br>")
+let sotr2 = createCounter(10000); 
+
+document.write("10.05.2025 — сотрудник 2 хорошо выполнил работу (+10 000): " + sotr2.increment() + "<br>");
+document.write("12.05.2025 — сотрудник 2 перевыполнил недельный план (+10 000): " + sotr2.increment() + "<br>");
+document.write("22.05.2025 — сотрудник 2 опоздал на рабочее место (-5 000): " + sotr2.decrement() + "<br>");
+document.write("28.05.2025 — сотрудник 2 испортил готовое изделие (-5 000): " + sotr2.decrement() + "<br>");
+
+document.write("<br>ИТОГОВАЯ ЗАРПЛАТА сотрудника 2: " + sotr2.getSalary() + " руб." + "<br>");
+
+
+</script>
+</body>
+</html>

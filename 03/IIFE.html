@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IIFE</title>
+</head>
+<body>
+<script>
+    (function (a, b){
+        const result = a + b;
+        document.write(`${a} + ${b} = ${result}`);
+    } (4, 5));
+    let a = function(a, b) {
+        return a + b;
+    }
+    a();
+    document.write("<br>");
+    document.write(
+        ((x,y) => (
+            ((proc2) => (
+                ((proc1) => proc1(5,30))((x,y) => [x, proc2(), y])
+            ))(() => x + y)
+        ))(10, 15)
+    );
+</script>
+</body>
+</html>

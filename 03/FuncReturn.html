@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Возврат из функции</title>
+</head>
+<body>
+<script>
+    function operation(n) {
+        switch (n) {
+            case 1: return (x, y) => x + y;
+            case 2: return (x, y) => x * y;
+            default: return 0;
+        }
+    }
+    const o = operation(1);
+    document.write(o(10, 20));
+</script>
+</body>
+</html>

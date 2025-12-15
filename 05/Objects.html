@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объекты</title>
+</head>
+<body>
+<script>
+    // let user = new Object();
+    let user = {};
+    // 1
+    user.name = "Вася";
+    user.age = 15;
+    document.write(`${user.name}<br>${user.age}`);
+    // 2
+    user = {
+        name: "Tom",
+        age: 26,
+        show: function() {
+            console.log(this.name);
+            console.log(this.age);
+        },
+        go(x) {
+            console.log(this.age + x);
+        }
+    };
+    document.write(`<br>${user.name}<br>${user.age}`);
+    user.show();
+    user.go(10);
+    // 3
+    const name = "Bob";
+    const age = 34;
+    user = { name, age };
+    document.write(`<br>${user.name}<br>${user.age}`);
+    console.log(user);
+    // ошибка
+    // user.display();
+    // 4
+    user.display = function() {
+        document.write(`<br>${user.name}`);
+        document.write(`<br>${user.age}`);
+    };
+    user.display();
+    // 5
+    user = {};
+    user["name"] = "Maria";
+    user["age"] = 25;
+    user["display"] = function(){
+        document.write(`<br>${user.name}`);
+    };
+    // вызов метода
+    user["display"]();
+    user.display();
+
+    // использование строк с пробелами
+    user = {
+        name: "Tom",
+        age: 42,
+        "full name": "Tom Johns",
+        "display info": function(){
+            console.log(user.name);
+            console.log(user.age);
+        }
+    };
+    console.log(user["full name"]);
+    user["display info"]();
+
+    // динамическое создание св-в
+    function createObject(propName, propValue){
+        return {
+            [propName]: propValue,
+            print() {
+                console.log(`${propName}: ${propValue}`);
+            }
+        };
+    }
+    let person = createObject("name", "Tom");
+    person.print();     // name: Tom
+    document.write(`<br>${person.name}`);
+    const book = createObject("title", "JavaScript Reference");
+    book.print();   // title: JavaScript Reference
+    document.write(`<br>${book.title}`);
+
+    // удаление св-в и методов
+    delete person.name; // удаляем свойство
+    // альтернативный вариант
+    // delete person["name"];
+    document.write(`<br>${person.name}`);
+    delete person.print; // удаляем метод
+    person.print(); // Uncaught TypeError: person.print is not a function
+
+    // 6
+    const personData = [ ["name", "Tom"], ["age", 37] ];
+    person = Object.fromEntries(personData);
+    console.log(person);        // { name: "Tom", age: 37 }
+    console.log(person.name);    // Tom
+</script>
+</body>
+</html>

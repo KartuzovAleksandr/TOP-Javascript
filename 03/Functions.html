@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Работа с функциями</title>
+</head>
+<body>
+<script>
+    let message = () => document.write("Привет");
+    message();
+    message = function() {
+        document.write("<br>Hello");
+    }
+    message();
+    message = (param) => document.write("<br>"+param);
+    message();
+
+    sum();      // 26
+    sum(6);     // 22
+    sum(6, 4)   // 10
+    function sum(x = 8, y = 10 + x) {
+        const z = x + y;
+        document.write("<br>" + z);
+    }
+</script>
+</body>
+</html>

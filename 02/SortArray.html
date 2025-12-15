@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Привет мир</title>
+</head>
+<body>
+<script>
+    let n = prompt("Введите кол-во", 12);
+    const max = 100;
+    // 1 способ
+    // let a = [n];
+    // for (let i = 0; i < n; i++) {
+    //     a[i] = Math.round(Math.random() * max);
+    // }
+    // 2 способ
+    // let a = [];
+    // let i = 0;
+    // for (; i++ < n;) {
+    //      a.push(Math.round(Math.random() * max));
+    // }
+    // 3 способ
+    let N = parseInt(n);
+    let a = Array.from({ length: N }).map(_ => Math.round(Math.random() * max));
+
+    document.write([1, 2, 3, 4, 5].sort().max());
+    // console.log(a);
+    // console.log(a.join(", "));
+    // document.write(a.join("<br>"));
+    document.write(a.sort((x, y) => y - x));
+    document.write(`Максимум = ${Math.min(...a)}`);
+</script>
+</body>
+</html>

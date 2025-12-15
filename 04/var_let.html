@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Видимость var и let</title>
+</head>
+<body>
+<script>
+    "use strict";
+    const x = 10;
+    const n = +prompt("Введите число", 10);
+    for (let i = 0; i < n; i++) {
+
+    }
+    var z = 89;
+    function print(){
+
+        var z = 10;
+        document.write(z); // 10
+    }
+    print(); // 10
+    document.write(`<br>${z}`); // 89
+</script>
+</body>
+</html>
