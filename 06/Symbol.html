@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Symbol</title>
+</head>
+<body>
+<script>
+    // дублирование имен
+    let company = {
+        "Tom": "senior",
+        "Sam": "junior",
+        "Tom": "junior"
+    }
+    for (let developer in company) {
+        document.write(`<br>${developer} - ${company[developer]}`);
+    }
+
+    // добавление через Symbol
+    company = {
+        [Symbol("Tom")]: "senior",
+        [Symbol("Sam")]: "junior",
+        [Symbol("Tom")]: "junior"
+    }
+    const developers = Object.getOwnPropertySymbols(company);
+    for (developer of developers) {
+        document.write(`<br>${developer.toString()} - ${company[developer]}`);
+    }
+
+    // не работает
+    company = { };
+    company[Symbol("Tom")]= "senior";
+    company[Symbol("Sam")]= "junior";
+    company[Symbol("Tom")]= "junior";
+    for (let developer in company) {
+        // document.write(`<br>${developer.getPrototype()}`);
+        document.write(`<br>${developer} - ${company[developer]}`);
+    }
+</script>
+</body>
+</html>

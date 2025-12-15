@@ -4,63 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 10">
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Перепланировка уроков, много новых примеров">
+      <change afterPath="$PROJECT_DIR$/06/Max.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/Symbol.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02/02_FiboRoman.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/02_FiboRoman.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/03_Array_Лощинин.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/03_Array_Лощинин.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/03_ReplaceDiagonals.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/03_ReplaceDiagonals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04/04_DateDiff.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/04_DateDiff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04/04_Palindrom.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/04_Palindrom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04/04_PalindromWord.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/04_PalindromWord.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04/04_Regular.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/04_Regular.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05/05_AverageFibo.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/05_AverageFibo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05/05_FuncDefault.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/05_FuncDefault.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05/05_FuncParameter.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/05_FuncParameter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05/05_FuncSpread.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/05_FuncSpread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05/05_FuncVariable.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/05_FuncVariable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05/05_FuncVariadic.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/05_FuncVariadic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/06_Closure.html" beforeDir="false" afterPath="$PROJECT_DIR$/04/06_Closure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/06_ObjectCopy.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/06_ObjectCopy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/06_Objects.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/06_Objects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/06_Point_Нещетин.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/06_Point_Нещетин.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/06_Prorotype_Морозов.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/06_Prototype_Морозов.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07/07_Generator.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/07_Generator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07/07_Iterator.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/07_Iterator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07/07_IteratorOdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/07_IteratorOdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07/07_JackMK.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/07_JackMK.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07/07_MapJack.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/07_MapJack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07/07_OddSumPro.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/07_OddSumPro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07/07_UniqueNumbers.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/07_UniqueNumbers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07/07_UniqueRandom.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/07_UniqueRandom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08/008_Location.html" beforeDir="false" afterPath="$PROJECT_DIR$/07/008_Location.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08/08_History.html" beforeDir="false" afterPath="$PROJECT_DIR$/07/08_History.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08/08_Navigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/07/08_Navigator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/09_AddAttribute.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/09_AddAttribute.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/09_AddChildren.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/09_AddChildren.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/09_CheckBox_Roman.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/09_CheckBox_Roman.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/09_Checkbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/09_Checkbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/09_GetByID.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/09_GetByID.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/09_RadioButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/09_RadioButton.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_CheckBox.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_CheckBox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_Context.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_Context.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_Even.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_Even.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_HelloJQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_HelloJQuery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_LI.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_LI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_RadioMargarita.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_RadioMargarita.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_Select_Нещетин.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_Select_Нещетин.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_Style.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_Style.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_Table.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_Table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_UL-CSS.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_UL-CSS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_Ul-find.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_Ul-find.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/10_Ul.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/10_Ul.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/09/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11/11_Button_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/11_Button_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11/11_DatePicker_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/11_DatePicker_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11/11_Hello_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/11_Hello_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11/11_Icon_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/11_Icon_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11/11_Progress_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/11_Progress_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11/11_Slider_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/11_Slider_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,12 +45,12 @@
     &quot;assignee&quot;: &quot;KartuzovAleksandr&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/KartuzovAleksandr/TOP-Javascript.git",
-    "accountId": "37905024-054c-4d6e-8a0d-e9c7c9342067"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/KartuzovAleksandr/TOP-Javascript.git&quot;,
+    &quot;accountId&quot;: &quot;37905024-054c-4d6e-8a0d-e9c7c9342067&quot;
   }
-}]]></component>
+}</component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
@@ -121,105 +68,105 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.01_Arrays.html.executor": "Run",
-    "JavaScript Debug.01_Converter.html.executor": "Run",
-    "JavaScript Debug.01_Cos.html.executor": "Run",
-    "JavaScript Debug.01_ES-Version.html.executor": "Run",
-    "JavaScript Debug.01_HelloExt.html.executor": "Run",
-    "JavaScript Debug.01_HelloSanya.html.executor": "Run",
-    "JavaScript Debug.01_HelloWorld.html.executor": "Debug",
-    "JavaScript Debug.01_Square.html.executor": "Run",
-    "JavaScript Debug.02_Arrays.html.executor": "Run",
-    "JavaScript Debug.02_Cos.html.executor": "Run",
-    "JavaScript Debug.02_CosX.html.executor": "Run",
-    "JavaScript Debug.02_Factorial.html.executor": "Run",
-    "JavaScript Debug.02_FiboNumber.html.executor": "Run",
-    "JavaScript Debug.02_FiboRoman.html.executor": "Run",
-    "JavaScript Debug.02_ReplaceDiagonals.html.executor": "Run",
-    "JavaScript Debug.02_SortEvenOdd.html.executor": "Run",
-    "JavaScript Debug.02_SwapRowsAvg.html.executor": "Run",
-    "JavaScript Debug.02_Types.html.executor": "Run",
-    "JavaScript Debug.03_BubbleSort.html.executor": "Run",
-    "JavaScript Debug.03_SortEvenOdd.html.executor": "Run",
-    "JavaScript Debug.03_SortEvenOdd_2.html.executor": "Run",
-    "JavaScript Debug.03_UniqueElements.html.executor": "Run",
-    "JavaScript Debug.03_UniqueElements_2.html.executor": "Run",
-    "JavaScript Debug.03_UniqueMorozov.html.executor": "Run",
-    "JavaScript Debug.04_Array_Лощинин.html.executor": "Run",
-    "JavaScript Debug.04_DateDiff.html.executor": "Run",
-    "JavaScript Debug.04_Palindrom.html.executor": "Run",
-    "JavaScript Debug.04_PalindromWord.html.executor": "Run",
-    "JavaScript Debug.04_Regular.html.executor": "Run",
-    "JavaScript Debug.05_AverageFibo.html.executor": "Run",
-    "JavaScript Debug.05_ChangeParameters.html.executor": "Run",
-    "JavaScript Debug.05_FuncParameter.html.executor": "Run",
-    "JavaScript Debug.05_FuncVariable.html.executor": "Run",
-    "JavaScript Debug.05_Good.html.executor": "Run",
-    "JavaScript Debug.05_Matrix_Морозов.html.executor": "Run",
-    "JavaScript Debug.05_Matrix_Нещетин.html.executor": "Run",
-    "JavaScript Debug.05_Scopes.html.executor": "Run",
-    "JavaScript Debug.06_Closure.html.executor": "Run",
-    "JavaScript Debug.06_ObjectCopy.html.executor": "Run",
-    "JavaScript Debug.06_Objects.html.executor": "Run",
-    "JavaScript Debug.06_Point_Нещетин.html.executor": "Run",
-    "JavaScript Debug.06_Prorotype_Морозов.html.executor": "Run",
-    "JavaScript Debug.07_Exceptions_Nechetin_Arseniy.html.executor": "Run",
-    "JavaScript Debug.07_Generator.html.executor": "Run",
-    "JavaScript Debug.07_MapJack.html.executor": "Run",
-    "JavaScript Debug.07_TryCatch.html.executor": "Run",
-    "JavaScript Debug.07_UniqueNumbers.html.executor": "Run",
-    "JavaScript Debug.07_UniqueRandom.html.executor": "Run",
-    "JavaScript Debug.08_History.html.executor": "Run",
-    "JavaScript Debug.08_Navigator.html.executor": "Run",
-    "JavaScript Debug.09_AddAttribute.html.executor": "Run",
-    "JavaScript Debug.09_AddChildren.html.executor": "Run",
-    "JavaScript Debug.09_CheckBox_Roman.html.executor": "Run",
-    "JavaScript Debug.09_GetByID.html.executor": "Run",
-    "JavaScript Debug.09_RadioButton.html.executor": "Run",
-    "JavaScript Debug.09_Ul.html.executor": "Run",
-    "JavaScript Debug.10_CheckBox.html.executor": "Run",
-    "JavaScript Debug.10_Checked_Нещетин.html.executor": "Run",
-    "JavaScript Debug.10_Context.html.executor": "Run",
-    "JavaScript Debug.10_Even.html.executor": "Run",
-    "JavaScript Debug.10_HelloJQuery.html.executor": "Run",
-    "JavaScript Debug.10_LI.html.executor": "Run",
-    "JavaScript Debug.10_Select_Нещетин.html.executor": "Run",
-    "JavaScript Debug.10_Style.html.executor": "Run",
-    "JavaScript Debug.10_Table.html.executor": "Run",
-    "JavaScript Debug.10_Ul-find.html.executor": "Run",
-    "JavaScript Debug.10_Ul.html.executor": "Run",
-    "JavaScript Debug.11_Button_JQ-UI.html.executor": "Run",
-    "JavaScript Debug.11_DatePicker_JQ-UI.html.executor": "Run",
-    "JavaScript Debug.11_Hello_JQ-UI.html.executor": "Run",
-    "JavaScript Debug.11_Icon_JQ-UI.html.executor": "Run",
-    "JavaScript Debug.11_Progress_JQ-UI.html.executor": "Run",
-    "JavaScript Debug.11_Slider_JQ-UI.html.executor": "Run",
-    "Node.js.ES_version.js.executor": "Run",
-    "Node.js.index.js.executor": "Run",
-    "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
-    "Notification.DoNotAsk-Vcs Notifications": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "24.12.0",
-    "javascript.nodejs.core.library.typings.version": "24.10.4",
-    "last_opened_file_path": "E:/AAA/gigacode-jetbrains-25.8.643.zip",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "ts.external.directory.path": "C:\\JetBrains\\WebStorm2025.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.01_Arrays.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.01_Converter.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.01_Cos.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.01_ES-Version.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.01_HelloExt.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.01_HelloSanya.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.01_HelloWorld.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.01_Square.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.02_Arrays.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.02_Cos.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.02_CosX.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.02_Factorial.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.02_FiboNumber.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.02_FiboRoman.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.02_ReplaceDiagonals.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.02_SortEvenOdd.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.02_SwapRowsAvg.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.02_Types.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.03_BubbleSort.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.03_SortEvenOdd.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.03_SortEvenOdd_2.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.03_UniqueElements.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.03_UniqueElements_2.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.03_UniqueMorozov.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.04_Array_Лощинин.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.04_DateDiff.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.04_Palindrom.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.04_PalindromWord.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.04_Regular.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.05_AverageFibo.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.05_ChangeParameters.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.05_FuncParameter.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.05_FuncVariable.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.05_Good.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.05_Matrix_Морозов.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.05_Matrix_Нещетин.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.05_Scopes.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.06_Closure.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.06_ObjectCopy.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.06_Objects.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.06_Point_Нещетин.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.06_Prorotype_Морозов.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.07_Exceptions_Nechetin_Arseniy.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.07_Generator.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.07_MapJack.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.07_TryCatch.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.07_UniqueNumbers.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.07_UniqueRandom.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.08_History.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.08_Navigator.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.09_AddAttribute.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.09_AddChildren.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.09_CheckBox_Roman.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.09_GetByID.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.09_RadioButton.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.09_Ul.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_CheckBox.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Checked_Нещетин.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Context.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Even.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_HelloJQuery.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_LI.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Select_Нещетин.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Style.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Table.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Ul-find.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.10_Ul.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.11_Button_JQ-UI.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.11_DatePicker_JQ-UI.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.11_Hello_JQ-UI.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.11_Icon_JQ-UI.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.11_Progress_JQ-UI.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.11_Slider_JQ-UI.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.ES_version.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Vcs Notifications&quot;: &quot;VCS notifications&quot;,
+    &quot;Notification.DoNotAsk-Vcs Notifications&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.12.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.10.4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/AAA/gigacode-jetbrains-25.8.643.zip&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\JetBrains\\WebStorm2025.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript" />
@@ -307,7 +254,8 @@
       <workItem from="1756799320243" duration="20000" />
       <workItem from="1756799831816" duration="37000" />
       <workItem from="1756914215770" duration="1423000" />
-      <workItem from="1765798769022" duration="3064000" />
+      <workItem from="1765798769022" duration="3146000" />
+      <workItem from="1765812942005" duration="4701000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -621,14 +569,21 @@
       <option name="project" value="LOCAL" />
       <updated>1756747768062</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Перепланировка уроков, много новых примеров">
+      <option name="closed" value="true" />
+      <created>1765804931935</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1765804931935</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson 4" />
     <MESSAGE value="Lesson 5" />
     <MESSAGE value="Lesson 6" />
     <MESSAGE value="Lesson 2 update" />
@@ -653,6 +608,7 @@
     <MESSAGE value="09_Checkbox" />
     <MESSAGE value="09_Radio" />
     <MESSAGE value="Урок 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 10" />
+    <MESSAGE value="Перепланировка уроков, много новых примеров" />
+    <option name="LAST_COMMIT_MESSAGE" value="Перепланировка уроков, много новых примеров" />
   </component>
 </project>
