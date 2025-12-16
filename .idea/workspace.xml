@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Перепланировка уроков, много новых примеров">
-      <change afterPath="$PROJECT_DIR$/06/Max.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06/Symbol.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 06">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -255,7 +253,7 @@
       <workItem from="1756799831816" duration="37000" />
       <workItem from="1756914215770" duration="1423000" />
       <workItem from="1765798769022" duration="3146000" />
-      <workItem from="1765812942005" duration="4701000" />
+      <workItem from="1765812942005" duration="8261000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -577,14 +575,21 @@
       <option name="project" value="LOCAL" />
       <updated>1765804931935</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Урок 06">
+      <option name="closed" value="true" />
+      <created>1765818252245</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1765818252245</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson 5" />
     <MESSAGE value="Lesson 6" />
     <MESSAGE value="Lesson 2 update" />
     <MESSAGE value="Lesson 7" />
@@ -609,6 +614,7 @@
     <MESSAGE value="09_Radio" />
     <MESSAGE value="Урок 10" />
     <MESSAGE value="Перепланировка уроков, много новых примеров" />
-    <option name="LAST_COMMIT_MESSAGE" value="Перепланировка уроков, много новых примеров" />
+    <MESSAGE value="Урок 06" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 06" />
   </component>
 </project>

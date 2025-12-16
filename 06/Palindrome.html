@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head> 
+  <meta charset="UTF-8">
+<title>Палиндром и случайный массив</title>
+</head>
+<body>
+<!-- Андреев Максим -->
+<!-- Академия ТОП -->
+    <script>
+        let word = prompt("Введите слово для проверки на палиндром:");
+        if (word) {
+    if (isPalindrome(word)) {
+        document.write("Слово \"" + word + "\" — палиндром");
+    } else {
+        document.write("Слово \"" + word + "\" — НЕ палиндром");
+    }
+}
+
+        function isPalindrome(str) {
+    str = str.toLowerCase(); 
+    let reversed = str.split("").reverse().join("");
+    return str === reversed;
+        }
+
+function shuffleArray(arr) {
+    let result = arr.slice(); 
+
+    for (let i = result.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+    }
+
+    return result;
+}
+
+const items = ["🍬", "🛒", "🦓", "☕", "👀", "☘"];
+
+let randomItems = shuffleArray(items);
+
+document.write("Исходный массив: " + items.join(" ") + "<br>");
+document.write("Случайный массив: " + randomItems.join(" "));
+        
+    </script>
+</body>
+</html>
