@@ -25,7 +25,7 @@ var ecmaScriptInfo = (function() {
                 return 13;
             case !String.prototype.isWellFormed:
                 return 14;
-            case !RegExp.Escape:
+            case !RegExp.escape:
                 return 15;
             default:
                 return 16;
