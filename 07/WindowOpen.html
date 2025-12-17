@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Открытие окна</title>
+</head>
+<body>
+<button onclick="openWindow()">Click в новой вкладке</button>
+<button onclick="openSelf()">Click в текущей вкладке</button>
+<script>
+   function openWindow() {
+       // в новой вкладке
+       window.open("https://microsoft.com");
+        // или в новом окне
+        // window.open("https://metanit.com", "_blank", "popup=yes");
+    }
+   function openSelf() {
+       window.open("https://microsoft.com", "_self");
+   }
+</script>
+</body>
+</html>
+</script>
+</body>
+</html>
