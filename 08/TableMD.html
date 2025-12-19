@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица с чередующимися цветами</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Person</th>
+        <th>Age</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Anna</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Anton</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>Andrey</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Alice</td>
+        <td>36</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    const rows = document.querySelectorAll("tbody tr");
+
+    rows.forEach((row, index) => {
+        if (index % 2 === 0) {
+            row.style.backgroundColor = "red";
+        } else {
+            row.style.backgroundColor = "green";
+        }
+    });
+</script>
+</body>
+</html>

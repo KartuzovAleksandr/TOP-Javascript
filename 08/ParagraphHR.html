@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вставить после каждого параграфа горизонтальную линию</title>
+</head>
+<body>
+<div id="paragraphs">
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem iure
+        voluptas obcaecati mollitia delectus? Consequatur illo natus vitae
+        aliquid incidunt a ipsa porro nemo officiis quas odio, laudantium atque
+        similique.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+        officia quae autem velit? Ad optio vel nemo quas nam unde quae id enim,
+        voluptatibus excepturi modi consectetur ab voluptate mollitia.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+        officia quae autem velit? Ad optio vel nemo quas nam unde quae id enim,
+        voluptatibus excepturi modi consectetur ab voluptate mollitia.
+    </p>
+</div>
+<script>
+    const paragraphs = document.querySelectorAll("#paragraphs p");
+    paragraphs.forEach((paragraph) => {
+        const line = document.createElement("hr");
+        paragraph.after(line);
+    });
+</script>
+</body>
+</html>
