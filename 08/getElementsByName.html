@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+<form>
+    <p>Language:</p>
+    <input type="radio" name="lang" value="Java">
+    <label>Java</label>
+    <br>
+    <input type="radio" name="lang" value="JavaScript" checked>
+    <label>JavaScript</label>
+    <br>
+    <input type="radio" name="lang" value="PHP">
+    <label>PHP</label>
+    <br>
+</form>
+<script>
+    // выбираем все элементы с атрибутом name="lang"
+    const langs = document.getElementsByName("lang");
+    for (lang of langs) {
+        console.log(lang.value);    // получаем значение атрибута value
+    }
+</script>
+</body>
+</html>

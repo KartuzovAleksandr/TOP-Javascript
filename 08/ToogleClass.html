@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+    <style>
+        .header-color {color:red;}
+        .header-font {font-family: Verdana;}
+        .header-size {font-size: 22px;}
+    </style>
+</head>
+<body>
+<h1 id="header" class="header-size">Home Page</h1>
+<script>
+    const header = document.getElementById("header");
+    header.classList.remove("header-size");     //  удаляем класс header-size
+    header.classList.add("header-font");        // добавляем класс header-font
+    header.classList.toggle("header-color");    // переключаем класс header-color
+</script>
+</body>
+</html>

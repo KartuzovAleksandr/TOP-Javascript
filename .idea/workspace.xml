@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 07">
-      <change afterPath="$PROJECT_DIR$/07/FullPopup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08/GetByTag.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08/NodeList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08/NodeType.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 08">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07/WindowOpenModal.html" beforeDir="false" afterPath="$PROJECT_DIR$/07/WindowOpenModal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08/09_RadioButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/09_RadioButton.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08/09_CheckBox_Roman.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/09_CheckBox_Roman.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08/09_Checkbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/09_Checkbox.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,11 +173,11 @@
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\09" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\09" />
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\08" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\07" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\02" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\03" />
-      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\05" />
-      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\04" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -262,7 +258,7 @@
       <workItem from="1765812942005" duration="8261000" />
       <workItem from="1765857174916" duration="53000" />
       <workItem from="1765983739284" duration="8584000" />
-      <workItem from="1766159043488" duration="3965000" />
+      <workItem from="1766159043488" duration="6233000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -632,14 +628,21 @@
       <option name="project" value="LOCAL" />
       <updated>1765994231000</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Урок 08">
+      <option name="closed" value="true" />
+      <created>1766163131311</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1766163131311</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson 2 update" />
     <MESSAGE value="Lesson 7" />
     <MESSAGE value="Lesson 8" />
     <MESSAGE value="Lesson 9" />
@@ -664,6 +667,7 @@
     <MESSAGE value="Перепланировка уроков, много новых примеров" />
     <MESSAGE value="Урок 06" />
     <MESSAGE value="Урок 07" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 07" />
+    <MESSAGE value="Урок 08" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 08" />
   </component>
 </project>
