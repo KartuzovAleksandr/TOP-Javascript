@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Окно на весь экран</title>
+</head>
+<body>
+<button onclick="openWindow()">Окно</button>
+<script>
+    function openWindow() {
+        let prop = "\"popup=yes,width=" + window.screen.width + ",height" + window.screen.height + "\"";
+        window.open("https://metanit.com", "_blank", prop);
+    }
+</script>
+</body>
+</html>

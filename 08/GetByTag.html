@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Поиск по тегу</title>
+</head>
+<body>
+<h1>Home Page</h1>
+<p><b>Первый абзац</b></p>
+<p>Второй абзац</p>
+<script>
+    let paragraphs = document.getElementsByTagName("p");
+    for (p of paragraphs) {
+        // просто так нельзя поменять html
+        // p.htmlContent = "<i>Курсив</i>";
+        // текст можно
+        // p.innerText = "Курсив";
+        console.log(p.textContent);   // выводим текст параграфа
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск по вложенным элементам</title>
+</head>
+<body>
+<div id="article">
+    <h1 id="header">Home Page</h1>
+    <p class="text">Page Text 1</p>
+    <p class="text">Page Text 2</p>
+</div>
+<div id="footer">
+    <p class="text">Footer Text</p>
+</div>
+<script>
+    // получаем элемент с id="article"
+    const article = document.getElementById("article");
+    // в этом элементе получаем все элементы с class="text"
+    const articleContent = article.getElementsByClassName("text");
+    for (p of articleContent) {
+        console.log(p);
+    }
+</script>
+</body>
+</html>

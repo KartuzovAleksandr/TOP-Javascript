@@ -30,11 +30,16 @@
 <div id="printBlock"></div>
 <script>
     function displayData() {
+        let options = document.getElementsByName("options");
+        for (let i = 0; i < options.length; i++) {
+            console.log(options[i].value);
+        }
+
         // Получаем значение из поля ввода имени
         const nameInput = document.getElementById('name');
         const enteredName = nameInput.value;
 
-        // Получаем выбранный радиокнопку
+        // Получаем выбранную радиокнопку
         const selectedOption = document.querySelector('input[name="options"]:checked');
         const selectedValue = selectedOption ? selectedOption.value : 'не выбран';
 

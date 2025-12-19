@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Типы узлов</title>
+</head>
+<body>
+<div id="article">
+    <h1 id="header">Home Page</h1>
+    <p>Первая строка</p>
+    <p>Вторая строка</p>
+</div>
+<script>
+    const article = document.getElementById("article");
+    console.log(article.nodeName);  // DIV
+    console.log(article.nodeType);  // 1
+    const header = document.getElementById("header");
+    console.log("parentNode у header= " + header.parentNode);
+    console.log("Список всех узлов родителя header");
+    for (let child of header.parentNode.children) {
+        console.log(child.innerHTML);
+    }
+    console.log("Список всех узлов article");
+    for (node of article.childNodes){
+        let type = "";
+        if (node.nodeType === 1) type = "элемент";
+        else if (node.nodeType === 2) type = "атрибут";
+        else if (node.nodeType === 3) type = "текст";
+        console.log(node.nodeName, ": ", type);
+    }
+</script>
+</body>
+</html>
