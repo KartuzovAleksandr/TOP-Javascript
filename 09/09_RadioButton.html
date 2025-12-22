@@ -40,8 +40,27 @@
         const enteredName = nameInput.value;
 
         // Получаем выбранную радиокнопку
-        const selectedOption = document.querySelector('input[name="options"]:checked');
-        const selectedValue = selectedOption ? selectedOption.value : 'не выбран';
+        // 1 способ
+        // const selectedOption = document.querySelector('input[name="options"]:checked');
+        // // если ничего не выбрано будет undefined
+        // let selectedValue = selectedOption ? selectedOption.value : 'не выбран';
+
+        // 2 способ
+        // let variants = document.getElementsByName("options");
+        // let selectedValue = 'не выбран';
+        // for (let i = 0; i < variants.length; i++) {
+        //     if (variants[i].checked) {
+        //         selectedValue = variants[i].value;
+        //     }
+        // }
+
+        // 3 способ
+        // const form = document.querySelector("form");
+        // let selectedValue = form.elements["options"].value;
+
+        // 4 способ
+        let selectedValue = Array.from(document.getElementsByName("options")).
+            find(radio => radio.checked).value;
 
         // Выводим результат
         const resultParagraph = document.getElementById('result');
