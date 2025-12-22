@@ -10,5 +10,5 @@
 8. DOM
 9. DOM. Работа с формами и событиями
 10. JQuery
-11. JSON. Работа c файлами. JQ UI. AJAX. Canvas
+11. JQ UI. JSON. Работа c файлами. AJAX. Canvas
 12. Экзамен

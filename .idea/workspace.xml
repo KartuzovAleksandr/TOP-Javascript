@@ -4,29 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 08">
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 09">
+      <change afterPath="$PROJECT_DIR$/09/09_onclickAllMethods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08/09_RadioButton.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/08/TableMD.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/TableMultipleColors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_CheckBox.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_CheckBox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_Context.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Context.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_Even.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Even.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_HelloJQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_HelloJQuery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_LI.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_LI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_RadioMargarita.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_RadioMargarita.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_Select_Нещетин.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Select_Нещетин.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_Style.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Style.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_Table.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_UL-CSS.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_UL-CSS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_Ul-find.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Ul-find.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/10_Ul.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Ul.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/10/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/11_Button_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_Button_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/11_DatePicker_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_DatePicker_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/11_Hello_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_Hello_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/11_Icon_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_Icon_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/11_Progress_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_Progress_JQ-UI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10/11_Slider_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_Slider_JQ-UI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,15 +259,8 @@
       <workItem from="1765857174916" duration="53000" />
       <workItem from="1765983739284" duration="8584000" />
       <workItem from="1766159043488" duration="8148000" />
-      <workItem from="1766384327680" duration="873000" />
-    </task>
-    <task id="LOCAL-00001" summary="Version ES">
-      <option name="closed" value="true" />
-      <created>1738053068691</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1738053068691</updated>
+      <workItem from="1766384327680" duration="967000" />
+      <workItem from="1766418500472" duration="2106000" />
     </task>
     <task id="LOCAL-00002" summary="Version ES">
       <option name="closed" value="true" />
@@ -672,14 +646,21 @@
       <option name="project" value="LOCAL" />
       <updated>1766168396263</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Урок 09">
+      <option name="closed" value="true" />
+      <created>1766390953280</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1766390953281</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson 7" />
     <MESSAGE value="Lesson 8" />
     <MESSAGE value="Lesson 9" />
     <MESSAGE value="Lesson 10" />
@@ -704,6 +685,7 @@
     <MESSAGE value="Урок 06" />
     <MESSAGE value="Урок 07" />
     <MESSAGE value="Урок 08" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 08" />
+    <MESSAGE value="Урок 09" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 09" />
   </component>
 </project>

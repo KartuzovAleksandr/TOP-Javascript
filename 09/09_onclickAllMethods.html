@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Все способы обработки нажатия кнопки</title>
+</head>
+<body>
+<!-- 1 способ -->
+<button id="btn" onclick="onClick()">Нажми меня</button>
+<button onclick="console.log('Обработчик прямо в HTML')">Нажми другую</button>
+<script>
+    function onClick() {
+        console.log("Кнопка нажата через атрибут onclick");
+    }
+    <!-- 2 способ -->
+    function OnClick() {
+        console.log("Кнопка нажата через функцию кнопки");
+    }
+    const btn = document.getElementById("btn");
+    btn.onclick = OnClick;
+    <!-- 3 способ -->
+    btn.onclick = () => { console.log("Кнопка нажата через лямбду"); };
+    <!-- 4 способ -->
+    btn.onclick = function() {
+        console.log("Кнопка нажата через function");
+    };
+    <!-- 5 способ -->
+    function onclick() {
+        console.log("Кнопка нажата через слушатель событий");
+    }
+    document.getElementById("btn").addEventListener("click", onclick);
+    <!-- 6 способ -->
+    const buttonHandler = {
+        handleEvent(event) {
+            console.log("Кнопка нажата через handleEvent");
+        }
+    }
+    document.getElementById("btn").addEventListener("click", buttonHandler);
+</script>
+</body>
+</html>
