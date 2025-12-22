@@ -28,7 +28,13 @@
     function onclick() {
         console.log("Кнопка нажата через слушатель событий");
     }
+    // удалить onclick
+    // btn.onclick = function() {};
+    // или еще проще
+    btn.onclick = null;
     document.getElementById("btn").addEventListener("click", onclick);
+    // удаление обработчика
+    document.getElementById("btn").removeEventListener("click", onclick);
     <!-- 6 способ -->
     const buttonHandler = {
         handleEvent(event) {
