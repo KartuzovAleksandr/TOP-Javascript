@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+<div id="article">
+    <h1 id="header">Home Page</h1>
+    <p>Page Text</p>
+</div>
+<script>
+    // выбираем все элемент c id="header"
+    const header = document.getElementById("header");
+    // получаем родительский элемента
+    const headerParent = header?.parentElement;
+    // можно так
+    // const headerParent = header?.parentNode;
+    console.log(headerParent);    // выводим родительский элемент на консоль
+</script>
+</body>
+</html>

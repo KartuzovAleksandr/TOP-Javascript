@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    Color Change Rectangle
+
+    #rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    }
+
+</head>
+<body>
+<script>
+
+let rectangle = document.getElementById('rectangle');
+let originalColor = 'blue';
+let newColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+
+function changeColor() {
+rectangle.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);//newColor;
+}
+
+function resetColor() {
+rectangle.style.backgroundColor = originalColor;
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+<form name="myForm">
+    <input type="text" name="key" placeholder="Введите ФИО" />
+    <input type="button" name="print" value="Submit" />
+    <button type="reset" name="reset">Очистить</button>
+    <input type="checkbox" name="enabled1" ><span>солнце</span>
+    <input type="checkbox" name="enabled2" ><span>дождь</span>
+    <input type="checkbox" name="enabled3" ><span>снег</span>
+    <input type="checkbox" name="enabled4" ><span>песок</span>
+    <input type="checkbox" name="enabled5" checked><span>гроза</span>
+</form>
+
+<div id="printBlock"></div>
+<script>
+
+const en1 = document.myForm.enabled1;
+const en2 = document.myForm.enabled2;
+const en3 = document.myForm.enabled3;
+const en4 = document.myForm.enabled4;
+const en5 = document.myForm.enabled5;
+var temp="";
+
+const printBox = document.myForm.print;
+const keyBox = document.myForm.key;
+const resetBox = document.myForm.reset;
+// обработчик изменения текста
+function onchange(){
+    // получаем элемент printBlock
+    const printBlock = document.getElementById("printBlock");
+
+    // установка значения
+    onreset();
+    temp = keyBox.value + " выбирает: ";
+        if (en1.checked) temp += "солнце; ";
+        if (en2.checked) temp += "дождь; ";
+        if (en3.checked) temp += "снег; ";
+        if (en4.checked) temp += "песок; ";
+        if (en5.checked) temp += "гроза;";
+    printBlock.textContent = temp;
+}
+
+function onreset(){
+    printBlock.textContent = "";
+}
+
+printBox.addEventListener("click", onchange);
+resetBox.addEventListener("click", onreset);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="myForm">
+    <input type="checkbox" name="languages" value="Java" /><span>Java</span>
+    <p>
+    <input type="checkbox" name="languages" value="C#" /><span>C#</span>
+    <p>
+    <input type="checkbox" name="languages" value="C++" /><span>C++</span>
+    <input type="submit" name="submit" onsubmit "onclick()"/>
+</form>
+<div id="printBlock"></div>
+<script>
+    const myForm = document.myForm;
+    function onclick() {
+        console.log( "вошел");
+        for (let i = 0; i < myForm.languages.length; i++) {
+            if (myForm.languages[i].checked)
+                console.log(myForm.languages[i].value);
+        }
+    }
+</script>
+</body>
+</html>

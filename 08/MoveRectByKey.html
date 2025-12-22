@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+    <style>
+        #blueRect{
+            width:100px;
+            height:100px;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+<div id="blueRect"></div>
+
+<script>
+    const blueRect = document.getElementById("blueRect");
+    // получаем стиль для blueRect
+    const blueRectStyle = window.getComputedStyle(blueRect);
+    // устанавливаем обработчик нажатия клавиши
+    window.addEventListener("keydown", moveRect);
+
+    function moveRect(e){
+        const left = parseInt(blueRectStyle.marginLeft); //смещение от левого края
+        const top = parseInt(blueRectStyle.marginTop);  // смещения от левой границы
+
+        switch(e.key){
+
+            case "ArrowLeft":  // если нажата клавиша влево
+                if(left>0)
+                    blueRect.style.marginLeft = left - 10 + "px";
+                break;
+            case "ArrowUp":   // если нажата клавиша вверх
+                if(top>0)
+                    blueRect.style.marginTop = top - 10 + "px";
+                break;
+            case "ArrowRight":   // если нажата клавиша вправо
+                if(left < document.documentElement.clientWidth - 100)
+                    blueRect.style.marginLeft = left + 10 + "px";
+                break;
+            case "ArrowDown":   // если нажата клавиша вниз
+                if(top < document.documentElement.clientHeight - 100)
+                    blueRect.style.marginTop = top + 10 + "px";
+                break;
+        }
+    }
+</script>
+</body>
+</html>

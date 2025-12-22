@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 08">
-      <change afterPath="$PROJECT_DIR$/08/ParagraphHR.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08/TableMD.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08/09_RadioButton.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08/TableMD.html" beforeDir="false" afterPath="$PROJECT_DIR$/08/TableMultipleColors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_CheckBox.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_CheckBox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_Context.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Context.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_Even.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Even.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_HelloJQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_HelloJQuery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_LI.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_LI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_RadioMargarita.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_RadioMargarita.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_Select_Нещетин.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Select_Нещетин.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_Style.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Style.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_Table.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_UL-CSS.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_UL-CSS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_Ul-find.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Ul-find.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/10_Ul.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Ul.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/10/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/11_Button_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_Button_JQ-UI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/11_DatePicker_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_DatePicker_JQ-UI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/11_Hello_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_Hello_JQ-UI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/11_Icon_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_Icon_JQ-UI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/11_Progress_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_Progress_JQ-UI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/11_Slider_JQ-UI.html" beforeDir="false" afterPath="$PROJECT_DIR$/11/11_Slider_JQ-UI.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,10 +193,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\09" />
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\10" />
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\11" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\08" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\07" />
-      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\02" />
-      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\03" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -258,7 +277,8 @@
       <workItem from="1765812942005" duration="8261000" />
       <workItem from="1765857174916" duration="53000" />
       <workItem from="1765983739284" duration="8584000" />
-      <workItem from="1766159043488" duration="7993000" />
+      <workItem from="1766159043488" duration="8148000" />
+      <workItem from="1766384327680" duration="873000" />
     </task>
     <task id="LOCAL-00001" summary="Version ES">
       <option name="closed" value="true" />
@@ -644,7 +664,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766165490728</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Урок 08">
+      <option name="closed" value="true" />
+      <created>1766168396263</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1766168396263</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
