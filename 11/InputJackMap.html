@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Коллекция Map - словарь по частоте использования слов</title>
+</head>
+<body>
+
+<h2>Загрузите файл</h2>
+<input type="file" id="fileInput" accept=".txt">
+<p id="fileName"></p>
+<!-- для результата -->
+<div id="result"></div>
+
+<script>
+    // Функция обработки текста
+    function processText(s) {
+        const delims = /[ ,.!?\n]+/;
+        const words = s.split(delims).filter(Boolean);  // убираем пустые строки
+        const m = new Map();
+
+        for (const w of words) {
+            const count = m.get(w) || 0;
+            m.set(w, count + 1);
+        }
+
+        // Сортировка по частоте (по убыванию)
+        const ms = new Map([...m.entries()].sort((a, b) => b[1] - a[1]));
+        console.log('Map по частоте слов:', ms);
+
+        // формируем результат в таблицу
+        let tableHtml = `
+        <h2>Словарь по частоте слов</h2>
+        <table border="1" style="border-collapse: collapse; width: 100%;">
+            <thead>
+                <tr>
+                    <th style="padding: 8px; text-align: left;">Слово</th>
+                    <th style="padding: 8px; text-align: right;">Частота</th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
+        for (const [word, count] of ms) {
+            tableHtml += `
+            <tr>
+                <td style="padding: 6px 8px; border: 1px solid #ccc;">${word}</td>
+                <td style="padding: 6px 8px; border: 1px solid #ccc; text-align: right;">${count}</td>
+            </tr>
+        `;
+        }
+        tableHtml += `</tbody></table>`;
+        // выводим
+        document.getElementById('result').innerHTML = tableHtml;
+    }
+
+    // Обработчик выбора файла
+    function handleFileSelect(event) {
+        const file = event.target.files[0];
+        if (!file) {
+            document.getElementById('fileName').textContent = '';
+            return;
+        }
+
+        document.getElementById('fileName').textContent = `Загружен файл: ${file.name}`;
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const content = e.target.result;  // строка из файла
+            processText(content);
+        };
+        reader.onerror = function() {
+            console.error('Ошибка чтения файла');
+            document.getElementById('fileName').textContent = 'Ошибка чтения файла';
+        };
+        reader.readAsText(file, 'UTF-8');
+    }
+    // Привязываем обработчик к input
+    document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+</script>
+</body>
+</html>

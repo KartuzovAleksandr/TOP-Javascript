@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 09">
-      <change afterPath="$PROJECT_DIR$/11/FetchJackMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11/InputJackMap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/09_RadioButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/09_RadioButton.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,15 +262,7 @@
       <workItem from="1766418500472" duration="7130000" />
       <workItem from="1766427672545" duration="191000" />
       <workItem from="1766553443953" duration="1494000" />
-      <workItem from="1766557753248" duration="1051000" />
-    </task>
-    <task id="LOCAL-00005" summary="Lesson 2">
-      <option name="closed" value="true" />
-      <created>1738074528394</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1738074528394</updated>
+      <workItem from="1766557753248" duration="3188000" />
     </task>
     <task id="LOCAL-00006" summary="Lesson 2">
       <option name="closed" value="true" />
@@ -657,7 +648,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766425791560</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Урок 09">
+      <option name="closed" value="true" />
+      <created>1766558930673</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1766558930673</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
