@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка из внешнего файла и частота использования слов</title>
+</head>
+<body>
+<script>
+    async function loadText() {
+        try {
+            const response = await fetch("../TXT/Jack.txt");
+            if (!response.ok) {
+                throw new Error(`Ошибка загрузки: ${response.status}`);
+            }
+            const s = await response.text();  // s — строка из файла
+            processText(s);
+        } catch (err) {
+            console.error('Не удалось загрузить файл:', err);
+        }
+    }
+
+    function processText(s) {
+        const delims = /[ ,.!?\n]+/;
+        const words = s.split(delims).filter(w => w.length > 0);  // отфильтруем пустые
+        // или проще: Boolean("") даёт false, а Boolean("слово") даёт true.
+        // const words = s.split(delims).filter(Boolean);
+        // самый простой вариант, но со знаками препинания
+        // const words = s.match(/\S+/g) || [];  // \S+ — один и более не пробельных символов
+        const m = new Map();
+        // заполняем словарь словами с подсчетом частоты
+        for (const w of words) {
+            const count = m.get(w) || 0;
+            m.set(w, count + 1);
+        }
+        // Сортировка по частоте (по убыванию)
+        const ms = new Map([...m.entries()].sort((a, b) => b[1] - a[1]));
+        console.log(ms);
+    }
+
+    // Запускаем загрузку при загрузке страницы
+    loadText();
+</script>
+</body>
+</html>

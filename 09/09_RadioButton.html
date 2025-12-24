@@ -55,12 +55,12 @@
         // }
 
         // 3 способ
-        // const form = document.querySelector("form");
-        // let selectedValue = form.elements["options"].value;
+        const selectedOption = document.myForm.options.value;
+        let selectedValue = selectedOption ? selectedOption : 'не выбран';
 
         // 4 способ
-        let selectedValue = Array.from(document.getElementsByName("options")).
-            find(radio => radio.checked).value;
+        // let selectedValue = Array.from(document.getElementsByName("options")).
+        //     find(radio => radio.checked).value;
 
         // Выводим результат
         const resultParagraph = document.getElementById('result');
