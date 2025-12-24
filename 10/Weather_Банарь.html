@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f5f7fa;
+            padding: 20px;
+            margin: 0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .form-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-table td {
+            padding: 25px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+            background-color: #f8f9fa;
+        }
+        .form-table th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+            font-size: 18px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 5px;
+        }
+        .radio-item,
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+        }
+        .radio-item input,
+        .checkbox-item input {
+            margin-right: 8px;
+            width: auto;
+        }
+        #result {
+            padding: 20px;
+            background-color: #e8f4f8;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 14px 32px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+            background-color: green;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Форма погоды</h1>
+    <table class="form-table">
+        <thead>
+        <tr>
+            <th colspan="3">Weather</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label for="name">ФИО</label>
+                    <input type="text" id="name" placeholder="Введите ФИО" />
+                </div>
+
+                <div class="form-group">
+                    <label>Пол</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input
+                                    type="radio"
+                                    id="gender-man"
+                                    name="genderType"
+                                    value="man"
+                                    checked
+                            />
+                            <label for="gender-man" style="font-weight: normal"
+                            >Мужской</label
+                            >
+                        </div>
+                        <div class="radio-item">
+                            <input
+                                    type="radio"
+                                    id="gender-woman"
+                                    name="genderType"
+                                    value="woman"
+                            />
+                            <label for="gender-woman" style="font-weight: normal"
+                            >Женский</label
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="city">Город</label>
+                    <select id="city">
+                        <option value="moscow">Москва</option>
+                        <option value="spb">Санкт-Петербург</option>
+                        <option value="kazan">Казань</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Погода</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="weather-sunny" value="sunny" />
+                            <label for="weather-sunny" style="font-weight: normal"
+                            >Солнечно</label
+                            >
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="weather-rain" value="rain" />
+                            <label for="weather-rain" style="font-weight: normal"
+                            >Дождь</label
+                            >
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="weather-snow" value="snow" />
+                            <label for="weather-snow" style="font-weight: normal"
+                            >Снег</label
+                            >
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <button onclick="getResult()">Получить результат</button>
+</div>
+
+<div>
+    <div id="result"></div>
+</div>
+
+<script>
+    function getResult() {
+        let name = $("#name").val();
+
+        let cityText = $("#city option:selected").text();
+
+        let gender = $("input[name='genderType']:checked").val();
+        console.log(gender);
+        let genderText = gender === "man" ? "мужского пола" : "женского пола";
+
+        let weatherTexts = [];
+        $("input[type='checkbox']:checked").each(function () {
+            let labelText = $(this).next("label").text();
+            weatherTexts.push(labelText);
+        });
+
+        let res = document.getElementById("result");
+
+        if (name) {
+            let weatherResult = "";
+            if (weatherTexts.length > 0) {
+                weatherResult = `погода: ${weatherTexts.join(", ")}`;
+            } else {
+                weatherResult = "погода не выбрана";
+            }
+
+            res.innerHTML = `
+        <h3>Результат:</h3>
+        <p>У пользователя <strong>${name}</strong>, ${genderText},
+        который живет в городе <strong>${
+                cityText || "не выбранном городе"
+            }</strong>,
+        ${weatherResult}.</p>
+      `;
+        } else {
+            res.innerHTML = '<p style="color: red;">Пожалуйста, введите имя</p>';
+        }
+    }
+</script>
+</body>
+</html>
+
