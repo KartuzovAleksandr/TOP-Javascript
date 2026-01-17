@@ -133,11 +133,11 @@
                     return;
                 }
                 let formData = $('#employeeForm').serializeArray();//сериализуем введенные данные в массив
-                let jsonObject = {};ы
+                let jsonObject = {};
                 $.each(formData, function() {//заполняем json объект данными с массива
                     jsonObject[this.name] = this.value;
                 });
-                jsonObject["passport"] = jsonObject["passport_series"] + " " + jsonObject["passport_number"];//соединяем пасспортные данные
+                jsonObject["passport"] = jsonObject["passport_series"] + " " + jsonObject["passport_number"];//соединяем паспортные данные
                 let jsonData = JSON.stringify(jsonObject, null, 2);//преобразуем json в json строку
                 let blob = new Blob([jsonData], { type: 'application/json' })//создаем json файл
                 let link = document.createElement('a');//создаем <a> ссылку для скачивания
