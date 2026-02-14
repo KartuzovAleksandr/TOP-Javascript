@@ -10,7 +10,7 @@
         // окно ввода
         const name = prompt("Ваше имя");
         // раньше было нормально - сейчас deprecated
-        // document.write("<h2>Hello, " + name + "</h2>");
+        document.write("<h2>Hello, " + name + "</h2>");
         const h2 = document.createElement("h2");
         h2.textContent = `Hello, ${name}`;
         document.body.appendChild(h2);
