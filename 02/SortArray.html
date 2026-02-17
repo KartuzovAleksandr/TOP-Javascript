@@ -23,10 +23,10 @@
     let N = parseInt(n);
     let a = Array.from({ length: N }).map(_ => Math.round(Math.random() * max));
 
-    document.write([1, 2, 3, 4, 5].sort().max());
-    // console.log(a);
-    // console.log(a.join(", "));
-    // document.write(a.join("<br>"));
+   // document.write([1, 2, 3, 4, 5].sort().max());
+    console.log(a);
+    console.log(a.join(", "));
+    document.write(a.join("<br>"));
     document.write(a.sort((x, y) => y - x));
     document.write(`Максимум = ${Math.min(...a)}`);
 </script>
