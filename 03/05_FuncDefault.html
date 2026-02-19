@@ -6,17 +6,19 @@
 </head>
 <body>
   <script>
-    function sum(x, y){
-      if(y === undefined) y = 5;
+    function sum(x, y) {
+      // if(y === undefined) y = 5;
       if(x === undefined) x = 8;
       const z = x + y;
       console.log(z);
     }
+    // undefined + число = NaN
     sum();          // 13
     sum(6);         // 11
     sum(6, 4)       // 10
 
-    function sumd(x = 8, y = 5){
+    // установка значений по умолчанию
+    function sumd(x = 8, y = 5) {
       const z = x + y;
       console.log(z);
     }
@@ -24,7 +26,7 @@
     sumd(6);     // 11
     sumd(6, 4)   // 10
 
-    function sume(x = 8, y = 10 + x){
+    function sume(x = 8, y = 10 + x) {
       const z = x + y;
       console.log(z);
     }

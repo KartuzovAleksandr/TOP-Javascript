@@ -7,6 +7,8 @@
 <body>
 <script>
     function avg(a, b, c)
+    // тот же результат - arguments останется
+    // function avg()
     // function avg(...a)
     {
         let result = 0;
@@ -26,12 +28,12 @@
         const z = x + y;
         console.log(z);
     }
-    sum();          // 13
-    sum(6);         // 11
-    sum(6, 4)       // 10
-    avg(1, 2, 3, 4);
-    avg(6, 4);
-    avg();
+    // sum();          // 13
+    // sum(6);         // 11
+    // sum(6, 4)       // 10
+    avg(1, 2, 3, 4); // 10 / 4 = 2.5
+    avg(6, 4); // 10 / 2 = 5
+    avg(); // NaN
 </script>
 </body>
 </html>
