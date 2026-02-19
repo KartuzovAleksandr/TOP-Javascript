@@ -35,11 +35,3 @@ function checkValidData(number) {
   }
   return true;
 }
-
-const userInput = prompt("Введите число:");
-if (checkValidData(userInput)) {
-  const number = parseInt(userInput);
-  const mass = fibo(number);
-  document.write(`Первые ${number} чисел Фибоначчи: ${mass.join(", ")}`);
-  document.write(`<br>Среднее арифметическое: ${mass.reduce((a, b) => a + b) / mass.length}`);
-}

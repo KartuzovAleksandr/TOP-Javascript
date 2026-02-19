@@ -7,7 +7,7 @@
 <body>
 <script>
   function SortEvenOdd(arr) {
-    // четные чмсла выделяем, сортируем по возрастанию
+    // четные числа выделяем, сортируем по возрастанию
     let even = arr.filter(num => num % 2 === 0).sort();
     // нечетные чмсла выделяем, сортируем по убыванию
     let odd = arr.filter(num => num % 2 !== 0).sort((a, b) => b - a);

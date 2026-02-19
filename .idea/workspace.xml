@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 2">
-      <change afterPath="$PROJECT_DIR$/03/FuncParam.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/05_FuncDefault.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/05_FuncDefault.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/05_FuncParameter.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/05_FuncParameter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/05_FuncVariable.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/05_FuncVariable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03/02_FiboRoman.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/02_FiboRoman.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03/03_BubbleSort.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/03_BubbleSort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03/03_SortEvenOdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_SortEvenOdd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03/03_SortEvenOdd_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_SortEvenOdd_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03/03_UniqueElements.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_UniqueElements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03/03_UniqueElements_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_UniqueElements_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03/03_UniqueMorozov.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_UniqueMorozov.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03/Fibo.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/Fibo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03/fibo.js" beforeDir="false" afterPath="$PROJECT_DIR$/03/fibo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,11 +183,11 @@
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\09" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\06" />
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\02" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\01" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\09" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\10" />
-      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\11" />
-      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\08" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -285,15 +290,7 @@
       <workItem from="1771255836450" duration="5000" />
       <workItem from="1771341297868" duration="3743000" />
       <workItem from="1771350856123" duration="3000" />
-      <workItem from="1771513419795" duration="4064000" />
-    </task>
-    <task id="LOCAL-00012" summary="Lesson 5">
-      <option name="closed" value="true" />
-      <created>1738831343941</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1738831343941</updated>
+      <workItem from="1771513419795" duration="4776000" />
     </task>
     <task id="LOCAL-00013" summary="Lesson 6">
       <option name="closed" value="true" />
@@ -679,14 +676,21 @@
       <option name="project" value="LOCAL" />
       <updated>1771350401586</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Урок 3">
+      <option name="closed" value="true" />
+      <created>1771519511966</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1771519511966</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson 10" />
     <MESSAGE value="Lesson 11" />
     <MESSAGE value="Lesson 12" />
     <MESSAGE value="ES version" />
@@ -711,6 +715,7 @@
     <MESSAGE value="Урок 10" />
     <MESSAGE value="Урок 1" />
     <MESSAGE value="Урок 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 2" />
+    <MESSAGE value="Урок 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 3" />
   </component>
 </project>
