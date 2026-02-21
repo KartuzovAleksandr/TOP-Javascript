@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Области видимости</title>
+</head>
+<body>
+<script>
+  var x = 10;
+  let y = 5;
+  const z = 20;
+  w = 1;
+  function show() {
+    var d = x + y + z + w;
+    let e = x + y + z + w;
+    console.log(d);
+    console.log(e);
+  }
+  // нельзя
+  // console.log(d);
+  // console.log(e);
+  show();
+
+  console.log("до функции:");
+  console.log(`w = ${w}`); // 1
+  // скрытие var
+  function print(){
+      var x = 100;
+      const z = 200;
+      w = 1000;
+      p = 555;
+      console.log("внутри функции:");
+      console.log(`w = ${w}`); // 1000
+      console.log(`z = ${z}`); // 200
+      console.log(`x = ${x}`); // 100
+  }
+  print();
+  console.log("после функции:");
+  // если функция не вызовется, то будет ошибка
+  console.log(`p = ${p}`); // 555
+  console.log(`w = ${w}`); // 1000
+  console.log(`x = ${x}`); // 10
+  console.log(`z = ${z}`); // 20
+
+  // условная конструкция
+  // var будет иметь значение при условии = истина
+  if (x < 10) {
+      var b = 6;
+      let a = 5;
+      c = 55;
+  }
+  // нельзя
+  // console.log(`a = ${a}`); // is not defined - ошибка и при false и при true
+  console.log(`c = ${c}`); // с = 55 при true, undefined при false
+  console.log("b =", b);  // b = 6 при true, undefined при false
+
+  // цикл
+  for (let i = 0; i < 5; i++){
+      var c = 7;
+  }
+  // нельзя
+  // console.log("i =", i); // ошибка
+  console.log("c =", c);  // c = 7
+</script>
+</body>
+</html>

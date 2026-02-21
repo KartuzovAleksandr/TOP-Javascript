@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 3">
+      <change afterPath="$PROJECT_DIR$/04/Scopes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/02_FiboRoman.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/02_FiboRoman.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/03_BubbleSort.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/03_BubbleSort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/03_SortEvenOdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_SortEvenOdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/03_SortEvenOdd_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_SortEvenOdd_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/03_UniqueElements.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_UniqueElements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/03_UniqueElements_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_UniqueElements_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/03_UniqueMorozov.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_UniqueMorozov.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/Fibo.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/Fibo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/fibo.js" beforeDir="false" afterPath="$PROJECT_DIR$/03/fibo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/05_Scopes.html" beforeDir="false" afterPath="$PROJECT_DIR$/04/05_Scopes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,11 +176,11 @@
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\09" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\04" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\06" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\02" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\01" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\09" />
-      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\10" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -290,15 +283,9 @@
       <workItem from="1771255836450" duration="5000" />
       <workItem from="1771341297868" duration="3743000" />
       <workItem from="1771350856123" duration="3000" />
-      <workItem from="1771513419795" duration="4776000" />
-    </task>
-    <task id="LOCAL-00013" summary="Lesson 6">
-      <option name="closed" value="true" />
-      <created>1738849654278</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1738849654278</updated>
+      <workItem from="1771513419795" duration="6327000" />
+      <workItem from="1771562995350" duration="4000" />
+      <workItem from="1771687806457" duration="3568000" />
     </task>
     <task id="LOCAL-00014" summary="Lesson 2 update">
       <option name="closed" value="true" />
@@ -684,7 +671,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771519511966</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Урок 3">
+      <option name="closed" value="true" />
+      <created>1771520214880</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1771520214880</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
