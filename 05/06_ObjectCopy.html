@@ -7,13 +7,16 @@
 <body>
 <script>
     const tom = { name: "Tom", age: 37, company: "Google"};
+    // создаем новый объект
     const bob = { ...tom }
-    let alice = new Object(bob);
-    alice.name = "Alice";
-    bob.name = "Bob";
+    // копия, меняем имя, но оно не меняется
+    let alice = new Object(bob)
+    alice.name = "Alice"
+    bob.name = "Bob"
     console.log(tom);   // {name: "Tom", age: 37, company: "Google"}
     console.log(bob);   // {name: "Bob", age: 37, company: "Google"}
     console.log(alice);   // {name: "Bob", age: 37, company: "Google"}
+    // создаем новый объект
     alice = Object.assign({}, tom);
     alice.name = "Alice";
     console.log(alice);   // {name: "Alice", age: 37, company: "Google"}
