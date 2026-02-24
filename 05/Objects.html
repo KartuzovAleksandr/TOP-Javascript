@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Объекты</title>
@@ -11,7 +11,11 @@
     // 1
     user.name = "Вася";
     user.age = 15;
-    document.write(`${user.name}<br>${user.age}`);
+    console.log(user); // Object раскрывается на 2 строчки { name: 'Вася', age: 15 }
+    // нельзя
+    // console.log(...user);
+    document.write(user); // [object Object]
+    document.write(`${user.name}<br>${user.age}`); // Вася на другой строке 15
     // 2
     user = {
         name: "Tom",
@@ -28,13 +32,14 @@
     user.show();
     user.go(10);
     // 3
-    const name = "Bob";
+    let name = "Bob";
     const age = 34;
     user = { name, age };
     document.write(`<br>${user.name}<br>${user.age}`);
     console.log(user);
+    console.log(user.company); // undefined
     // ошибка
-    // user.display();
+    // user.display(); // Uncaught TypeError: user.display is not a function
     // 4
     user.display = function() {
         document.write(`<br>${user.name}`);
@@ -62,6 +67,7 @@
             console.log(user.age);
         }
     };
+    // user.full name = "Bob"; // wait semicolon
     console.log(user["full name"]);
     user["display info"]();
 
@@ -76,6 +82,11 @@
     }
     let person = createObject("name", "Tom");
     person.print();     // name: Tom
+    // работает
+    let p = createObject(25, "Tom");
+    p.print();
+    let ps = createObject("Full name", "Василий Павлович");
+    ps.print();
     document.write(`<br>${person.name}`);
     const book = createObject("title", "JavaScript Reference");
     book.print();   // title: JavaScript Reference
@@ -85,9 +96,9 @@
     delete person.name; // удаляем свойство
     // альтернативный вариант
     // delete person["name"];
-    document.write(`<br>${person.name}`);
+    document.write(`<br>${person.name}`); // undefined
     delete person.print; // удаляем метод
-    person.print(); // Uncaught TypeError: person.print is not a function
+    // person.print(); // Uncaught TypeError: person.print is not a function
 
     // 6
     const personData = [ ["name", "Tom"], ["age", 37] ];
