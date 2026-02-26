@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 5">
+      <change afterPath="$PROJECT_DIR$/06/Temporal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/06_Prototype_Морозов.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/06_Prototype_Морозов.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06/05_ChangeParameters.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/05_ChangeParameters.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,11 +176,11 @@
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\09" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\02" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\05" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\03" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\06" />
       <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\04" />
-      <recent name="C:\Users\Sanya\WebstormProjects\TOP-Javascript\02" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -286,15 +287,8 @@
       <workItem from="1771562995350" duration="4000" />
       <workItem from="1771687806457" duration="5399000" />
       <workItem from="1771947671950" duration="6042000" />
-      <workItem from="1771954456394" duration="500000" />
-    </task>
-    <task id="LOCAL-00018" summary="Lesson 9">
-      <option name="closed" value="true" />
-      <created>1739514880375</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1739514880375</updated>
+      <workItem from="1771954456394" duration="520000" />
+      <workItem from="1772122616309" duration="5748000" />
     </task>
     <task id="LOCAL-00019" summary="Lesson 10">
       <option name="closed" value="true" />
@@ -680,7 +674,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771953889921</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Урок 5">
+      <option name="closed" value="true" />
+      <created>1771954967733</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1771954967733</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
