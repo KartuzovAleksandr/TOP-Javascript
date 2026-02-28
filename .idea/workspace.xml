@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 6">
-      <change afterPath="$PROJECT_DIR$/07/ThrowErrors.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -290,15 +289,7 @@
       <workItem from="1772122616309" duration="5777000" />
       <workItem from="1772206701620" duration="319000" />
       <workItem from="1772207239242" duration="48000" />
-      <workItem from="1772291007354" duration="1578000" />
-    </task>
-    <task id="LOCAL-00020" summary="Lesson 11">
-      <option name="closed" value="true" />
-      <created>1739830535225</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1739830535225</updated>
+      <workItem from="1772291007354" duration="2853000" />
     </task>
     <task id="LOCAL-00021" summary="Lesson 12">
       <option name="closed" value="true" />
@@ -684,14 +675,21 @@
       <option name="project" value="LOCAL" />
       <updated>1772129239361</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Урок 7">
+      <option name="closed" value="true" />
+      <created>1772294124921</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1772294124921</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Converter" />
     <MESSAGE value="Lesson03-04" />
     <MESSAGE value="DateDiff - форматирование даты по-русски" />
     <MESSAGE value="FuncSpread" />
@@ -716,6 +714,7 @@
     <MESSAGE value="Урок 4" />
     <MESSAGE value="Урок 5" />
     <MESSAGE value="Урок 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 6" />
+    <MESSAGE value="Урок 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 7" />
   </component>
 </project>
