@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генерация и обработка нескольких типов ошибок</title>
+</head>
+<body>
+<script>
+  class Person {
+    constructor(pName, pAge) {
+      const age = parseInt(pAge);
+      if (isNaN(age)) throw new TypeError("Возраст должен представлять число");
+      if (age < 0 || age > 120) throw new RangeError("Возраст должен быть больше 0 и меньше 120");
+      this.name = pName;
+      this.age = age;
+    }
+    print() {
+      console.log(`Name: ${this.name}  Age: ${this.age}`);
+    }
+  }
+
+  try {
+    const tom = new Person("Tom", -45); // RangeError
+    const bob = new Person("Bob", "bla bla"); // TypeError
+  }
+  catch (error) {
+    if (error instanceof TypeError) {
+      console.log("Некорректный тип данных.");
+    } else if (error instanceof RangeError) {
+      console.log("Недопустимое значение");
+    }
+    console.log(error.message);
+  }
+</script>
+</body>
+</html>

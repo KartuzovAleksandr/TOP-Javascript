@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 5">
-      <change afterPath="$PROJECT_DIR$/06/Temporal.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 6">
+      <change afterPath="$PROJECT_DIR$/07/ThrowErrors.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/05_ChangeParameters.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/05_ChangeParameters.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,15 +287,10 @@
       <workItem from="1771687806457" duration="5399000" />
       <workItem from="1771947671950" duration="6042000" />
       <workItem from="1771954456394" duration="520000" />
-      <workItem from="1772122616309" duration="5748000" />
-    </task>
-    <task id="LOCAL-00019" summary="Lesson 10">
-      <option name="closed" value="true" />
-      <created>1739827312858</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1739827312858</updated>
+      <workItem from="1772122616309" duration="5777000" />
+      <workItem from="1772206701620" duration="319000" />
+      <workItem from="1772207239242" duration="48000" />
+      <workItem from="1772291007354" duration="1578000" />
     </task>
     <task id="LOCAL-00020" summary="Lesson 11">
       <option name="closed" value="true" />
@@ -682,14 +676,21 @@
       <option name="project" value="LOCAL" />
       <updated>1771954967733</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Урок 6">
+      <option name="closed" value="true" />
+      <created>1772129239361</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1772129239361</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ES version" />
     <MESSAGE value="Converter" />
     <MESSAGE value="Lesson03-04" />
     <MESSAGE value="DateDiff - форматирование даты по-русски" />
@@ -714,6 +715,7 @@
     <MESSAGE value="Урок 3" />
     <MESSAGE value="Урок 4" />
     <MESSAGE value="Урок 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 5" />
+    <MESSAGE value="Урок 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 6" />
   </component>
 </project>
