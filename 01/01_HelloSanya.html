@@ -12,7 +12,10 @@
         // раньше было нормально - сейчас deprecated
         document.write("<h2>Hello, " + name + "</h2>");
         const h2 = document.createElement("h2");
-        h2.textContent = `Hello, ${name}`;
+        // любой из 3 подходов
+        // h2.textContent = `Hello, ${name}`;
+        h2.innerText = `Hello, ${name}`;
+        // h2.innerHTML = `Hello, ${name}`;
         document.body.appendChild(h2);
         // информационное окно
         alert("Hello, " + name);
