@@ -13,7 +13,7 @@
     document.addEventListener("payment", ()=>console.log("Payment succeeded!"));
 
     // по нажатию на кнопку выполняем метод pay
-    button.addEventListener("click", ()=>myAcc.pay(50));
+    button.addEventListener("click", () => myAcc.pay(50));
     // конструктор объекта счета
     function Account(money) {
         _money = money;

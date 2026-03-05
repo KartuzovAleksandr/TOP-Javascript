@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 8">
-      <change afterPath="$PROJECT_DIR$/02/Switch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/09_onclickAllMethods.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/09_onclickAllMethods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/AddListener2.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/CustomEvent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/AddListeners.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/AddListeners.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/Button_onclick.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/Button_onclick.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/Button_onlick.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/Button_onlick.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/SendButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/InputText.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,15 +298,8 @@
       <workItem from="1772291007354" duration="5181000" />
       <workItem from="1772375703187" duration="464000" />
       <workItem from="1772550871895" duration="4555000" />
-      <workItem from="1772558993190" duration="689000" />
-    </task>
-    <task id="LOCAL-00025" summary="Converter">
-      <option name="closed" value="true" />
-      <created>1755496862160</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1755496862160</updated>
+      <workItem from="1772558993190" duration="1325000" />
+      <workItem from="1772723595332" duration="1897000" />
     </task>
     <task id="LOCAL-00026" summary="Lesson03-04">
       <option name="closed" value="true" />
@@ -687,7 +685,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772557750852</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Урок 8">
+      <option name="closed" value="true" />
+      <created>1772559705201</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1772559705202</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
