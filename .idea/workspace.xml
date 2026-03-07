@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 8">
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/09_onclickAllMethods.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/09_onclickAllMethods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/AddListener2.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/CustomEvent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/AddListeners.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/AddListeners.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/Button_onclick.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/Button_onclick.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/Button_onlick.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/Button_onlick.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/SendButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/InputText.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/Checkbox3.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/CheckboxAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/RadioS.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/RadioS.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,15 +295,11 @@
       <workItem from="1772375703187" duration="464000" />
       <workItem from="1772550871895" duration="4555000" />
       <workItem from="1772558993190" duration="1325000" />
-      <workItem from="1772723595332" duration="1897000" />
-    </task>
-    <task id="LOCAL-00026" summary="Lesson03-04">
-      <option name="closed" value="true" />
-      <created>1755537970483</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1755537970483</updated>
+      <workItem from="1772723595332" duration="1916000" />
+      <workItem from="1772732911920" duration="123000" />
+      <workItem from="1772799099666" duration="1863000" />
+      <workItem from="1772816817099" duration="2000" />
+      <workItem from="1772895775303" duration="406000" />
     </task>
     <task id="LOCAL-00027" summary="DateDiff - форматирование даты по-русски">
       <option name="closed" value="true" />
@@ -693,14 +685,21 @@
       <option name="project" value="LOCAL" />
       <updated>1772559705202</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Урок 9">
+      <option name="closed" value="true" />
+      <created>1772732155582</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1772732155582</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="DateDiff - форматирование даты по-русски" />
     <MESSAGE value="FuncSpread" />
     <MESSAGE value="Lesson05" />
     <MESSAGE value="Lesson06" />
@@ -725,6 +724,7 @@
     <MESSAGE value="Урок 6" />
     <MESSAGE value="Урок 7" />
     <MESSAGE value="Урок 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 8" />
+    <MESSAGE value="Урок 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 9" />
   </component>
 </project>

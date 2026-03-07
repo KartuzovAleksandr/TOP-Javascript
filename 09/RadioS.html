@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=HJlvCHSfHBzxHRAQJ8MSPsMTqO29cMSWtfxMSckehG3nSRtaSIA3jU8BNK6bMAIXQFAgubBEkz7ZnGZF0PTDwthJD1ypmfsFT0uF4zFyYvexZ3EEo5zp4uwNDw6kISyo" charset="UTF-8"></script></head>
+    <title>Выбор radio</title>
+</head>
 <body>
 <form name="myForm">
     <input type="text" name="key" placeholder="Введите фамилию и имя"></input>
@@ -21,12 +21,9 @@
 <script>
     function printForm() {
         // получаем значение поля key
-        const keyBox = document.myForm.key;
-        const val = keyBox.value;
+        const val = document.myForm.key.value;
         // получаем выбранную машину
         const selectedCar = document.myForm.languages.value;
-        // получаем элемент printBlock
-        const printBlock = document.getElementById("printBlock");
         // создаем новый параграф
         const pElement = document.createElement("p");
         // устанавливаем у него текст

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Обработка checkbox через querySelectorAll</title>
+</head>
+<body>
+<form name="myForm">
+    <input type="text" name="key" placeholder="Введите ФИО" />
+    <input type="button" name="print" value="Submit" />
+    <button type="reset" name="reset">Очистить</button>
+<!--    value нужен для обработки -->
+    <input type="checkbox" name="enabled1" value="солнце"><span>солнце</span>
+    <input type="checkbox" name="enabled2" value="дождь"><span>дождь</span>
+    <input type="checkbox" name="enabled3" value="снег"><span>снег</span>
+    <input type="checkbox" name="enabled4" value="песок"><span>песок</span>
+    <input type="checkbox" name="enabled5" value="гроза" checked><span>гроза</span>
+</form>
+<div id="printBlock"></div>
+<script>
+var temp="";
+// обработчик изменения текста
+function onchange(){
+    onreset();
+    temp = document.myForm.key.value + " выбирает: ";
+    // способ получить все отмеченные чекбоксы внутри формы
+    const checkedItems = document.querySelectorAll('form[name="myForm"] input[type="checkbox"]:checked');
+    // Собираем значения в массив текстовых строк
+    const values = [];
+    for (let item of checkedItems) {
+        values.push(item.value);
+    }
+    // добавляем
+    temp += values.join(", "); // через запятую
+    printBlock.textContent = temp;
+}
+
+// сброс значения
+function onreset(){
+    printBlock.textContent = "";
+}
+
+// установка обработчиков
+const printBox = document.myForm.print;
+const resetBox = document.myForm.reset;
+printBox.addEventListener("click", onchange);
+resetBox.addEventListener("click", onreset);
+</script>
+</body>
+</html>
