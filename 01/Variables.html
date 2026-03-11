@@ -7,9 +7,15 @@
 <body>
 <script>
   let s = "Вася";
-  document.write(s);
-  s = 12;
-  document.write(`<p> ${s}`);
+  document.write("Имя: " + s);
+  const c = 12;
+  document.write(`<p><h2>${c}</h2>`);
+  // нельзя присвоить значение заново константе
+  // c = 10;
+  s = 365;
+  document.write("Число: " + s);
+  x = 125;
+  document.write("     x = " + s);
 </script>
 </body>
 </html>
