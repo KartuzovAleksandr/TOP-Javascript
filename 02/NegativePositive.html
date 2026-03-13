@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Массив положительных и отрицательных чисел</title>
+</head>
+<body>
+<script>
+    const n = parseInt(prompt("Введите кол-во чмсел:", 12));
+    const max = 100;
+    // создаем массив из n
+    let a = [n];
+    for (let i = 0; i < n; i++) {
+        a[i] = Math.round(Math.random() * max) - 50;
+    }
+    console.log("Исходный массив:");
+    console.log(a);
+    let positive = [];
+    let negative = [];
+    for (const x of a) {
+        if (x >= 0) {
+            positive.push(x);
+        }
+        else {
+            negative.push(x);
+        }
+    }
+    console.log("Положительные:");
+    console.log(positive);
+    console.log("Отрицательные:");
+    console.log(negative);
+
+    let sum = 0;
+    for (const x of a) {
+        sum += Math.abs(x);
+    }
+    console.log(`Среднее: ${sum / a.length}`);
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Массив</title>
+</head>
+<body>
+<script>
+    const n = parseInt(prompt("Введите кол-во чисел:", 12));
+    const max = 100;
+    let a = [];
+    for (let i = 0; i < n; i++) {
+        a[i] = Math.round(Math.random() * max) - 50;
+    }
+    console.log("Исходный массив:", a);
+    let asc = [...a].sort((x, y) => x - y);
+    console.log("По возрастанию:", asc);
+    let desc = [...a].sort((x, y) => y - x);
+    console.log("По убыванию:", desc);
+    let evens = [];
+    for (const x of a) {
+        if (x % 2 === 0) evens.push(x);
+    }
+    console.log("Четные:", evens);
+    let positives = [];
+    for (const x of a) {
+        if (x > 0) positives.push(x);
+    }
+    console.log("Положительные:", positives);
+    let sum = 0;
+    for (const x of a) {
+        sum += x;
+    }
+    console.log("Сумма:", sum);
+    let avg = sum / a.length;
+    console.log("Среднее:", avg.toFixed(2));
+    let sumSq = 0;
+    for (const x of a) {
+        sumSq += Math.pow(x - avg, 2);
+    }
+    let stdDev = Math.sqrt(sumSq / a.length);
+    console.log("Стандартное отклонение:", stdDev.toFixed(4));
+</script>
+</body>
+</html>
