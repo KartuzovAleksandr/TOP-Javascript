@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Функции</title>
+</head>
+<body>
+<script>
+    function hello(str) {
+        if (str) {
+            document.write(`${str}<br>`);
+        }
+        else {
+            document.writeln("Аргумент str не определен");
+        }
+    }
+    hello("Привет");
+    hello();
+    function sum(a, b) {
+        const result = a + b;
+        return result;
+    }
+    document.writeln(sum(2, 3));
+    document.writeln(sum(2));
+</script>
+</body>
+</html>
