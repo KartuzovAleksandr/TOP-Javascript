@@ -1,0 +1,60 @@
+<!--Калмыков Кирилл-->
+<!--Академия TOP-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="Калькулятор.css">
+</head>
+<body>
+    <h2>Калькулятор</h2>
+
+    <input id="a" type="number">
+    <input id="b" type="number">
+    <br><br>
+
+    <button onclick="calc('+')">+</button>
+    <button onclick="calc('-')">-</button>
+    <button onclick="calc('*')">*</button>
+    <button onclick="calc('/')">/</button>
+    <button onclick="calc('^')">^</button>
+
+    <br><br>
+
+    <input id="angle" type="number" placeholder="угол">
+
+    <br><br>
+
+    <button onclick="trig('sin')">sin</button>
+    <button onclick="trig('cos')">cos</button>
+    <button onclick="trig('tan')">tan</button>
+
+    <h3 id="res">0</h3>
+
+    <script>
+        function calc(op) {
+            let aVal = +document.getElementById('a').value;
+            let bVal = +document.getElementById('b').value;
+            let res = document.getElementById('res');
+
+            if (op === '+') res.innerText = aVal + bVal;
+            else if (op === '-') res.innerText = aVal - bVal;
+            else if (op === '*') res.innerText = aVal * bVal;
+            else if (op === '/') res.innerText = aVal / bVal;
+            else res.innerText = aVal ** bVal;
+        }
+
+        function trig(t) {
+            let r = +document.getElementById('angle').value * Math.PI / 180;
+            let res = document.getElementById('res');
+
+            if (t === 'sin') res.innerText = Math.sin(r).toFixed(4);
+            else if (t === 'cos') res.innerText = Math.cos(r).toFixed(4);
+            else res.innerText = Math.tan(r).toFixed(4);
+        }
+    </script>
+
+</body>
+
+</html>
