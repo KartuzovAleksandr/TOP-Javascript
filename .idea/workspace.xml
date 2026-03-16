@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 02">
-      <change afterPath="$PROJECT_DIR$/03/Func.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 03">
+      <change beforePath="$PROJECT_DIR$/02/Жуков.html" beforeDir="false" afterPath="$PROJECT_DIR$/02/Жуков.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,15 +305,7 @@
       <workItem from="1773244422398" duration="4589000" />
       <workItem from="1773329530166" duration="5000" />
       <workItem from="1773420880979" duration="3399000" />
-      <workItem from="1773673319759" duration="2423000" />
-    </task>
-    <task id="LOCAL-00031" summary="Lesson06">
-      <option name="closed" value="true" />
-      <created>1755884037940</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1755884037940</updated>
+      <workItem from="1773673319759" duration="2562000" />
     </task>
     <task id="LOCAL-00032" summary="Iterator">
       <option name="closed" value="true" />
@@ -700,14 +691,21 @@
       <option name="project" value="LOCAL" />
       <updated>1773424509516</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Урок 03">
+      <option name="closed" value="true" />
+      <created>1773679301293</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1773679301293</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Iterator" />
     <MESSAGE value="IteratorOdd" />
     <MESSAGE value="07_Generator" />
     <MESSAGE value="08_Navigator, Location, History" />
@@ -732,6 +730,7 @@
     <MESSAGE value="Урок 11" />
     <MESSAGE value="Урок 01" />
     <MESSAGE value="Урок 02" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 02" />
+    <MESSAGE value="Урок 03" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 03" />
   </component>
 </project>
