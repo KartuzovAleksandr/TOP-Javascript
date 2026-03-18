@@ -6,6 +6,7 @@
 </head>
 <body>
 <script>
+    // а вот так можно - потому что до указания строгого режима
     // d = 100;
     "use strict";
     function print() {
@@ -19,7 +20,7 @@
         console.log("Function print: c =", c);
     }
     print();
-    // console.log("Global: a =", a);
+    // console.log("Local: a =", a);
     console.log("Global: d =", d);  // Uncaught ReferenceError: d is not defined
 </script>
 </body>

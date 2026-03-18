@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope для var</title>
+</head>
+<body>
+<script>
+    var z = 10;
+    function onSuccess() {
+        var z = 30;
+        {
+            var z = 25;
+        }
+        console.log(`Внутри функции z = ${z}`);
+    }
+    onSuccess();
+    console.log(`Вне функции z = ${z}`);
+    var z = 50;
+    console.log(`Переопределение z = ${z}`);
+</script>
+</body>
+</html>

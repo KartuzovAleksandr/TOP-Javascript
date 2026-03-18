@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>use strict для функции</title>
+</head>
+<body>
+  <script>
+    d = 10;
+    console.log(d);
+    function strictFunction() {
+      "use strict";
+      c = 5;
+      console.log(c);
+    }
+    strictFunction();
+    // если не вызову функцию - то все нормально
+    console.log(d);
+  </script>
+</body>
+</html>

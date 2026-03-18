@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 03">
+      <change afterPath="$PROJECT_DIR$/04/ScopeVar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04/UseStrictFunction.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04/05_Scopes.html" beforeDir="false" afterPath="$PROJECT_DIR$/04/StrictMode.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,23 +308,11 @@
       <workItem from="1773244422398" duration="4589000" />
       <workItem from="1773329530166" duration="5000" />
       <workItem from="1773420880979" duration="3399000" />
-      <workItem from="1773673319759" duration="3832000" />
-    </task>
-    <task id="LOCAL-00033" summary="IteratorOdd">
-      <option name="closed" value="true" />
-      <created>1756141607850</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1756141607850</updated>
-    </task>
-    <task id="LOCAL-00034" summary="07_Generator">
-      <option name="closed" value="true" />
-      <created>1756143692049</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1756143692049</updated>
+      <workItem from="1773673319759" duration="5479000" />
+      <workItem from="1773765640887" duration="267000" />
+      <workItem from="1773766684587" duration="182000" />
+      <workItem from="1773767558852" duration="617000" />
+      <workItem from="1773847214370" duration="2267000" />
     </task>
     <task id="LOCAL-00035" summary="08_Navigator, Location, History">
       <option name="closed" value="true" />
@@ -699,7 +690,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773679415666</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Урок 03">
+      <option name="closed" value="true" />
+      <created>1773681562842</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1773681562842</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Урок 03">
+      <option name="closed" value="true" />
+      <created>1773683644250</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1773683644250</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
