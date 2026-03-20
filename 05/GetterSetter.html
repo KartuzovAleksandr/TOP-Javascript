@@ -35,7 +35,7 @@
 
     // setter и getter в классе
     class Person {
-        #ageValue = 1; // private
+        #age = 1; // private
         // делаем конструктор - значит поля name и age добавляются автоматически
         constructor(name, age) {
             this.name = name;
@@ -43,10 +43,10 @@
         }
         set age(value) {
             console.log(`Передано ${value}`);
-            if (value>0 && value < 110) this.#ageValue = value;
+            if (value>0 && value < 110) this.#age = value;
         }
         get age() {
-            return this.#ageValue;
+            return this.#age;
         }
         // св-во fullName
         get fullName() { return `${this.name} ${this.age}` }
