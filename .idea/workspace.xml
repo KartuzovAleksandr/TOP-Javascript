@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 03">
-      <change afterPath="$PROJECT_DIR$/04/ScopeVar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/UseStrictFunction.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04/05_Scopes.html" beforeDir="false" afterPath="$PROJECT_DIR$/04/StrictMode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/Objects.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/Objects.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,15 +310,10 @@
       <workItem from="1773765640887" duration="267000" />
       <workItem from="1773766684587" duration="182000" />
       <workItem from="1773767558852" duration="617000" />
-      <workItem from="1773847214370" duration="2267000" />
-    </task>
-    <task id="LOCAL-00035" summary="08_Navigator, Location, History">
-      <option name="closed" value="true" />
-      <created>1756311370573</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1756311370573</updated>
+      <workItem from="1773847214370" duration="4576000" />
+      <workItem from="1773980506858" duration="6000" />
+      <workItem from="1773980756958" duration="5000" />
+      <workItem from="1774020541009" duration="729000" />
     </task>
     <task id="LOCAL-00036" summary="09_UL-CSS">
       <option name="closed" value="true" />
@@ -706,14 +699,21 @@
       <option name="project" value="LOCAL" />
       <updated>1773683644250</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Урок 04">
+      <option name="closed" value="true" />
+      <created>1773849893535</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1773849893535</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="IteratorOdd" />
     <MESSAGE value="07_Generator" />
     <MESSAGE value="08_Navigator, Location, History" />
     <MESSAGE value="09_UL-CSS" />
@@ -738,6 +738,7 @@
     <MESSAGE value="Урок 01" />
     <MESSAGE value="Урок 02" />
     <MESSAGE value="Урок 03" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 03" />
+    <MESSAGE value="Урок 04" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 04" />
   </component>
 </project>

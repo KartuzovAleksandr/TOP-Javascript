@@ -6,16 +6,17 @@
 </head>
 <body>
 <script>
+    // 0 способ
     // let user = new Object();
     let user = {};
-    // 1
+    // 1 способ
     user.name = "Вася";
     user.age = 15;
     console.log(user); // Object раскрывается на 2 строчки { name: 'Вася', age: 15 }
     // нельзя
     // console.log(...user);
     document.write(user); // [object Object]
-    document.write(`${user.name}<br>${user.age}`); // Вася на другой строке 15
+    document.write(`<br>${user.name}<br>${user.age}`); // Вася на другой строке 15
     // 2
     user = {
         name: "Tom",
@@ -46,7 +47,7 @@
         document.write(`<br>${user.age}`);
     };
     user.display();
-    // 5
+    // 5 способ с синтаксисом массивов
     user = {};
     user["name"] = "Maria";
     user["age"] = 25;
@@ -67,7 +68,7 @@
             console.log(user.age);
         }
     };
-    // user.full name = "Bob"; // wait semicolon
+    // user.full name = "Bob"; // New line or semicolon expected
     console.log(user["full name"]);
     user["display info"]();
 
