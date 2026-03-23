@@ -9,9 +9,14 @@
     // Хомидов Лев г. Барнаул
     let n = prompt("Размер массива = ", 10);
     let a = new Set();
+    // если чисел захотим больше 10 - то цикл бесконечный !!!
     while (a.size < n) {
         a.add(Math.floor(Math.random() * 10));
     }
+    // если простой цикл, то повторы удалятся и чисел будет меньше
+    // for (let i = 0; i < n; i++) {
+    //     a.add(Math.floor(Math.random() * 10));
+    // }
     let resultArray = [...a];
     console.log(a);
     console.log("Генерированные уникальные числа: " + resultArray.join(", "));

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Палиндром</title>
+</head>
+<body>
+<script>
+        let str = prompt("Введите строку:");
+        let clean = str.replaceAll(" ", "").toLowerCase();
+        console.log(clean);
+        let reversed = clean.split('').reverse().join('');
+        console.log(reversed);
+
+        if (clean === reversed) {
+            alert("Это палиндром!");
+        } else {
+            alert("Это не палиндром");
+        }
+</script>
+</body>
+</html>
