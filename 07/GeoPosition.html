@@ -5,6 +5,15 @@
     <title>Navigator</title>
 </head>
 <body>
+<div id="out">Широта ? Долгота ?</div>
+<p>
+    <!-- Элемент сам запросит данные при загрузке, если разрешите - кликните -->
+    <!-- для Chrome 146+ -->
+    <!-- точность - желательно 4 знака после запятой, потому что если только 2 - то это около км (зависит от широты - долготы) -->
+    <geolocation autolocate onlocation="
+        const {latitude: lat, longitude: lon} = event.target.position.coords;
+        document.getElementById('out').innerText = `Широта ${lat.toFixed(4)} Долгота ${lon.toFixed(4)}`;">
+    </geolocation>
 <script>
     // Функция для успешного получения геопозиции
     function onSuccess(position) {
@@ -13,7 +22,6 @@
         console.log("Долгота:", position.coords.longitude);
         console.log("Точность:", position.coords.accuracy + " м");
     }
-
     // Функция для обработки ошибок
     function onFail(error) {
         switch (error.code) {
@@ -30,19 +38,8 @@
                 console.error("Неизвестная ошибка:", error.message);
         }
     }
-
     // Запрос геопозиции
     navigator.geolocation.getCurrentPosition(onSuccess, onFail);
-
-    // Остальные свойства navigator
-    console.log("appCodeName:", navigator.appCodeName);
-    console.log("appName:", navigator.appName);
-    console.log("appVersion:", navigator.appVersion);
-    console.log("product:", navigator.product);
-    console.log("vendor:", navigator.vendor);
-    console.log("userAgent:", navigator.userAgent);
-    console.log("platform:", navigator.platform);
-    console.log("languages:", navigator.languages);
 </script>
 </body>
 </html>

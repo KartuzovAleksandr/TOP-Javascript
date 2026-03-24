@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 05">
-      <change afterPath="$PROJECT_DIR$/06/Palindrom.html" afterDir="false" />
+    <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 06">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/03_SortEvenOdd_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/03_SortEvenOdd_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/07_UniqueRandom.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/07_UniqueRandom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06/Palindrome.html" beforeDir="false" afterPath="$PROJECT_DIR$/06/Palindrome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07/08_Navigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/07/GeoPosition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07/Navigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/07/Navigator.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +145,7 @@
     "JavaScript Debug.11_Icon_JQ-UI.html.executor": "Run",
     "JavaScript Debug.11_Progress_JQ-UI.html.executor": "Run",
     "JavaScript Debug.11_Slider_JQ-UI.html.executor": "Run",
+    "JavaScript Debug.GeoPosition.html.executor": "Run",
     "JavaScript Debug.Palindrom.html.executor": "Run",
     "JavaScript Debug.SortArray.html.executor": "Run",
     "Node.js.ES_version.js.executor": "Run",
@@ -319,15 +318,8 @@
       <workItem from="1773980756958" duration="5000" />
       <workItem from="1774020541009" duration="5666000" />
       <workItem from="1774254574237" duration="7000" />
-      <workItem from="1774278660608" duration="7189000" />
-    </task>
-    <task id="LOCAL-00038" summary="09_Radio">
-      <option name="closed" value="true" />
-      <created>1756487113343</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1756487113343</updated>
+      <workItem from="1774278660608" duration="7641000" />
+      <workItem from="1774353738167" duration="1975000" />
     </task>
     <task id="LOCAL-00039" summary="Урок 10">
       <option name="closed" value="true" />
@@ -713,7 +705,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774026458731</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Урок 06">
+      <option name="closed" value="true" />
+      <created>1774288258458</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1774288258458</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -725,7 +725,6 @@
     <MESSAGE value="09_Checkbox" />
     <MESSAGE value="09_Radio" />
     <MESSAGE value="Перепланировка уроков, много новых примеров" />
-    <MESSAGE value="Урок 06" />
     <MESSAGE value="Урок 07" />
     <MESSAGE value="Урок 08" />
     <MESSAGE value="Урок 09" />
@@ -745,6 +744,7 @@
     <MESSAGE value="Урок 03" />
     <MESSAGE value="Урок 04" />
     <MESSAGE value="Урок 05" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 05" />
+    <MESSAGE value="Урок 06" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 06" />
   </component>
 </project>
