@@ -5,15 +5,18 @@
     <title>Открытие окна</title>
 </head>
 <body>
-<button onclick="openWindow()">Click в новой вкладке</button>
+<button onclick="openTab()">Click в новой вкладке</button>
+<button onclick="openWindow()">Click в новом окне</button>
 <button onclick="openSelf()">Click в текущей вкладке</button>
 <script>
+   function openTab() {
+        // в новой вкладке
+        window.open("https://microsoft.com");
+   }
    function openWindow() {
-       // в новой вкладке
-       // window.open("https://microsoft.com");
-        // или в новом окне
+       // в новом окне
        window.open("https://metanit.com", "_blank", "popup=yes");
-    }
+   }
    function openSelf() {
        window.open("https://microsoft.com", "_self");
    }
