@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Input обработка ввода</title>
+</head>
+<body>
+<form id="myForm">
+    <input type="text" id="name" placeholder="Введите имя:" />
+    <input type="button" id="button" onclick=print() value="Печать" />
+</form>
+<p id="print"></p>
+<script>
+    function print() {
+        const key = document.getElementById("name").value;
+        // проверка валидности если нужно
+        document.getElementById("print").innerHTML = `Вы ввели имя ${key}`;
+    }
+</script>
+</body>
+</html>
