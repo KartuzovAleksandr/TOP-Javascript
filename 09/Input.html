@@ -5,12 +5,16 @@
     <title>Input обработка ввода</title>
 </head>
 <body>
-<input type="text" id="name" placeholder="Введите имя:" />
-<input type="button" id="button" onclick=print() value="Печать" />
+<form name="myForm">
+    <input type="text" name="myname" id="key" placeholder="Введите имя:" />
+    <input type="button" id="button" onclick="printForm()" value="Печать" />
+</form>
 <p id="print"></p>
 <script>
-    function print() {
-        const key = document.getElementById("name").value;
+    function printForm() {
+        // const key = document.getElementById("key").value;
+        // устаревшее поведение - обращаться к форме по имени
+        const key = document.myForm.myname.value;
         // проверка валидности если нужно
         document.getElementById("print").innerHTML = `Вы ввели имя ${key}`;
     }
