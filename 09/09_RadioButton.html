@@ -14,20 +14,20 @@
         <input type="text" id="name" name="name">
     </div>
     <div>
-        <p>Выберите вариант:</p>
-        <input type="radio" id="option1" name="options" value="Java">
-        <label for="option1">Java</label><br>
+        <p>Какой язык вы любите больше:</p>
+        <label for="option1">Java</label>
+        <input type="radio" id="option1" name="options" value="Java"><br>
 
-        <input type="radio" id="option2" name="options" value="C#">
-        <label for="option2">C#</label><br>
+        <label for="option2">C#</label>
+        <input type="radio" id="option2" name="options" value="C#"><br>
 
-        <input type="radio" id="option3" name="options" value="C">
         <label for="option3">C</label>
+        <input type="radio" id="option3" name="options" value="C"><br>
     </div>
     <button type="button" onclick="displayData()">Отправить</button>
 </form>
 <p id="result"></p>
-<div id="printBlock"></div>
+<!--<div id="printBlock"></div>-->
 <script>
     function displayData() {
         let options = document.getElementsByName("options");

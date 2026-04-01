@@ -11,16 +11,16 @@
     <input type="checkbox" name="languages" value="C#" /><span>C#</span>
     <p>
     <input type="checkbox" name="languages" value="C++" /><span>C++</span>
-    <input type="submit" name="submit" onsubmit="onclick()"/>
+    <input type="button" name="submit" value="Отправить" onclick="handleClick()"/>
 </form>
 <div id="printBlock"></div>
 <script>
     const myForm = document.myForm;
-    function onclick() {
+    function handleClick() {
         console.log( "вошел");
-        for (let i = 0; i < myForm.languages.length; i++) {
-            if (myForm.languages[i].checked)
-                console.log(myForm.languages[i].value);
+        for (let chk of myForm.languages) {
+            if (chk.checked)
+                console.log(chk.value);
         }
     }
 </script>

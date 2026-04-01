@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function click() {
+    function handleSubmit() {
         const myForm = document.myForm;
         console.log("вошел");
         for (let i = 0; i < myForm.languages.length; i++)
@@ -14,14 +14,14 @@
                 console.log(myForm.languages[i].value);
     }
 </script>
-<form name="myForm" method="post">
+<form name="myForm">
     <input type="checkbox" name="languages" value="Java" /><span>Java</span>
     <p>
     <input type="checkbox" name="languages" value="C#" /><span>C#</span>
     <p>
     <input type="checkbox" name="languages" value="C++" /><span>C++</span>
     <p>
-    <input type="submit" name="submit" onclick="return click()" />
+    <input type="button" name="submit" value="Отправить" onclick="handleSubmit()" />
 </form>
 </body>
 </html>

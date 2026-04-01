@@ -5,20 +5,10 @@
 </head>
 <body>
     <input type="text" id="textInput">
-
-    <br><br>
-    
     <input type="radio" name="option" value=" Мужчина" id="option1"> <label for="option1">Мужчина</label>
     <input type="radio" name="option" value=" Женщина" id="option2"> <label for="option2">Женщина</label>
-    
-    <br><br>
-    
     <button onclick="printText()">Печать</button>
-    
-    <br><br>
-
     <div id="output"></div>
-
     <script>
         function printText() {
             var textInput = document.getElementById("textInput").value;
@@ -30,7 +20,6 @@
                     break;
                 }
             }
-
         }
     </script>
 </body>

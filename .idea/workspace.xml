@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 09">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09/Input.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/Input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/09_RadioButton.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/09_RadioButton.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/CheckBox.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/CheckBox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/Checkbox2.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/Checkbox2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/RadioG.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/RadioG.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09/RadioS.html" beforeDir="false" afterPath="$PROJECT_DIR$/09/RadioS.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,15 +334,8 @@
       <workItem from="1774887264155" duration="3296000" />
       <workItem from="1774893910464" duration="234000" />
       <workItem from="1774956850300" duration="5000" />
-      <workItem from="1775046791046" duration="1139000" />
-    </task>
-    <task id="LOCAL-00048" summary="Урок 08">
-      <option name="closed" value="true" />
-      <created>1766165490728</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1766165490728</updated>
+      <workItem from="1775046791046" duration="1210000" />
+      <workItem from="1775055723533" duration="3798000" />
     </task>
     <task id="LOCAL-00049" summary="Урок 08">
       <option name="closed" value="true" />
@@ -724,7 +721,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774894128463</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Урок 09">
+      <option name="closed" value="true" />
+      <created>1775047984411</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1775047984412</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
