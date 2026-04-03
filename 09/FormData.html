@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FormData</title>
+    <link rel="stylesheet" href="FormData.css">
+</head>
+<body>
+<form id="myForm" method="get">
+    <label>Введите имя</label>
+    <input type="text" required name="username" placeholder="Логин" pattern="[A-Za-z]*">
+    <p>
+        <label>Пароль</label>
+        <input type="password" name="password" placeholder="Пароль" minlength="8">
+    <p>
+        <label for="age">Возраст</label>
+        <input type="number" min="18" max="80" step="5" name="age" id="age">
+    <p>
+        <label>Страна</label>
+        <input type="text" name="country" list="countries">
+        <datalist id="countries">
+            <option>Россия</option>
+            <option>США</option>
+            <option>Европа</option>
+        </datalist>
+    <p>
+        <input type="checkbox" name="isstudent" checked>Студент
+    <p>
+    <p>
+        <input type="radio" name="gender" value="male">Мужской
+        <input type="radio" name="gender" value="female">Женский
+    <p>
+        <input type="submit">
+        <input type="reset">
+</form>
+
+<script>
+        const form = document.getElementById('myForm');
+        // Через FormData
+        function processForm(e) {
+            e.preventDefault();
+            const fd = new FormData(form);
+            const dataFromFD = {
+                username: fd.get('username'),         // string|null
+                password: fd.get('password'),
+                age: fd.get('age'),
+                country: fd.get('country'),
+                isstudent: fd.get('isstudent') !== null, // checkbox presence -> boolean
+                gender: fd.get('gender'),
+            };
+        console.log('From FormData:', dataFromFD);
+
+        // Через form.elements (получает checked/values корректно)
+        const elems = form.elements;
+        const dataFromElems = {
+        username: elems['username'].value,
+        password: elems['password'].value,
+        age: elems['age'].value,
+        country: elems['country'].value,
+        isstudent: elems['isstudent'].checked,
+        gender: (() => {
+            const g = elems['gender'];
+            // если несколько радио — g может быть RadioNodeList
+            if (g instanceof RadioNodeList) return g.value;
+            return g.checked ? g.value : null;
+        })(),
+        };
+        console.log('From elements:', dataFromElems);
+    }
+    form.addEventListener('submit', processForm);
+</script>
+</body>
+</html>
