@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba93b836-4a1a-4afa-becc-f1282543d5d8" name="Changes" comment="Урок 10">
-      <change beforePath="$PROJECT_DIR$/.idea/TOP-Javascript.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TOP-Javascript.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/10_CheckBox.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_CheckBox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/10_Context.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Context.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10/10_Even.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_Even.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/10/10_HelloJQuery.html" beforeDir="false" afterPath="$PROJECT_DIR$/10/10_HelloJQuery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12/12_Anketa_Виловатый Артем.html" beforeDir="false" afterPath="$PROJECT_DIR$/12/12_Anketa_Виловатый Артем.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +137,7 @@
     "JavaScript Debug.10_Even.html.executor": "Run",
     "JavaScript Debug.10_HelloJQuery.html.executor": "Run",
     "JavaScript Debug.10_LI.html.executor": "Run",
+    "JavaScript Debug.10_RadioMargarita.html.executor": "Run",
     "JavaScript Debug.10_Select_Нещетин.html.executor": "Run",
     "JavaScript Debug.10_Style.html.executor": "Run",
     "JavaScript Debug.10_Table.html.executor": "Run",
@@ -151,6 +154,7 @@
     "JavaScript Debug.SortArray.html.executor": "Run",
     "Node.js.ES_version.js.executor": "Run",
     "Node.js.index.js.executor": "Run",
+    "Node.js.script.js.executor": "Run",
     "Notification.DisplayName-DoNotAsk-Vcs Notifications": "VCS notifications",
     "Notification.DoNotAsk-Vcs Notifications": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -337,15 +341,7 @@
       <workItem from="1775065406960" duration="340000" />
       <workItem from="1775118178217" duration="1242000" />
       <workItem from="1775203138657" duration="4000" />
-      <workItem from="1775229284452" duration="874000" />
-    </task>
-    <task id="LOCAL-00050" summary="Урок 09">
-      <option name="closed" value="true" />
-      <created>1766390953280</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1766390953281</updated>
+      <workItem from="1775229284452" duration="6244000" />
     </task>
     <task id="LOCAL-00051" summary="Урок 09">
       <option name="closed" value="true" />
@@ -731,7 +727,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775062492686</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Урок 10">
+      <option name="closed" value="true" />
+      <created>1775230182815</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1775230182815</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

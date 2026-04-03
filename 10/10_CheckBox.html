@@ -18,8 +18,13 @@
     $(function() {
         $("#submit").click(function(e) {
             e.preventDefault();
-            console.log("Вы выбрали");
+            // const selected =$(':checkbox:checked')
             const selected = $('input[name="languages"]:checked');
+            if (selected.length === 0) {
+                console.log("Вы ничего не выбрали");
+                return;
+            }
+            console.log("Вы выбрали");
             for (let item of selected)
                 console.log(item.value);
             console.log("________________");

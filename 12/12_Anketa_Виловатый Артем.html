@@ -187,12 +187,18 @@
                 Полис: $("#policy").val()
             };
 
+            // сериализация в JSON
             let jsonData = JSON.stringify(data, null, 4);
+            // создаем объект Blob
             let blob = new Blob([jsonData], { type: "application/json" });
+            // создаем ссылку
             let a = document.createElement("a");
             a.href = URL.createObjectURL(blob);
             a.download = "employee_data.json";
+            // выполняем метод
             a.click();
+            // удаляем ссылку для экономии памяти
+            a.remove();
         });
     </script>
 </body>
