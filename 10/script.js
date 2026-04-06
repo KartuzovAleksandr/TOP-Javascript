@@ -39,6 +39,12 @@ $(document).ready(function() {
         handleFormSubmit();
     });
 
+    // $(document).on('keypress', ...) — вешает обработчик на нажатие клавиши по всей странице.
+    // e.which === 13 — проверяет, нажали ли Enter.
+    // const focused = $(':focus') — берет элемент, который сейчас в фокусе.
+    // Если в фокусе button, вызывается его click().
+    // Если в фокусе input, форма #langForm отправляется через .submit().
+    // Иначе нажимаются все button на странице через $('button').click(), что может быть не очень безопасно, если кнопок несколько.
     $(document).on('keypress', function(e) {
         if (e.which === 13) {
             const focused = $(':focus');
